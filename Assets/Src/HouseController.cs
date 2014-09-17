@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class HouseController : BaseController {
+
+
+	Dictionary<int,CellController> cells = new Dictionary<int, CellController>();
 
 	Vector3 markerPos;
 	public Vector3 MarkerPosition{
@@ -25,6 +28,20 @@ public class HouseController : BaseController {
 		
 		Gizmos.color = Color.red;    
 		Gizmos.DrawWireCube(markerPos, new Vector3(1,1, 1) * 1.1f);
+	}
+
+	private int MapPointToInt(MapPoint point)
+	{
+		return point.X << 16 | point.Y;
+	}
+
+	public CellController GetCell(MapPoint point)
+	{
+		int key = MapPointToInt(point);
+		if(cells.ContainsKey(key))
+			return cells[key];
+
+		return null;
 	}
 
 }
