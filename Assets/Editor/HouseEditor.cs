@@ -5,7 +5,10 @@ using System.Collections;
 [CustomEditor(typeof(HouseController))]
 public class HouseEditor : Editor {
 
-	bool edit = false;
+	enum Modes {
+		Idle, PlaceCell
+	}
+	Modes state = Modes.Idle;
 	EditorMouseInput input;
 
 	public override void OnInspectorGUI()
@@ -13,9 +16,16 @@ public class HouseEditor : Editor {
 		
 		DrawDefaultInspector();
 
-		if(GUILayout.Button(edit? "Disable editor": "Enable editor"))
+		if(GUILayout.Button(state!=Modes.Idle? "Disable editor": "Enable editor"))
 		{
-			edit = !edit;
+			if(state!=Modes.Idle)
+				state = Modes.Idle;
+			else
+			{
+				state = Modes.PlaceCell;
+				HouseController hc = (HouseController) target;
+				hc.EditorCheckCells();
+			}	
 		}
 	}
 
@@ -25,7 +35,7 @@ public class HouseEditor : Editor {
 	/// </summary>
 	private void OnSceneGUI()
 	{
-		if(!edit)
+		if(state==Modes.Idle)
 			return;
 		HouseController hc = (HouseController) target;
 		if(input==null)
@@ -51,24 +61,19 @@ public class HouseEditor : Editor {
 			    current.type == EventType.MouseDrag || 
 			    current.type==EventType.MouseUp)
 			{
-				/*if (current.button == 1 &&
-				    (current.type==EventType.MouseUp || selType==SelType.Block))
+				if (current.button == 1 &&
+				    (current.type==EventType.MouseUp))
 				{
 					MapPoint mp = input.GetTilePositionFromMouseLocation();
-					switch(selType)
+					switch(state)
 					{
-					case SelType.Block:
-						PlaceBlock(tc,mp);
+					case Modes.PlaceCell:
+						PlaceCell(hc,mp);
 						break;
-					case SelType.Building:
-						PlaceBuilding(tc,mp);
-						break;
-					case SelType.Vehicle:
-						PlaceVehicle(tc,mp);
-						break;
+					
 					}
 					current.Use();
-				}*/
+				}
 
 			}
 			
@@ -81,6 +86,12 @@ public class HouseEditor : Editor {
 		GUI.Label(new Rect(10, Screen.height - 105, 100, 100), "RMB: Erase");
 		Handles.EndGUI();
 		*/
+	}
+
+
+	private void PlaceCell(HouseController hc, MapPoint p)
+	{
+		hc.SetCell(p);
 	}
 
 	private bool IsMouseOnLayer()

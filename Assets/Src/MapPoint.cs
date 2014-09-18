@@ -22,6 +22,17 @@ public class MapPoint
 		X = Mathf.Clamp(X,0,width-1);
 		Y = Mathf.Clamp(Y,0,height-1);
 	}
+
+	public int toInt()
+	{
+		return X << 16 | Y;
+	}
+
+	public void fromInt(int v)
+	{
+		X = v >> 16;
+		Y = (v & 0xffff);
+	}
 }
 
 

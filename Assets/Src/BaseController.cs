@@ -39,4 +39,10 @@ public class BaseController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	protected T Instantiate<T>(Component prefab) where T: Component
+	{
+		GameObject o = (GameObject)GameObject.Instantiate(prefab.gameObject);
+		return o.GetComponent<T>();
+	}
 }
