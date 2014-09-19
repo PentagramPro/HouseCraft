@@ -2,13 +2,21 @@
 using System;
 using System.Collections.Generic;
 
+[RequireComponent (typeof (HouseController))]
 public class HouseController : BaseController {
 
+	enum Modes{
+		Idle, SetWalls
+	}
 	public CellController CellPrefab;
 	public WallController ThickWallPrefab;
+	public WallController WallPrefab;
 
 	Dictionary<int,CellController> cells = new Dictionary<int, CellController>();
 	Dictionary<int,WallController> walls = new Dictionary<int, WallController>();
+
+
+	Modes state = Modes.SetWalls;
 
 	Vector3 markerPos;
 	public Vector3 MarkerPosition{
@@ -34,6 +42,8 @@ public class HouseController : BaseController {
 		{
 			walls.Add(wall.Position.toInt(),wall);
 		}
+
+		GetComponent<TapController>().OnTap+=OnTap;
 	}
 	// Use this for initialization
 	void Start () {
@@ -107,6 +117,39 @@ public class HouseController : BaseController {
 			newCell.transform.parent = transform;
 			newCell.Position = point;
 			cells.Add(key,newCell);
+		}
+	}
+
+
+	public void SetWall(WallPoint point)
+	{
+		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
+			return;
+
+		int key = point.toInt();
+		if(!walls.ContainsKey(key))
+		{
+			WallController newWall = Instantiate<WallController>(WallPrefab);
+			newWall.transform.parent = transform;
+			newWall.Position = point;
+			walls.Add(key,newWall);
+		}
+	}
+
+	void OnTap()
+	{
+		Vector3 pz = Camera.main.ScreenToWorldPoint(Input.mousePosition)+transform.position;
+
+		if(state == Modes.SetWalls)
+		{
+
+			WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
+			Rect r = new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f);
+			if(r.Contains(pz))
+			{
+				SetWall(wp);
+			}
+
 		}
 	}
 
