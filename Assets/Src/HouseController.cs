@@ -118,6 +118,8 @@ public class HouseController : BaseController {
 				if (cells [k] == null)
 						toRemove.Add (k);
 		}
+		if(toRemove.Count==0)
+			return;
 
 		Debug.LogWarning ("To remove: " + toRemove.Count);
 		foreach (int k in toRemove)
@@ -136,9 +138,15 @@ public class HouseController : BaseController {
 
 			}
 
-			wc.UpdateWall(true);
+			if(wc.EditorUpdateWall())
+			{
+				GameObject.DestroyImmediate(wc.gameObject);
+				walls.Remove(wp.toInt());
+			}
 			
 		});
+
+
 	}
 
 	#endregion

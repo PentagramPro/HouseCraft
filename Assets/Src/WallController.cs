@@ -39,31 +39,32 @@ public class WallController : BaseController {
 		{
 			update = false;
 
-			InternalUpdateWall();
+
 		}
 	}
 
-	public void UpdateWall(bool immediately)
+	public void UpdateWall( )
 	{
-		if(immediately)
-		{
-			if(houseController==null)
-				houseController = GetComponentInParent<HouseController>();
-			InternalUpdateWall();
-		}
-		else
+
 			update = true;
 	}
 
-	private void InternalUpdateWall()
+	// returns true if wall has to be destroyed
+	public bool EditorUpdateWall()
 	{
-
+		if(houseController==null)
+			houseController = GetComponentInParent<HouseController>();
 		CellController tr = houseController.GetCell(new MapPoint(position.X,position.Y));
 		CellController tl = houseController.GetCell(new MapPoint(position.X-1,position.Y));
 		
 		CellController br = houseController.GetCell(new MapPoint(position.X,position.Y-1));
 		CellController bl = houseController.GetCell(new MapPoint(position.X-1,position.Y-1));
-		
+
+		if(tr!=null && tl!=null && br!=null && bl!=null)
+		{
+
+			return true;
+		}
 		wallSprite.Top = (tr==null) ^ (tl==null);
 		wallSprite.Bottom = (br==null) ^ (bl==null);
 		
@@ -71,5 +72,7 @@ public class WallController : BaseController {
 		wallSprite.Left = (tl==null) ^ (bl==null);
 		
 		wallSprite.UpdateWall();
+
+		return false;
 	}
 }
