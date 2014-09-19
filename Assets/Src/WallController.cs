@@ -9,7 +9,9 @@ public class WallController : BaseController {
 	public WallGfxController wallSprite;
 
 	public WallPoint position;
-	
+
+
+
 	public WallPoint Position{
 		set{
 			transform.localPosition = new Vector3(value.X,value.Y, 0);
@@ -39,7 +41,7 @@ public class WallController : BaseController {
 		{
 			update = false;
 
-
+			wallSprite.UpdateWall();
 		}
 	}
 

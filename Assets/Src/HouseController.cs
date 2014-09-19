@@ -121,11 +121,12 @@ public class HouseController : BaseController {
 	}
 
 
-	public void SetWall(WallPoint point)
+	public WallController SetWall(WallPoint point)
 	{
 		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
-			return;
+			return null;
 
+		WallController res = null;
 		int key = point.toInt();
 		if(!walls.ContainsKey(key))
 		{
@@ -133,7 +134,11 @@ public class HouseController : BaseController {
 			newWall.transform.parent = transform;
 			newWall.Position = point;
 			walls.Add(key,newWall);
+			res = newWall;
 		}
+		else
+			res = walls[key];
+		return res;
 	}
 
 	void OnTap()
@@ -144,10 +149,43 @@ public class HouseController : BaseController {
 		{
 
 			WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
-			Rect r = new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f);
-			if(r.Contains(pz))
+			//new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f).Contains(pz)
+
+			WallController wall = null;
+
+			if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
 			{
-				SetWall(wp);
+				//middle
+				wall = SetWall(wp);
+			}
+			else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+			{
+				//left
+				wall = SetWall(wp);
+				wall.wallSprite.Left = true;
+			}
+			else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
+			{
+				//top
+				wall = SetWall(wp);
+				wall.wallSprite.Top = true;
+			}
+			else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+			{
+				//right
+				wall = SetWall(wp);
+				wall.wallSprite.Right = true;
+			}
+			else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
+			{
+				//bottom
+				wall = SetWall(wp);
+				wall.wallSprite.Bottom = true;
+			}
+
+			if(wall!=null)
+			{
+				wall.UpdateWall();
 			}
 
 		}
