@@ -42,7 +42,14 @@ public class BaseController : MonoBehaviour {
 
 	protected T Instantiate<T>(Component prefab) where T: Component
 	{
+		return Instantiate<T>(prefab,null);
+	}
+
+	protected T Instantiate<T>(Component prefab, Transform parent) where T: Component
+	{
 		GameObject o = (GameObject)GameObject.Instantiate(prefab.gameObject);
+		if(parent!=null)
+			o.transform.parent = parent;
 		return o.GetComponent<T>();
 	}
 }

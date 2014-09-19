@@ -92,6 +92,7 @@ public class HouseEditor : Editor {
 	private void PlaceCell(HouseController hc, MapPoint p)
 	{
 		hc.SetCell(p);
+		hc.EditorUpdateThickWalls(p);
 	}
 
 	private bool IsMouseOnLayer()

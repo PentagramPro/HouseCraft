@@ -7,11 +7,11 @@ public class IntegerPoint
 	public int X;
 	public int Y;
 
-	public MapPoint()
+	public IntegerPoint()
 	{
 		X = 0;Y = 0;
 	}
-	public MapPoint (int x, int y)
+	public IntegerPoint (int x, int y)
 	{
 		this.X=x;
 		this.Y=y;

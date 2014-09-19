@@ -53,8 +53,25 @@ public class HouseController : BaseController {
 		Gizmos.DrawWireCube(markerPos, new Vector3(1,1, 1) * 1.1f);
 	}
 
-	public void ForEachWall(MapPoint point, Action action)
+
+
+	public void ForEachWall(MapPoint point, Action<WallPoint,WallController> action)
 	{
+		WallController wc = null;
+		WallPoint wp;
+
+		for(int i=0;i<4;i++)
+		{
+			wp = new WallPoint(point.X+i%2,point.Y+(i>1?1:0));
+
+			if(wp.X<0 || wp.Y<0)
+				continue;
+			walls.TryGetValue(wp.toInt(),out wc);
+			action(wp,wc);
+			wc = null;
+		}
+
+
 
 	}
 
@@ -68,6 +85,9 @@ public class HouseController : BaseController {
 
 	public CellController GetCell(MapPoint point)
 	{
+		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
+			return null;
+
 		int key = point.toInt();
 		if(cells.ContainsKey(key))
 			return cells[key];
@@ -77,6 +97,9 @@ public class HouseController : BaseController {
 
 	public void SetCell(MapPoint point)
 	{
+		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
+			return;
+
 		int key = point.toInt();
 		if(!cells.ContainsKey(key))
 		{
@@ -101,9 +124,21 @@ public class HouseController : BaseController {
 			cells.Remove (k);
 	}
 
-	public void EditorUpdateThickWalls ()
+	public void EditorUpdateThickWalls (MapPoint point)
 	{
 
+		ForEachWall(point, (WallPoint wp, WallController wc) => {
+			if(wc==null)
+			{
+				wc = Instantiate<WallController>(ThickWallPrefab,transform);
+				wc.Position = wp;
+				walls.Add(wp.toInt(),wc);
+
+			}
+
+			wc.UpdateWall(true);
+			
+		});
 	}
 
 	#endregion
