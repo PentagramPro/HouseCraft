@@ -6,7 +6,7 @@ using System.Collections;
 public class HouseEditor : Editor {
 
 	enum Modes {
-		Idle, PlaceCell
+		Idle, PlaceCell, PlaceWindow, PlaceThickWall
 	}
 	Modes state = Modes.Idle;
 	EditorMouseInput input;
@@ -26,6 +26,24 @@ public class HouseEditor : Editor {
 				HouseController hc = (HouseController) target;
 				hc.EditorCheckCells();
 			}	
+		}
+
+		if(state!=Modes.Idle)
+		{
+			GUILayout.Label("Current mode: "+System.Enum.GetName(typeof(Modes),state));
+
+			if(GUILayout.Button("Place cells"))
+			{
+				state = Modes.PlaceCell;
+			}
+			if(GUILayout.Button("Place thick walls"))
+			{
+				state = Modes.PlaceThickWall;
+			}
+			if(GUILayout.Button("Place windows"))
+			{
+				state = Modes.PlaceWindow;
+			}
 		}
 	}
 
@@ -64,13 +82,18 @@ public class HouseEditor : Editor {
 				if (current.button == 1 &&
 				    (current.type==EventType.MouseUp))
 				{
-					MapPoint mp = input.GetTilePositionFromMouseLocation();
+
 					switch(state)
 					{
 					case Modes.PlaceCell:
-						PlaceCell(hc,mp);
+						PlaceCell(hc,input.GetCellPositionFromMouseLocation());
 						break;
-					
+					case Modes.PlaceWindow:
+						PlaceWall(hc,input.GetWallPositionFromMouseLocation(), hc.WindowPrefab);
+						break;
+					case Modes.PlaceThickWall:
+						PlaceWall(hc,input.GetWallPositionFromMouseLocation(), hc.ThickWallPrefab);
+						break;
 					}
 					current.Use();
 				}
@@ -95,6 +118,18 @@ public class HouseEditor : Editor {
 		hc.EditorUpdateThickWalls(p);
 	}
 
+	private void PlaceWall(HouseController hc, WallPoint p, WallController prefab)
+	{
+
+		if(hc.GetWall(p)==null)
+			return;
+
+		hc.EditorRemoveWall(p);
+		WallController w = hc.SetWall(p,prefab);
+		w.EditorUpdateWall();
+
+	}
+
 	private bool IsMouseOnLayer()
 	{
 		return true;
@@ -109,12 +144,23 @@ public class HouseEditor : Editor {
 		HouseController hc = (HouseController) target;
 		
 		// store the tile location (Column/Row) based on the current location of the mouse pointer
-		var tilepos = input.GetTilePositionFromMouseLocation();
+
 		
 		
 		
 		// set the TileMap.MarkerPosition value
-		hc.MarkerPosition = hc.transform.position + new Vector3(tilepos.X+0.5f, tilepos.Y+0.5f,0.5f);
+		Vector3 offset;
+		if(state==Modes.PlaceCell)
+		{
+			var tilepos = input.GetCellPositionFromMouseLocation();
+			offset = new Vector3(tilepos.X+0.5f, tilepos.Y+0.5f,0.5f);
+		}
+		else
+		{
+			var tilepos = input.GetWallPositionFromMouseLocation();
+			offset = new Vector3(tilepos.X, tilepos.Y,0.5f);
+		}
+		hc.MarkerPosition = hc.transform.position + offset;
 	}
 
 }

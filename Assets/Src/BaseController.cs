@@ -52,4 +52,15 @@ public class BaseController : MonoBehaviour {
 			o.transform.parent = parent;
 		return o.GetComponent<T>();
 	}
+
+	protected T GetComponentInterface<T>()
+	{
+		Component[] comps = GetComponents<Component>();
+		foreach(Component c in comps)
+		{
+			if(c is T)
+				return (T)(object)c;
+		}
+		return default(T);
+	}
 }

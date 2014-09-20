@@ -58,25 +58,24 @@ public class EditorMouseInput
 
 
 	
-	/// <summary>
-	/// Calculates the location in tile coordinates (Column/Row) of the mouse position
-	/// </summary>
-	/// <returns>Returns a <see cref="Vector2"/> type representing the Column and Row where the mouse of positioned over.</returns>
-	public MapPoint GetTilePositionFromMouseLocation()
+
+	public MapPoint GetCellPositionFromMouseLocation()
 	{
-
-
-		
 		// round the numbers to the nearest whole number using 5 decimal place precision
 		MapPoint pos = new MapPoint(
 			(int)System.Math.Round(mouseHitPos.x, 5, System.MidpointRounding.ToEven), 
 			(int)System.Math.Round(mouseHitPos.y, 5, System.MidpointRounding.ToEven));
+
+		return pos;
+	}
+
+	public WallPoint GetWallPositionFromMouseLocation()
+	{
+		// round the numbers to the nearest whole number using 5 decimal place precision
+		WallPoint pos = new WallPoint(
+			(int)System.Math.Round(mouseHitPos.x+0.5f, 5, System.MidpointRounding.ToEven), 
+			(int)System.Math.Round(mouseHitPos.y+0.5f, 5, System.MidpointRounding.ToEven));
 		
-		
-		// do a check to ensure that the row and column are with the bounds of the tile map
-		//pos.Clamp(hc.MapX,hc.MapZ);
-		
-		// return the column and row values
 		return pos;
 	}
 }

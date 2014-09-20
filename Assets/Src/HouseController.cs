@@ -11,6 +11,7 @@ public class HouseController : BaseController {
 	public CellController CellPrefab;
 	public WallController ThickWallPrefab;
 	public WallController WallPrefab;
+	public WallController WindowPrefab;
 
 	Dictionary<int,CellController> cells = new Dictionary<int, CellController>();
 	Dictionary<int,WallController> walls = new Dictionary<int, WallController>();
@@ -124,8 +125,26 @@ public class HouseController : BaseController {
 		}
 	}
 
+	public WallController ReplaceWall(WallPoint point, WallController prefab)
+	{
+		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
+			return null;
 
-	public WallController SetWall(WallPoint point)
+		WallController res = null;
+		int key = point.toInt();
+
+		if(walls.ContainsKey(key))
+		{
+			GameObject.Destroy(walls[key].gameObject);
+			walls.Remove(key);
+		}
+
+		res = SetWall(point, prefab);
+
+		return res;
+	}
+
+	public WallController SetWall(WallPoint point, WallController prefab)
 	{
 		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
 			return null;
@@ -134,7 +153,7 @@ public class HouseController : BaseController {
 		int key = point.toInt();
 		if(!walls.ContainsKey(key))
 		{
-			WallController newWall = Instantiate<WallController>(WallPrefab);
+			WallController newWall = Instantiate<WallController>(prefab);
 			newWall.transform.parent = transform;
 			newWall.Position = point;
 			walls.Add(key,newWall);
@@ -168,52 +187,52 @@ public class HouseController : BaseController {
 			if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
 			{
 				//middle
-				wall = SetWall(wp);
+				wall = SetWall(wp, WallPrefab);
 			}
 			else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
 			{
 				//left
-				wall = SetWall(wp);
+				wall = SetWall(wp, WallPrefab);
 				wall.wallSprite.Left = true;
 				WallPoint adjWallPoint = new WallPoint(wp.X-1,wp.Y);
 				adjWall = GetWall(adjWallPoint);
 				if(adjWall==null)
-					SetWall(adjWallPoint);
+					SetWall(adjWallPoint, WallPrefab);
 
 
 			}
 			else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
 			{
 				//top
-				wall = SetWall(wp);
+				wall = SetWall(wp, WallPrefab);
 				wall.wallSprite.Top = true;
 
 				WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y+1);
 				adjWall = GetWall(adjWallPoint);
 				if(adjWall==null)
-					SetWall(adjWallPoint);
+					SetWall(adjWallPoint, WallPrefab);
 			}
 			else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
 			{
 				//right
-				wall = SetWall(wp);
+				wall = SetWall(wp, WallPrefab);
 				wall.wallSprite.Right = true;
 
 				WallPoint adjWallPoint = new WallPoint(wp.X+1,wp.Y);
 				adjWall = GetWall(adjWallPoint);
 				if(adjWall==null)
-					SetWall(adjWallPoint);
+					SetWall(adjWallPoint, WallPrefab);
 			}
 			else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
 			{
 				//bottom
-				wall = SetWall(wp);
+				wall = SetWall(wp, WallPrefab);
 				wall.wallSprite.Bottom = true;
 
 				WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y-1);
 				adjWall = GetWall(adjWallPoint);
 				if(adjWall==null)
-					SetWall(adjWallPoint);
+					SetWall(adjWallPoint, WallPrefab);
 			}
 
 			if(wall!=null)
@@ -258,6 +277,16 @@ public class HouseController : BaseController {
 		});
 
 
+	}
+
+	public void EditorRemoveWall(WallPoint point)
+	{
+		WallController w = null;
+		if(walls.TryGetValue(point.toInt(),out w))
+		{
+			GameObject.DestroyImmediate(w.gameObject);
+			walls.Remove(point.toInt());
+		}
 	}
 
 	#endregion
