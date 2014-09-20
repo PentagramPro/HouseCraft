@@ -5,6 +5,7 @@ public class Manager : MonoBehaviour {
 
 	CameraController camCon;
 	public bool BlockMouseInput = false;
+	public HouseController House;
 
 	void Awake()
 	{

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class HouseController : BaseController {
 
 	enum Modes{
-		Idle, SetWalls
+		Idle, SetWalls, SetObject
 	}
 	public CellController CellPrefab;
 	public WallController ThickWallPrefab;
@@ -16,7 +16,7 @@ public class HouseController : BaseController {
 	Dictionary<int,CellController> cells = new Dictionary<int, CellController>();
 	Dictionary<int,WallController> walls = new Dictionary<int, WallController>();
 
-
+	CellController selectedPrefab = null;
 	Modes state = Modes.SetWalls;
 
 	Vector3 markerPos;
@@ -110,19 +110,39 @@ public class HouseController : BaseController {
 		return null;
 	}
 
-	public void SetCell(MapPoint point)
+	public CellController ReplaceCell(MapPoint point, CellController prefab)
 	{
 		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
-			return;
+			return null;
 
+		int key = point.toInt();
+		if(cells.ContainsKey(key))
+		{
+			GameObject.Destroy(cells[key].gameObject);
+			cells.Remove(key);
+		}
+
+		return SetCell(point,prefab);
+	}
+
+	public CellController SetCell(MapPoint point, CellController prefab)
+	{
+		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
+			return  null;
+
+		CellController newCell = null;
 		int key = point.toInt();
 		if(!cells.ContainsKey(key))
 		{
-			CellController newCell = Instantiate<CellController>(CellPrefab);
+			newCell = Instantiate<CellController>(prefab);
 			newCell.transform.parent = transform;
 			newCell.Position = point;
 			cells.Add(key,newCell);
 		}
+		else
+			newCell = cells[key];
+
+		return newCell;
 	}
 
 	public WallController ReplaceWall(WallPoint point, WallController prefab)
@@ -246,6 +266,39 @@ public class HouseController : BaseController {
 			}
 
 		}
+		else if(state==Modes.SetObject)
+		{
+			MapPoint mp = new MapPoint(Mathf.FloorToInt(pz.x),Mathf.FloorToInt(pz.y));
+			if(cells.ContainsKey(mp.toInt()))
+			{
+				CellController targetCell = cells[mp.toInt()];
+
+				if(targetCell.CellObject==null)
+				{
+					ReplaceCell(mp,selectedPrefab);
+				}
+			}
+		}
+	}
+
+	public void SetHouseMode(HouseModes mode, CellController prefab)
+	{
+		switch(mode)
+		{
+		case HouseModes.Idle:
+			state = Modes.Idle;
+			selectedPrefab = null;
+			break;
+		case HouseModes.SetWalls:
+			state = Modes.SetWalls;
+			selectedPrefab = null;
+			break;
+		case HouseModes.SetObject:
+			state = Modes.SetObject;
+			selectedPrefab = prefab;
+			break;
+		}
+
 	}
 
 	#region Editor Methods
