@@ -32,7 +32,7 @@ public class WallController : BaseController {
 
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -40,6 +40,24 @@ public class WallController : BaseController {
 		if(update)
 		{
 			update = false;
+			if(houseController==null)
+				houseController = GetComponentInParent<HouseController>();
+
+			WallController w = houseController.GetWall(new WallPoint(position.X-1,position.Y));
+			if(w!=null && w.wallSprite.Right)
+				wallSprite.Left = true;
+
+			w = houseController.GetWall(new WallPoint(position.X+1,position.Y));
+			if(w!=null && w.wallSprite.Left)
+				wallSprite.Right = true;
+
+			w = houseController.GetWall(new WallPoint(position.X,position.Y-1));
+			if(w!=null && w.wallSprite.Top)
+				wallSprite.Bottom = true;
+
+			w = houseController.GetWall(new WallPoint(position.X,position.Y+1));
+			if(w!=null && w.wallSprite.Bottom)
+				wallSprite.Top = true;
 
 			wallSprite.UpdateWall();
 		}

@@ -25,23 +25,27 @@ public class HouseController : BaseController {
 		}
 	}
 
-	protected override void Awake ()
+	public void RestoreCache()
 	{
-		base.Awake ();
-
 		CellController[] c = GetComponentsInChildren<CellController>();
 		
 		foreach(CellController cell in c)
 		{
 			cells.Add(cell.Position.toInt(),cell);
 		}
-
+		
 		WallController[] w = GetComponentsInChildren<WallController>();
 		
 		foreach(WallController wall in w)
 		{
 			walls.Add(wall.Position.toInt(),wall);
 		}
+	}
+	protected override void Awake ()
+	{
+		base.Awake ();
+
+		RestoreCache();
 
 		GetComponent<TapController>().OnTap+=OnTap;
 	}
@@ -141,6 +145,14 @@ public class HouseController : BaseController {
 		return res;
 	}
 
+	public WallController GetWall(WallPoint point)
+	{
+
+		if(walls.ContainsKey(point.toInt()))
+			return walls[point.toInt()];
+
+		return null;
+	}
 	void OnTap()
 	{
 		Vector3 pz = Camera.main.ScreenToWorldPoint(Input.mousePosition)+transform.position;
@@ -151,7 +163,7 @@ public class HouseController : BaseController {
 			WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
 			//new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f).Contains(pz)
 
-			WallController wall = null;
+			WallController wall = null, adjWall=null;
 
 			if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
 			{
@@ -163,29 +175,55 @@ public class HouseController : BaseController {
 				//left
 				wall = SetWall(wp);
 				wall.wallSprite.Left = true;
+				WallPoint adjWallPoint = new WallPoint(wp.X-1,wp.Y);
+				adjWall = GetWall(adjWallPoint);
+				if(adjWall==null)
+					SetWall(adjWallPoint);
+
+
 			}
 			else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
 			{
 				//top
 				wall = SetWall(wp);
 				wall.wallSprite.Top = true;
+
+				WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y+1);
+				adjWall = GetWall(adjWallPoint);
+				if(adjWall==null)
+					SetWall(adjWallPoint);
 			}
 			else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
 			{
 				//right
 				wall = SetWall(wp);
 				wall.wallSprite.Right = true;
+
+				WallPoint adjWallPoint = new WallPoint(wp.X+1,wp.Y);
+				adjWall = GetWall(adjWallPoint);
+				if(adjWall==null)
+					SetWall(adjWallPoint);
 			}
 			else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
 			{
 				//bottom
 				wall = SetWall(wp);
 				wall.wallSprite.Bottom = true;
+
+				WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y-1);
+				adjWall = GetWall(adjWallPoint);
+				if(adjWall==null)
+					SetWall(adjWallPoint);
 			}
 
 			if(wall!=null)
 			{
 				wall.UpdateWall();
+			}
+
+			if(adjWall!=null)
+			{
+				adjWall.UpdateWall();
 			}
 
 		}
@@ -194,17 +232,9 @@ public class HouseController : BaseController {
 	#region Editor Methods
 	public void EditorCheckCells ()
 	{
-		List<int> toRemove = new List<int> ();
-		foreach (int k in cells.Keys) {
-				if (cells [k] == null)
-						toRemove.Add (k);
-		}
-		if(toRemove.Count==0)
-			return;
-
-		Debug.LogWarning ("To remove: " + toRemove.Count);
-		foreach (int k in toRemove)
-			cells.Remove (k);
+		cells.Clear();
+		walls.Clear();
+		RestoreCache();
 	}
 
 	public void EditorUpdateThickWalls (MapPoint point)
