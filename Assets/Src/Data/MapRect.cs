@@ -24,10 +24,21 @@ public class MapRect
 			return p2.Y;
 		}
 	}
-	public MapRect (MapPoint p1, MapPoint p2)
+	public MapRect (int x1,int y1, int x2, int y2)
 	{
-		this.p1=p1;
-		this.p2=p2;
+		int minX = Math.Min(x1,x2);
+		int maxX = Math.Max(x1,x2);
+		int minY = Math.Min(y1,y2);
+		int maxY = Math.Max(y1,y2);
+		this.p1=new MapPoint(minX,minY);
+		this.p2=new MapPoint(maxX,maxY);
+	}
+
+
+	public MapRect(MapRect copy)
+	{
+		p1 = new MapPoint(copy.p1);
+		p2 = new MapPoint(copy.p2);
 	}
 
 	public void Foreach(Action<MapPoint> action)
@@ -41,4 +52,15 @@ public class MapRect
 		}
 	}
 
+	public static bool operator ==(MapRect r1, MapRect r2)
+	{
+		return r1.p1==r2.p1 && r1.p2==r2.p2;
+	}
+	
+	public static bool operator !=(MapRect r1, MapRect r2)
+	{
+		return r1.p1!=r2.p1 || r1.p2!=r2.p2;;
+	}
+
 }
+

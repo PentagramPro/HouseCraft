@@ -56,22 +56,26 @@ public class CellController : BaseController {
 
 		MapRect rect = GetCellIndexes(point,rotation);
 
-		bool res = true;
+		bool res = m.House.Phantom.Place(rect);
+
+
 
 		rect.Foreach((MapPoint p) => {
-			if(res)
-			{
-				CellController c =m.House.GetCell(p);
-				if(c==null || c.CellObject!=null)
-					res = false;
 
-				if(p.X>rect.MinX && p.Y>rect.MinY)
-				{
-					WallController w = m.House.GetWall(new WallPoint(p.X,p.Y));
-					if(w!=null)
-						res = false;
-				}
+			CellController c =m.House.GetCell(p);
+			if(c==null || c.CellObject!=null)
+			{
+				res = false;
+				m.House.Phantom.SetRed(p);
 			}
+
+			if(p.X>rect.MinX && p.Y>rect.MinY)
+			{
+				WallController w = m.House.GetWall(new WallPoint(p.X,p.Y));
+				if(w!=null)
+					res = false;
+			}
+
 		});
 
 
@@ -111,7 +115,7 @@ public class CellController : BaseController {
 			break;
 		}
 
-		return new MapRect(new MapPoint(minX,minY), new MapPoint(maxX,maxY));
+		return new MapRect(minX,minY,maxX,maxY);
 	}
 
 	public void SetRotation(CellRotation rotation)

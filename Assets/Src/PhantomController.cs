@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 public class PhantomController : BaseController {
 
-	List<Transform> phantoms = new List<Transform>();
-	int lastMinX=-1, lastMinY=-1, lastMaxX=-1, lastMaxY=-1;
+	Dictionary<int,Transform> phantoms = new Dictionary<int,Transform>();
+	MapRect lastRect = new MapRect(-1,-1,-1,-1);
 
 	public Transform Red,Green;
 
@@ -19,36 +19,46 @@ public class PhantomController : BaseController {
 	}
 
 	//returns true if this phantom already has been placed
-	public bool Place(int minX, int minY, int maxX, int maxY)
+	public bool Place(MapRect rect)
 	{
 		Remove();
-		if(minX==lastMinX && maxX == lastMaxX && minY== lastMinY && maxY==lastMaxY)
+		if(lastRect == rect)
 			return true;
+		rect.Foreach((MapPoint p) => {
+			Create(p,true);
+		});
 
-		for(int x=minX;x<=maxX;x++)
-		{
-			for(int y=minY;y<=maxY;y++)
-			{
-				Transform p = Instantiate<Transform>(Green);
-				p.parent = transform;
-				p.localPosition = new Vector3(x+0.5f,y+0.5f,0);
-
-			}
-		}
 	
-		lastMinX = minX;
-		lastMaxX = maxX;
-		lastMinY = minY;
-		lastMaxY = maxY;
+		lastRect = new MapRect(rect);
 		return false;
 	}
 
+	public void SetRed(MapPoint p)
+	{
+		Transform ph= null;
+		if(phantoms.TryGetValue(p.toInt(),out ph))
+		{
+			Destroy(ph.gameObject);
+			phantoms.Remove(p.toInt());
+		}
+
+		Create(p,false);
+	}
+
+	void Create(MapPoint p, bool isGreen)
+	{
+		Transform ph = Instantiate<Transform>(isGreen?Green:Red);
+		ph.parent = transform;
+		ph.localPosition = new Vector3(p.X+0.5f,p.Y+0.5f,0);
+		phantoms.Add(p.toInt(),ph);
+	}
 	public void Remove()
 	{
-		foreach(Transform s in phantoms)
+		foreach(Transform s in phantoms.Values)
 		{
 			Destroy(s.gameObject);
 		}
+		phantoms.Clear();
 	}
 
 }

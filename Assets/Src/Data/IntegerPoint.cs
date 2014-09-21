@@ -34,15 +34,7 @@ public class IntegerPoint
 		Y = (v & 0xffff);
 	}
 
-	public static bool operator ==(IntegerPoint p1, IntegerPoint p2)
-	{
-		return p1.X==p2.X && p1.Y==p2.Y;
-	}
 
-	public static bool operator !=(IntegerPoint p1, IntegerPoint p2)
-	{
-		return p1.X!=p2.X || p1.Y!=p2.Y;
-	}
 }
 
 
