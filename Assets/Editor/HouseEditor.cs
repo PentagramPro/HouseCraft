@@ -114,7 +114,7 @@ public class HouseEditor : Editor {
 
 	private void PlaceCell(HouseController hc, MapPoint p)
 	{
-		hc.SetCell(p, hc.CellPrefab);
+		hc.EditorSetCell(p, hc.CellPrefab);
 		hc.EditorUpdateThickWalls(p);
 	}
 

@@ -17,6 +17,8 @@ public class HouseController : BaseController {
 	Dictionary<int,WallController> walls = new Dictionary<int, WallController>();
 
 	CellController selectedPrefab = null;
+	CellController.CellRotation selectedRotation = CellController.CellRotation.None;
+
 	Modes state = Modes.SetWalls;
 
 	Vector3 markerPos;
@@ -57,7 +59,11 @@ public class HouseController : BaseController {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		// BAD THING
+		if(Input.GetKeyUp(KeyCode.Space))
+		{
+			selectedRotation = selectedRotation.Next();
+		}
 	}
 
 	void OnDrawGizmosSelected()
@@ -115,35 +121,32 @@ public class HouseController : BaseController {
 		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
 			return null;
 
-		int key = point.toInt();
-		if(cells.ContainsKey(key))
+
+		CellController newCell = CellController.InstantiateMe(prefab,transform,point);
+
+		int minX=0,maxX=0,minY=0,maxY=0;
+		prefab.GetCellIndexes(point,selectedRotation,ref minX,ref minY,ref maxX, ref maxY);
+
+		for(int x=minX;x<=maxX;x++)
 		{
-			GameObject.Destroy(cells[key].gameObject);
-			cells.Remove(key);
+			for(int y=minY;y<=maxY;y++)
+			{
+				MapPoint p = new MapPoint(x,y);
+				int key = p.toInt();
+				if(cells.ContainsKey(key))
+				{
+					GameObject.Destroy(cells[key].gameObject);
+					cells.Remove(key);
+					cells[key] = newCell;
+				}
+			}
 		}
-
-		return SetCell(point,prefab);
-	}
-
-	public CellController SetCell(MapPoint point, CellController prefab)
-	{
-		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
-			return  null;
-
-		CellController newCell = null;
-		int key = point.toInt();
-		if(!cells.ContainsKey(key))
-		{
-			newCell = Instantiate<CellController>(prefab);
-			newCell.transform.parent = transform;
-			newCell.Position = point;
-			cells.Add(key,newCell);
-		}
-		else
-			newCell = cells[key];
+		newCell.SetRotation(selectedRotation);
 
 		return newCell;
 	}
+
+
 
 	public WallController ReplaceWall(WallPoint point, WallController prefab)
 	{
@@ -201,83 +204,82 @@ public class HouseController : BaseController {
 
 			WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
 			//new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f).Contains(pz)
-
-			WallController wall = null, adjWall=null;
-
-			if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
+			if(IsInsideBuilding(wp))
 			{
-				//middle
-				wall = SetWall(wp, WallPrefab);
+				WallController wall = null, adjWall=null;
+
+				if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
+				{
+					//middle
+					wall = SetWall(wp, WallPrefab);
+				}
+				else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+				{
+					//left
+					wall = SetWall(wp, WallPrefab);
+					wall.wallSprite.Left = true;
+					WallPoint adjWallPoint = new WallPoint(wp.X-1,wp.Y);
+					adjWall = GetWall(adjWallPoint);
+					if(adjWall==null)
+						SetWall(adjWallPoint, WallPrefab);
+
+
+				}
+				else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
+				{
+					//top
+					wall = SetWall(wp, WallPrefab);
+					wall.wallSprite.Top = true;
+
+					WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y+1);
+					adjWall = GetWall(adjWallPoint);
+					if(adjWall==null)
+						SetWall(adjWallPoint, WallPrefab);
+				}
+				else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+				{
+					//right
+					wall = SetWall(wp, WallPrefab);
+					wall.wallSprite.Right = true;
+
+					WallPoint adjWallPoint = new WallPoint(wp.X+1,wp.Y);
+					adjWall = GetWall(adjWallPoint);
+					if(adjWall==null)
+						SetWall(adjWallPoint, WallPrefab);
+				}
+				else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
+				{
+					//bottom
+					wall = SetWall(wp, WallPrefab);
+					wall.wallSprite.Bottom = true;
+
+					WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y-1);
+					adjWall = GetWall(adjWallPoint);
+					if(adjWall==null)
+						SetWall(adjWallPoint, WallPrefab);
+				}
+
+				if(wall!=null)
+				{
+					wall.UpdateWall();
+				}
+
+				if(adjWall!=null)
+				{
+					adjWall.UpdateWall();
+				}
 			}
-			else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
-			{
-				//left
-				wall = SetWall(wp, WallPrefab);
-				wall.wallSprite.Left = true;
-				WallPoint adjWallPoint = new WallPoint(wp.X-1,wp.Y);
-				adjWall = GetWall(adjWallPoint);
-				if(adjWall==null)
-					SetWall(adjWallPoint, WallPrefab);
-
-
-			}
-			else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
-			{
-				//top
-				wall = SetWall(wp, WallPrefab);
-				wall.wallSprite.Top = true;
-
-				WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y+1);
-				adjWall = GetWall(adjWallPoint);
-				if(adjWall==null)
-					SetWall(adjWallPoint, WallPrefab);
-			}
-			else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
-			{
-				//right
-				wall = SetWall(wp, WallPrefab);
-				wall.wallSprite.Right = true;
-
-				WallPoint adjWallPoint = new WallPoint(wp.X+1,wp.Y);
-				adjWall = GetWall(adjWallPoint);
-				if(adjWall==null)
-					SetWall(adjWallPoint, WallPrefab);
-			}
-			else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
-			{
-				//bottom
-				wall = SetWall(wp, WallPrefab);
-				wall.wallSprite.Bottom = true;
-
-				WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y-1);
-				adjWall = GetWall(adjWallPoint);
-				if(adjWall==null)
-					SetWall(adjWallPoint, WallPrefab);
-			}
-
-			if(wall!=null)
-			{
-				wall.UpdateWall();
-			}
-
-			if(adjWall!=null)
-			{
-				adjWall.UpdateWall();
-			}
-
 		}
 		else if(state==Modes.SetObject)
 		{
 			MapPoint mp = new MapPoint(Mathf.FloorToInt(pz.x),Mathf.FloorToInt(pz.y));
-			if(cells.ContainsKey(mp.toInt()))
+			if(CellPrefab.PrefabValidatePosition(M,mp,selectedRotation))
 			{
-				CellController targetCell = cells[mp.toInt()];
-
-				if(targetCell.CellObject==null)
-				{
-					ReplaceCell(mp,selectedPrefab);
-				}
+				ReplaceCell(mp,selectedPrefab);
 			}
+
+
+
 		}
 	}
 
@@ -340,6 +342,24 @@ public class HouseController : BaseController {
 			GameObject.DestroyImmediate(w.gameObject);
 			walls.Remove(point.toInt());
 		}
+	}
+
+	public CellController EditorSetCell(MapPoint point, CellController prefab)
+	{
+		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
+			return  null;
+		
+		CellController newCell = null;
+		int key = point.toInt();
+		if(!cells.ContainsKey(key))
+		{
+			newCell = CellController.InstantiateMe(prefab,transform,point);
+			cells.Add(key,newCell);
+		}
+		else
+			newCell = cells[key];
+		
+		return newCell;
 	}
 
 	#endregion
