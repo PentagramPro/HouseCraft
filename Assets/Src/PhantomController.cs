@@ -21,9 +21,12 @@ public class PhantomController : BaseController {
 	//returns true if this phantom already has been placed
 	public bool Place(MapRect rect)
 	{
-		Remove();
+
 		if(lastRect == rect)
 			return true;
+
+		Remove();
+
 		rect.Foreach((MapPoint p) => {
 			Create(p,true);
 		});

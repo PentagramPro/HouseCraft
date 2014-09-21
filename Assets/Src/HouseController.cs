@@ -276,6 +276,7 @@ public class HouseController : BaseController {
 			if(selectedPrefab.PrefabValidatePosition(M,mp,selectedRotation))
 			{
 				ReplaceCell(mp,selectedPrefab);
+				Phantom.Remove();
 			}
 
 
