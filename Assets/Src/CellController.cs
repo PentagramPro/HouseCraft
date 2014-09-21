@@ -52,54 +52,41 @@ public class CellController : BaseController {
 	// we need manager here because we call this method in prefab context
 	public bool PrefabValidatePosition(Manager m, MapPoint point, CellRotation rotation)
 	{
-		int minX=0,minY=0;
-		int maxX = minX, maxY = minY;
 
-		GetCellIndexes(point,rotation,ref minX,ref minY,ref maxX,ref maxY);
+
+		MapRect rect = GetCellIndexes(point,rotation);
 
 		bool res = true;
 
-		for(int x=minX;x<=maxX;x++)
-		{
-			for(int y=minY;y<=maxY;y++)
+		rect.Foreach((MapPoint p) => {
+			if(res)
 			{
-				CellController c =m.House.GetCell(new MapPoint(x,y));
+				CellController c =m.House.GetCell(p);
 				if(c==null || c.CellObject!=null)
-				{
 					res = false;
-					break;
-				}
-			}
-			if(!res)
-				break;
-		}
 
-		if(res)
-		{
-			for(int x=minX+1;x<=maxX;x++)
-			{
-				for(int y=minY+1;y<=maxY;y++)
+				if(p.X>rect.MinX && p.Y>rect.MinY)
 				{
-					WallController w = m.House.GetWall(new WallPoint(x,y));
+					WallController w = m.House.GetWall(new WallPoint(p.X,p.Y));
 					if(w!=null)
-					{
 						res = false;
-						break;
-					}
 				}
-				if(!res)
-					break;
 			}
-		}
+		});
+
+
+
 
 		return res;
 	}
 
-	public void GetCellIndexes(MapPoint point, CellRotation rotation,
-	                           ref int minX, ref int minY, ref int maxX, ref int maxY)
+	public MapRect GetCellIndexes(MapPoint point, CellRotation rotation)
 	{
-		minX = point.X; minY = point.Y;
-		maxX = minX; maxY = minY;
+		int minX = point.X;
+		int minY = point.Y;
+		int maxX = minX;
+		int maxY = minY;
+
 		
 		switch(rotation)
 		{
@@ -123,6 +110,8 @@ public class CellController : BaseController {
 			
 			break;
 		}
+
+		return new MapRect(new MapPoint(minX,minY), new MapPoint(maxX,maxY));
 	}
 
 	public void SetRotation(CellRotation rotation)

@@ -13,6 +13,8 @@ public class HouseController : BaseController {
 	public WallController WallPrefab;
 	public WallController WindowPrefab;
 
+	public PhantomController Phantom;
+
 	Dictionary<int,CellController> cells = new Dictionary<int, CellController>();
 	Dictionary<int,WallController> walls = new Dictionary<int, WallController>();
 
@@ -124,23 +126,19 @@ public class HouseController : BaseController {
 
 		CellController newCell = CellController.InstantiateMe(prefab,transform,point);
 
-		int minX=0,maxX=0,minY=0,maxY=0;
-		prefab.GetCellIndexes(point,selectedRotation,ref minX,ref minY,ref maxX, ref maxY);
 
-		for(int x=minX;x<=maxX;x++)
-		{
-			for(int y=minY;y<=maxY;y++)
+		MapRect rect = prefab.GetCellIndexes(point,selectedRotation);
+		rect.Foreach((MapPoint p) => {
+
+			int key = p.toInt();
+			if(cells.ContainsKey(key))
 			{
-				MapPoint p = new MapPoint(x,y);
-				int key = p.toInt();
-				if(cells.ContainsKey(key))
-				{
-					GameObject.Destroy(cells[key].gameObject);
-					cells.Remove(key);
-					cells[key] = newCell;
-				}
+				GameObject.Destroy(cells[key].gameObject);
+				cells.Remove(key);
+				cells[key] = newCell;
 			}
-		}
+		});
+
 		newCell.SetRotation(selectedRotation);
 
 		return newCell;
@@ -273,7 +271,9 @@ public class HouseController : BaseController {
 		else if(state==Modes.SetObject)
 		{
 			MapPoint mp = new MapPoint(Mathf.FloorToInt(pz.x),Mathf.FloorToInt(pz.y));
-			if(CellPrefab.PrefabValidatePosition(M,mp,selectedRotation))
+
+
+			if(selectedPrefab.PrefabValidatePosition(M,mp,selectedRotation))
 			{
 				ReplaceCell(mp,selectedPrefab);
 			}

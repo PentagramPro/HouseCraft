@@ -15,6 +15,10 @@ public class MapPoint : IntegerPoint
 
 	}
 
+	public MapPoint(MapPoint p) : base(p.X,p.Y)
+	{
+		
+	}
 
 }
 
