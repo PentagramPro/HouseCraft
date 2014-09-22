@@ -78,8 +78,19 @@ public class CellController : BaseController {
 
 		});
 
+		for(int x = rect.MinX+1;x<=rect.MaxX;x++)
+		{
+			WallController w = m.House.GetWall(new WallPoint(x,rect.MinY));
+			if(w!=null && w.wallSprite.Top==true)
+				res = false;
+		}
 
-
+		for(int y = rect.MinY+1;y<=rect.MaxY;y++)
+		{
+			WallController w = m.House.GetWall(new WallPoint(rect.MinX,y));
+			if(w!=null && w.wallSprite.Right==true)
+				res = false;
+		}
 
 		return res;
 	}

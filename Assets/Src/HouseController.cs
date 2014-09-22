@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class HouseController : BaseController {
 
 	enum Modes{
-		Idle, SetWalls, SetObject
+		Idle, SetWalls, SetObject, RemoveWall
 	}
 	public CellController CellPrefab;
 	public WallController ThickWallPrefab;
@@ -213,55 +213,30 @@ public class HouseController : BaseController {
 
 				if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
 				{
-					//middle
-
 					wall = wallPrefab.PrefabSetWall(M,wp);
 				}
 				else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
 				{
-					//left
 					wall = wallPrefab.PrefabSetWall(M,wp);
-
 					SetAdjacentWall(wall,Side.Left);
-
 				}
 				else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
 				{
-					//top
 					wall = wallPrefab.PrefabSetWall(M,wp);
-
 					SetAdjacentWall(wall,Side.Top);
-
 				}
 				else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
 				{
-					//right
 					wall = wallPrefab.PrefabSetWall(M,wp);
-
-
 					SetAdjacentWall(wall,Side.Right);
-
 				}
 				else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
 				{
-					//bottom
 					wall = wallPrefab.PrefabSetWall(M,wp);
-
-
 					SetAdjacentWall(wall,Side.Bottom);
-
 				}
 
-				for(int x = wp.X-1;x<=wp.X+1;x++)
-				{
-					for(int y = wp.Y-1;y<=wp.Y+1;y++)
-					{
-						WallController w = GetWall(new WallPoint(x,y));
-						if(w!=null)
-							w.UpdateWall();
-					}
-
-				}
+				UpdateWallsAround(wp);
 
 			}
 		}
@@ -275,12 +250,33 @@ public class HouseController : BaseController {
 				ReplaceCell(mp,cellPrefab);
 				Phantom.Remove();
 			}
-
-
-
+		}
+		else if(state==Modes.RemoveWall)
+		{
+			WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
+			WallController wall = GetWall(wp);
+			if(wall!=null && IsInsideBuilding(wp))
+			{
+				Destroy(wall.gameObject);
+				walls.Remove(wp.toInt());
+				UpdateWallsAround(wp);
+			}
 		}
 	}
 
+	private void UpdateWallsAround(WallPoint wp)
+	{
+		for(int x = wp.X-1;x<=wp.X+1;x++)
+		{
+			for(int y = wp.Y-1;y<=wp.Y+1;y++)
+			{
+				WallController w = GetWall(new WallPoint(x,y));
+				if(w!=null)
+					w.UpdateWall();
+			}
+			
+		}
+	}
 	private void SetAdjacentWall(WallController wall, Side side)
 	{
 		WallPoint wp = wall.Position;
@@ -322,6 +318,10 @@ public class HouseController : BaseController {
 		case HouseModes.SetObject:
 			state = Modes.SetObject;
 			selectedPrefab = prefab;
+			break;
+		case HouseModes.RemoveWalls:
+			state = Modes.RemoveWall;
+			selectedPrefab = null;
 			break;
 
 		}
