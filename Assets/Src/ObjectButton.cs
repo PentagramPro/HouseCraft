@@ -20,6 +20,6 @@ public class ObjectButton : BaseController {
 
 	void OnClick()
 	{
-		M.House.SetHouseMode(HouseModes.SetObject,CellPrefab);
+		M.House.SetHouseMode(HouseModes.SetObject,CellPrefab.gameObject);
 	}
 }

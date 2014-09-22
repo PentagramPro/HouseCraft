@@ -26,6 +26,16 @@ public class WallGfxController : BaseController {
 	
 	}
 
+	public void SetSide(Side s, bool val)
+	{
+		switch(s)
+		{
+		case Side.Bottom: Bottom=val; break;
+		case Side.Left: Left=val; break;
+		case Side.Right: Right=val; break;
+		case Side.Top: Top=val; break;
+		}
+	}
 	public void UpdateWall()
 	{
 		if(sRenderer==null)

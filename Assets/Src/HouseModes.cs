@@ -1,7 +1,7 @@
 
 public enum HouseModes
 {
-	Idle, SetWalls, SetObject
+	Idle, SetWalls, SetObject, SetDoors
 }
 
 

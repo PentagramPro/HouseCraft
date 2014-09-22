@@ -6,6 +6,8 @@ public class WallController : BaseController {
 
 	bool update = true;
 	HouseController houseController;
+	public IWallObject WallObject;
+
 	public WallGfxController wallSprite;
 
 	public WallPoint position;
@@ -28,6 +30,7 @@ public class WallController : BaseController {
 	{
 		base.Awake ();
 		houseController = GetComponentInParent<HouseController>();
+		WallObject = GetComponentInterface<IWallObject>();
 	}
 
 	// Use this for initialization
@@ -67,6 +70,41 @@ public class WallController : BaseController {
 	{
 
 			update = true;
+	}
+
+	public WallController PrefabSetWall(Manager m, WallPoint point)
+	{
+		IWallObject wo = GetComponentInterface<IWallObject>();
+		WallController w = m.House.SetWall(point,this);
+		if(wo!=null)
+		{
+			wo.PrefabPrepareWall(m,w);
+		}
+		return w;
+	}
+	public bool PrefabValidatePosition(Manager m, WallPoint point)
+	{
+		IWallObject wo = GetComponentInterface<IWallObject>();
+
+		if(wo!=null && wo.PrefabValidatePosition(m,point)==false)
+			return false;
+
+		WallController w = null;
+
+		w = m.House.GetWall(new WallPoint(point.X-1,point.Y));
+		if(w!=null && w.WallObject!=null)
+			return false;
+		w = m.House.GetWall(new WallPoint(point.X+1,point.Y));
+		if(w!=null && w.WallObject!=null)
+			return false;
+		w = m.House.GetWall(new WallPoint(point.X,point.Y-1));
+		if(w!=null && w.WallObject!=null)
+			return false;
+		w = m.House.GetWall(new WallPoint(point.X,point.Y+1));
+		if(w!=null && w.WallObject!=null)
+			return false;
+
+		return true;
 	}
 
 	// returns true if wall has to be destroyed

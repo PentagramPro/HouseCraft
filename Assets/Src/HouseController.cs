@@ -18,7 +18,8 @@ public class HouseController : BaseController {
 	Dictionary<int,CellController> cells = new Dictionary<int, CellController>();
 	Dictionary<int,WallController> walls = new Dictionary<int, WallController>();
 
-	CellController selectedPrefab = null;
+	GameObject selectedPrefab = null;
+
 	CellController.CellRotation selectedRotation = CellController.CellRotation.None;
 
 	Modes state = Modes.SetWalls;
@@ -49,7 +50,7 @@ public class HouseController : BaseController {
 	protected override void Awake ()
 	{
 		base.Awake ();
-
+		selectedPrefab = WallPrefab.gameObject;
 		RestoreCache();
 
 		GetComponent<TapController>().OnTap+=OnTap;
@@ -100,10 +101,12 @@ public class HouseController : BaseController {
 
 	public bool IsInsideBuilding(WallPoint wallPoint)
 	{
-		return cells.ContainsKey(wallPoint.toInt()) 
-			&& cells.ContainsKey(new WallPoint(wallPoint.X+1,wallPoint.Y).toInt()) 
-			&& cells.ContainsKey(new WallPoint(wallPoint.X,wallPoint.Y+1).toInt()) 
-			&& cells.ContainsKey(new WallPoint(wallPoint.X+1,wallPoint.Y+1).toInt()) ;
+		bool res =
+				cells.ContainsKey(wallPoint.toInt()) 
+			&& cells.ContainsKey(new WallPoint(wallPoint.X-1,wallPoint.Y).toInt()) 
+			&& cells.ContainsKey(new WallPoint(wallPoint.X,wallPoint.Y-1).toInt()) 
+			&& cells.ContainsKey(new WallPoint(wallPoint.X-1,wallPoint.Y-1).toInt()) ;
+		return res;
 	}
 
 	public CellController GetCell(MapPoint point)
@@ -199,83 +202,77 @@ public class HouseController : BaseController {
 
 		if(state == Modes.SetWalls)
 		{
-
+			WallController wallPrefab = selectedPrefab.GetComponent<WallController>();
 			WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
+
+
 			//new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f).Contains(pz)
-			if(IsInsideBuilding(wp))
+			if(IsInsideBuilding(wp) && wallPrefab.PrefabValidatePosition(M,wp))
 			{
 				WallController wall = null, adjWall=null;
 
 				if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
 				{
 					//middle
-					wall = SetWall(wp, WallPrefab);
+
+					wall = wallPrefab.PrefabSetWall(M,wp);
 				}
 				else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
 				{
 					//left
-					wall = SetWall(wp, WallPrefab);
-					wall.wallSprite.Left = true;
-					WallPoint adjWallPoint = new WallPoint(wp.X-1,wp.Y);
-					adjWall = GetWall(adjWallPoint);
-					if(adjWall==null)
-						SetWall(adjWallPoint, WallPrefab);
+					wall = wallPrefab.PrefabSetWall(M,wp);
 
+					SetAdjacentWall(wall,Side.Left);
 
 				}
 				else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
 				{
 					//top
-					wall = SetWall(wp, WallPrefab);
-					wall.wallSprite.Top = true;
+					wall = wallPrefab.PrefabSetWall(M,wp);
 
-					WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y+1);
-					adjWall = GetWall(adjWallPoint);
-					if(adjWall==null)
-						SetWall(adjWallPoint, WallPrefab);
+					SetAdjacentWall(wall,Side.Top);
+
 				}
 				else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
 				{
 					//right
-					wall = SetWall(wp, WallPrefab);
-					wall.wallSprite.Right = true;
+					wall = wallPrefab.PrefabSetWall(M,wp);
 
-					WallPoint adjWallPoint = new WallPoint(wp.X+1,wp.Y);
-					adjWall = GetWall(adjWallPoint);
-					if(adjWall==null)
-						SetWall(adjWallPoint, WallPrefab);
+
+					SetAdjacentWall(wall,Side.Right);
+
 				}
 				else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
 				{
 					//bottom
-					wall = SetWall(wp, WallPrefab);
-					wall.wallSprite.Bottom = true;
+					wall = wallPrefab.PrefabSetWall(M,wp);
 
-					WallPoint adjWallPoint = new WallPoint(wp.X,wp.Y-1);
-					adjWall = GetWall(adjWallPoint);
-					if(adjWall==null)
-						SetWall(adjWallPoint, WallPrefab);
+
+					SetAdjacentWall(wall,Side.Bottom);
+
 				}
 
-				if(wall!=null)
+				for(int x = wp.X-1;x<=wp.X+1;x++)
 				{
-					wall.UpdateWall();
+					for(int y = wp.Y-1;y<=wp.Y+1;y++)
+					{
+						WallController w = GetWall(new WallPoint(x,y));
+						if(w!=null)
+							w.UpdateWall();
+					}
+
 				}
 
-				if(adjWall!=null)
-				{
-					adjWall.UpdateWall();
-				}
 			}
 		}
 		else if(state==Modes.SetObject)
 		{
 			MapPoint mp = new MapPoint(Mathf.FloorToInt(pz.x),Mathf.FloorToInt(pz.y));
+			CellController cellPrefab = selectedPrefab.GetComponent<CellController>();
 
-
-			if(selectedPrefab.PrefabValidatePosition(M,mp,selectedRotation))
+			if(cellPrefab.PrefabValidatePosition(M,mp,selectedRotation))
 			{
-				ReplaceCell(mp,selectedPrefab);
+				ReplaceCell(mp,cellPrefab);
 				Phantom.Remove();
 			}
 
@@ -284,7 +281,33 @@ public class HouseController : BaseController {
 		}
 	}
 
-	public void SetHouseMode(HouseModes mode, CellController prefab)
+	private void SetAdjacentWall(WallController wall, Side side)
+	{
+		WallPoint wp = wall.Position;
+		WallPoint adjWallPoint = null;
+		switch(side)
+		{
+		case Side.Bottom: adjWallPoint=new WallPoint(wp.X,wp.Y-1); break;
+		case Side.Left: adjWallPoint=new WallPoint(wp.X-1,wp.Y); break;
+		case Side.Right: adjWallPoint=new WallPoint(wp.X+1,wp.Y); break;
+		case Side.Top: adjWallPoint=new WallPoint(wp.X,wp.Y+1); break;
+		}
+
+		WallController adjWall = GetWall(adjWallPoint);
+		if(adjWall==null)
+		{
+			if(WallPrefab.PrefabValidatePosition(M,adjWallPoint))
+			{
+				wall.wallSprite.SetSide(side,true);
+				SetWall(adjWallPoint, WallPrefab);
+			}
+		}
+		else if(adjWall.WallObject==null)
+		{
+			wall.wallSprite.SetSide(side,true);
+		}
+	}
+	public void SetHouseMode(HouseModes mode, GameObject prefab)
 	{
 		switch(mode)
 		{
@@ -294,12 +317,13 @@ public class HouseController : BaseController {
 			break;
 		case HouseModes.SetWalls:
 			state = Modes.SetWalls;
-			selectedPrefab = null;
+			selectedPrefab = prefab;
 			break;
 		case HouseModes.SetObject:
 			state = Modes.SetObject;
 			selectedPrefab = prefab;
 			break;
+
 		}
 
 	}
