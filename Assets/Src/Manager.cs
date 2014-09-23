@@ -25,4 +25,10 @@ public class Manager : MonoBehaviour {
 	{
 		camCon.Scroll(delta);
 	}
+
+	public void Sale()
+	{
+		House.SetHouseMode(HouseModes.Sale,null);
+
+	}
 }

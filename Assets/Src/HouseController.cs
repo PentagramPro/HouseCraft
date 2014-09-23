@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class HouseController : BaseController {
 
 	enum Modes{
-		Idle, SetWalls, SetObject, RemoveWall
+		Idle, SetWalls, SetObject, RemoveWall,Sale
 	}
 	public CellController CellPrefab;
 	public WallController ThickWallPrefab;
@@ -323,9 +323,19 @@ public class HouseController : BaseController {
 			state = Modes.RemoveWall;
 			selectedPrefab = null;
 			break;
-
+		case HouseModes.Sale:
+			state = Modes.Sale;
+			selectedPrefab = null;
+			Sale ();
+			break;
 		}
 
+	}
+
+	private void Sale()
+	{
+		Segmentator s = new Segmentator(walls,cells);
+		s.Start();
 	}
 
 	#region Editor Methods

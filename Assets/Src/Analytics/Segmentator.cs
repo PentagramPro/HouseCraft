@@ -10,9 +10,14 @@ public class Segmentator {
 	List<CellController> processed = new List<CellController>();
 	List<Room> rooms = new List<Room>();
 	Room curRoom = new Room();
-
+	public Segmentator(Dictionary<int,WallController> walls, Dictionary<int,CellController> cells)
+	{
+		this.walls = walls;
+		this.cells = cells;
+	}
 	public void Start()
 	{
+		Debug.Log("Starting segmentation");
 		rooms.Clear();
 		processed.Clear();
 		foreach(CellController cell in cells.Values)
@@ -23,10 +28,12 @@ public class Segmentator {
 			if(curRoom.Cells.Count>0)
 			{
 				rooms.Add(curRoom);
+				Debug.Log(string.Format("Found room with {0} cells",curRoom.Cells.Count));
 				curRoom = new Room();
 			}
 
 		}
+
 	}
 
 	void Next(CellController curCell)
