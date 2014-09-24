@@ -91,7 +91,9 @@ public class Segmentator : BaseController {
 			reachable.Add(c);
 
 		M.House.ForEachWall(curCell.Position, (WallPoint wp, WallController wc) => {
-			if(wc!=null && wc.WallObject is DoorController)
+			if(wc==null)
+				return;
+			if(wc.WallObject is DoorController)
 			{
 				Door door = null;
 				if(!doors.TryGetValue(wp.toInt(),out door))
@@ -102,6 +104,14 @@ public class Segmentator : BaseController {
 
 				door.AddRoom(curRoom);
 				curRoom.AddDoor(door);
+			}
+			else if(wc.WallObject is EntranceController)
+			{
+				curRoom.Entrance = true;
+			}
+			else if(wc.WallObject is GarageGateController)
+			{
+				curRoom.GarageGate = true;
 			}
 		});
 

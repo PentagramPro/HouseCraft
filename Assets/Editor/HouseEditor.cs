@@ -6,7 +6,7 @@ using System.Collections;
 public class HouseEditor : Editor {
 
 	enum Modes {
-		Idle, PlaceCell, PlaceWindow, PlaceThickWall
+		Idle, PlaceCell, PlaceWindow, PlaceThickWall, PlaceEntrance, PlaceGarage
 	}
 	Modes state = Modes.Idle;
 	EditorMouseInput input;
@@ -43,6 +43,14 @@ public class HouseEditor : Editor {
 			if(GUILayout.Button("Place windows"))
 			{
 				state = Modes.PlaceWindow;
+			}
+			if(GUILayout.Button("Place entrance"))
+			{
+				state = Modes.PlaceEntrance;
+			}
+			if(GUILayout.Button("Place garage"))
+			{
+				state = Modes.PlaceGarage;
 			}
 		}
 	}
@@ -93,6 +101,12 @@ public class HouseEditor : Editor {
 						break;
 					case Modes.PlaceThickWall:
 						PlaceWall(hc,input.GetWallPositionFromMouseLocation(), hc.ThickWallPrefab);
+						break;
+					case Modes.PlaceEntrance:
+						PlaceWall(hc,input.GetWallPositionFromMouseLocation(), hc.EntrancePrefab);
+						break;
+					case Modes.PlaceGarage:
+						PlaceWall(hc,input.GetWallPositionFromMouseLocation(), hc.GaragePrefab);
 						break;
 					}
 					current.Use();

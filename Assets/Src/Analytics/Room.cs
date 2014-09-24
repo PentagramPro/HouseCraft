@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 
 public class Room  {
-
+	public bool Entrance;
+	public bool GarageGate;
 	public int Number=0;
 	public List<CellController> Cells = new List<CellController>();
 	public List<Door> Doors =new List<Door>();

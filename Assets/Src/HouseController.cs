@@ -12,6 +12,8 @@ public class HouseController : BaseController {
 	public WallController ThickWallPrefab;
 	public WallController WallPrefab;
 	public WallController WindowPrefab;
+	public WallController EntrancePrefab;
+	public WallController GaragePrefab;
 
 	public PhantomController Phantom;
 
