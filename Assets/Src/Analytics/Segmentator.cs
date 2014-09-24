@@ -1,22 +1,20 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections.Generic;
 
-public class Segmentator {
+public class Segmentator : BaseController {
 
-	Dictionary<int,WallController> walls;
-	Dictionary<int,CellController> cells;
 
 
 	List<CellController> processed = new List<CellController>();
 	List<Room> rooms = new List<Room>();
+	Dictionary<int, Door> doors = new Dictionary<int, Door>();
 	Room curRoom = new Room();
-	public Segmentator(Dictionary<int,WallController> walls, Dictionary<int,CellController> cells)
+
+	public void Launch(Dictionary<int,WallController> walls, Dictionary<int,CellController> cells)
 	{
-		this.walls = walls;
-		this.cells = cells;
-	}
-	public void Start()
-	{
+
+
 		Debug.Log("Starting segmentation");
 		rooms.Clear();
 		processed.Clear();
@@ -28,10 +26,32 @@ public class Segmentator {
 			if(curRoom.Cells.Count>0)
 			{
 				rooms.Add(curRoom);
-				Debug.Log(string.Format("Found room with {0} cells",curRoom.Cells.Count));
+				Debug.Log(string.Format("Found room #{1} with {0} cells",curRoom.Cells.Count,curRoom.Number));
 				curRoom = new Room();
+				curRoom.Number = rooms.Count;
 			}
 
+		}
+
+		foreach(Room r in rooms)
+		{
+			foreach(Door d in r.Doors)
+			{
+				if(d.Rooms.Count==1)
+				{
+					Debug.Log(string.Format("Room #{0} contains door that leads to nothing",r.Number));
+				}
+				else if(d.Rooms.Count==2)
+		        {
+
+					Debug.Log(string.Format("Room #{0} contains door that leads to room #{1}",
+					                        r.Number, d.GetAnotherRoom(r).Number));
+				}	        
+				else
+				{
+					Debug.Log(string.Format("Buggy room #{0}",r.Number));
+				}
+			}
 		}
 
 	}
@@ -44,6 +64,7 @@ public class Segmentator {
 
 		curRoom.Cells.Add(curCell);
 		processed.Add(curCell);
+
 
 		//left
 		c = GetCell(curCell.Position.X-1, curCell.Position.Y);
@@ -69,6 +90,21 @@ public class Segmentator {
 		if(c!=null && (w==null || w.wallSprite.Right==false))
 			reachable.Add(c);
 
+		M.House.ForEachWall(curCell.Position, (WallPoint wp, WallController wc) => {
+			if(wc!=null && wc.WallObject is DoorController)
+			{
+				Door door = null;
+				if(!doors.TryGetValue(wp.toInt(),out door))
+				{
+					door = new Door();
+					doors.Add(wp.toInt(),door);
+				}
+
+				door.AddRoom(curRoom);
+				curRoom.AddDoor(door);
+			}
+		});
+
 		foreach(CellController nc in reachable)
 		{
 			if(!processed.Contains(nc))
@@ -79,30 +115,43 @@ public class Segmentator {
 	WallController GetWall(int x, int y)
 	{
 
-		return GetWall(new WallPoint(x,y));
+		return M.House.GetWall(new WallPoint(x,y));
 	}
-	WallController GetWall(WallPoint point)
-	{
-		
-		if(walls.ContainsKey(point.toInt()))
-			return walls[point.toInt()];
-		
-		return null;
-	}
+
 	CellController GetCell(int x, int y)
 	{
-		return GetCell(new MapPoint(x,y));
+		return M.House.GetCell(new MapPoint(x,y));
 	}
-	CellController GetCell(MapPoint point)
+
+
+	/*
+	void ForeachCrossCell(MapPoint p, Action<WallController, WallController, CellController> action)
 	{
-		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
-			return null;
+		CellController c;
+		WallController w1,w2;
+		//left
+		c = GetCell(curCell.Position.X-1, curCell.Position.Y);
+		w1 = GetWall(curCell.Position.X, curCell.Position.Y);
+		w2 = GetWall(curCell.Position.X, curCell.Position.Y+1);
+		action(w1,w2,c);
 		
-		int key = point.toInt();
-		if(cells.ContainsKey(key))
-			return cells[key];
-		
-		return null;
-	}
+		//right
+		c = GetCell(curCell.Position.X+1, curCell.Position.Y);
+		w1 = GetWall(curCell.Position.X+1, curCell.Position.Y+1);
+		w2 = GetWall(curCell.Position.X+1, curCell.Position.Y);
+		action(w1,w2,c);
+
+		//top
+		c = GetCell(curCell.Position.X, curCell.Position.Y+1);
+		w1 = GetWall(curCell.Position.X+1, curCell.Position.Y+1);
+		w2 = GetWall(curCell.Position.X, curCell.Position.Y+1);
+		action(w1,w2,c);
+
+		//bottom
+		c = GetCell(curCell.Position.X, curCell.Position.Y-1);
+		w1 = GetWall(curCell.Position.X, curCell.Position.Y);
+		w2 = GetWall(curCell.Position.X+1, curCell.Position.Y);
+		action(w1,w2,c);
+	}*/
 
 }

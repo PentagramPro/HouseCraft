@@ -334,8 +334,8 @@ public class HouseController : BaseController {
 
 	private void Sale()
 	{
-		Segmentator s = new Segmentator(walls,cells);
-		s.Start();
+		Segmentator s = GetComponent<Segmentator>();
+		s.Launch(walls,cells);
 	}
 
 	#region Editor Methods
