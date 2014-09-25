@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 public class MapRect
 {
@@ -52,15 +53,13 @@ public class MapRect
 		}
 	}
 
-	public static bool operator ==(MapRect r1, MapRect r2)
+	public override bool Equals (object obj)
 	{
-		return r1.p1==r2.p1 && r1.p2==r2.p2;
+		MapRect p = obj as MapRect;
+		return p1.Equals(p.p1) && p2.Equals(p.p2);
 	}
-	
-	public static bool operator !=(MapRect r1, MapRect r2)
-	{
-		return r1.p1!=r2.p1 || r1.p2!=r2.p2;;
-	}
+
+
 
 }
 

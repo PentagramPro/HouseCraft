@@ -41,21 +41,22 @@ public class Segmentator : BaseController {
 
 		foreach(Room r in rooms)
 		{
+			Debug.Log(string.Format("Room #{0} is {1}", r.Number, Enum.GetName(typeof(RoomType),r.TypeOfRoom)));
 			foreach(Door d in r.Doors)
 			{
 				if(d.Rooms.Count==1)
 				{
-					Debug.Log(string.Format("Room #{0} contains door that leads to nothing",r.Number));
+					Debug.Log(string.Format("  Room #{0} contains door that leads to nothing",r.Number));
 				}
 				else if(d.Rooms.Count==2)
 		        {
 
-					Debug.Log(string.Format("Room #{0} contains door that leads to room #{1}",
+					Debug.Log(string.Format("  Room #{0} contains door that leads to room #{1}",
 					                        r.Number, d.GetAnotherRoom(r).Number));
 				}	        
 				else
 				{
-					Debug.Log(string.Format("Buggy room #{0}",r.Number));
+					Debug.Log(string.Format("  Buggy room #{0}",r.Number));
 				}
 			}
 		}

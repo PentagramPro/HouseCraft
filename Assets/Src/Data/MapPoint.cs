@@ -20,16 +20,13 @@ public class MapPoint : IntegerPoint
 
 	}
 
+	public override bool Equals (object obj)
+	{
+		MapPoint p = obj as MapPoint;
+		return X==p.X && Y==p.Y;
+	}
 	 
-	public static bool operator ==(MapPoint p1, MapPoint p2)
-	{
-		return p1.X==p2.X && p1.Y==p2.Y;
-	}
-	
-	public static bool operator !=(MapPoint p1, MapPoint p2)
-	{
-		return p1.X!=p2.X || p1.Y!=p2.Y;
-	}
+
 
 }
 

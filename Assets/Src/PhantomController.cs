@@ -22,7 +22,7 @@ public class PhantomController : BaseController {
 	public bool Place(MapRect rect)
 	{
 
-		if(lastRect == rect)
+		if(lastRect.Equals(rect))
 			return true;
 
 		Remove();
