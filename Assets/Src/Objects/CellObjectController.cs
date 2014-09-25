@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SinkController : BaseController, ICellObject {
+public class CellObjectController : MonoBehaviour {
 
+	public CellObjects ObjectType;
 	// Use this for initialization
 	void Start () {
 	
