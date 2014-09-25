@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CellObjectController : MonoBehaviour {
+public class CellObjectController : BaseController, ICellObject {
 
 	public CellObjects ObjectType;
 	// Use this for initialization
@@ -13,4 +13,13 @@ public class CellObjectController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	#region ICellObject implementation
+
+	public CellObjects GetCellObjectType ()
+	{
+		return ObjectType;
+	}
+
+	#endregion
 }

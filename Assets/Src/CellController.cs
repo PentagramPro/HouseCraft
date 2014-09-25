@@ -49,48 +49,56 @@ public class CellController : BaseController {
 	
 	}
 
+	public bool IsRectFree(MapRect rect)
+	{
+		bool res = true;
+		rect.Foreach((MapPoint p) => {
+			
+			CellController c =M.House.GetCell(p);
+			if(c==null || c.CellObject!=null)
+			{
+				res = false;
+				M.House.Phantom.SetRed(p);
+			}
+			
+			if(p.X>rect.MinX && p.Y>rect.MinY)
+			{
+				WallController w = M.House.GetWall(new WallPoint(p.X,p.Y));
+				if(w!=null)
+					res = false;
+			}
+			
+		});
+		
+		for(int x = rect.MinX+1;x<=rect.MaxX;x++)
+		{
+			WallController w = M.House.GetWall(new WallPoint(x,rect.MinY));
+			if(w!=null && w.wallSprite.Top==true)
+				res = false;
+		}
+		
+		for(int y = rect.MinY+1;y<=rect.MaxY;y++)
+		{
+			WallController w = M.House.GetWall(new WallPoint(rect.MinX,y));
+			if(w!=null && w.wallSprite.Right==true)
+				res = false;
+		}
+		return res;
+	}
+	
 	// we need manager here because we call this method in prefab context
 	public bool PrefabValidatePosition(Manager m, MapPoint point, CellRotation rotation)
 	{
-
+		manager = m;
 
 		MapRect rect = GetCellIndexes(point,rotation);
 
 		bool res = m.House.Phantom.Place(rect);
 
 
+		if(IsRectFree(rect)==false)
+			res = false;
 
-		rect.Foreach((MapPoint p) => {
-
-			CellController c =m.House.GetCell(p);
-			if(c==null || c.CellObject!=null)
-			{
-				res = false;
-				m.House.Phantom.SetRed(p);
-			}
-
-			if(p.X>rect.MinX && p.Y>rect.MinY)
-			{
-				WallController w = m.House.GetWall(new WallPoint(p.X,p.Y));
-				if(w!=null)
-					res = false;
-			}
-
-		});
-
-		for(int x = rect.MinX+1;x<=rect.MaxX;x++)
-		{
-			WallController w = m.House.GetWall(new WallPoint(x,rect.MinY));
-			if(w!=null && w.wallSprite.Top==true)
-				res = false;
-		}
-
-		for(int y = rect.MinY+1;y<=rect.MaxY;y++)
-		{
-			WallController w = m.House.GetWall(new WallPoint(rect.MinX,y));
-			if(w!=null && w.wallSprite.Right==true)
-				res = false;
-		}
 
 		return res;
 	}

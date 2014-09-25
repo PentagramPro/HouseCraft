@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BaseController : MonoBehaviour {
 
-	private Manager manager;
+	protected Manager manager;
 	protected Manager M
 	{
 		get{

@@ -14,7 +14,7 @@ public class Segmentator : BaseController {
 	public void Launch(Dictionary<int,WallController> walls, Dictionary<int,CellController> cells)
 	{
 
-
+		// STEP 1 - Find rooms
 		Debug.Log("Starting segmentation");
 		rooms.Clear();
 		processed.Clear();
@@ -25,6 +25,7 @@ public class Segmentator : BaseController {
 			Next (cell);
 			if(curRoom.Cells.Count>0)
 			{
+
 				rooms.Add(curRoom);
 				Debug.Log(string.Format("Found room #{1} with {0} cells",curRoom.Cells.Count,curRoom.Number));
 				curRoom = new Room();
@@ -32,6 +33,11 @@ public class Segmentator : BaseController {
 			}
 
 		}
+
+
+		// STEP 2 - Recognize rooms
+		Recognize();
+
 
 		foreach(Room r in rooms)
 		{
@@ -54,6 +60,95 @@ public class Segmentator : BaseController {
 			}
 		}
 
+	}
+
+	void Recognize()
+	{
+		List<Room> unrecognized = new List<Room>();
+
+		// PHASE 1 - small rooms
+		foreach(Room r in rooms)
+		{
+			r.PrepareToRecognition();
+
+
+			if(r.GarageGate)
+			{
+				r.TypeOfRoom = RoomType.Garage;
+			}
+			else if(r.ConnectedTo.Count==1)
+			{
+				if(r.Empty && r.Cells.Count<=4)
+					r.TypeOfRoom = RoomType.Storage;
+				else
+				{
+					bool bathtub = r.Contains(CellObjects.Bathtub);
+					bool toilet = r.Contains(CellObjects.Toilet);
+					bool shower = r.Contains(CellObjects.Shower);
+					if(toilet)
+					{
+						if(bathtub || shower)
+							r.TypeOfRoom = RoomType.ToiletBathroom;
+						else
+							r.TypeOfRoom = RoomType.Toilet;
+					}
+					else if(bathtub || shower)
+						r.TypeOfRoom = RoomType.Bathroom;
+				}
+			}
+
+			if(r.TypeOfRoom==RoomType.Unknown)
+			{
+				// coridor detector
+				if(!r.ContainsRectangle(3,3))
+				{
+					r.TypeOfRoom = RoomType.Coridor;
+				}
+				else
+				{
+					unrecognized.Add(r);
+				}
+			}
+
+		}
+
+		// PHASE 2 - kitchen
+		if(unrecognized.Count==0)
+			return;
+		else if(unrecognized.Count==1)
+		{
+			unrecognized[0].TypeOfRoom = RoomType.Studio;
+			return;
+		}
+		Room kitchen = null, smallest = unrecognized[0];
+
+		foreach(Room r in unrecognized)
+		{
+			if(r.Contains(CellObjects.Hob))
+			{
+				if(kitchen==null || kitchen.Cells.Count>r.Cells.Count)
+					kitchen = r;
+			}
+
+			if(smallest.Cells.Count>r.Cells.Count)
+				smallest = r;
+		}
+
+		if(kitchen==null)
+			kitchen = smallest;
+		if(kitchen.Cells.Count>16)
+			kitchen.TypeOfRoom = RoomType.Dining;
+		else
+			kitchen.TypeOfRoom = RoomType.Kitchen;
+
+		unrecognized.Remove(kitchen);
+
+		// PHASE 3 - bedrooms
+
+		foreach(Room r in unrecognized)
+		{
+			r.TypeOfRoom = RoomType.Bedroom;
+		}
 	}
 
 	void Next(CellController curCell)
