@@ -3,9 +3,35 @@ using System.Collections;
 
 public class Manager : MonoBehaviour {
 
+	enum Modes{
+		Build,Process,Verify,Sold
+	}
+
+	Modes state = Modes.Build;
+
 	CameraController camCon;
-	public bool BlockMouseInput = false;
+
+	int mouseBlockCount = 0;
+
 	public HouseController House;
+	public OverlayController Overlay;
+
+	public bool BlockMouseInput 
+	{
+		get
+		{
+			return mouseBlockCount>0;
+		}
+		set
+		{
+			if(value)
+				mouseBlockCount++;
+			else
+				mouseBlockCount--;
+			if(mouseBlockCount<0)
+				mouseBlockCount=0;
+		}
+	}
 
 	void Awake()
 	{
@@ -28,7 +54,12 @@ public class Manager : MonoBehaviour {
 
 	public void Sale()
 	{
-		House.SetHouseMode(HouseModes.Sale,null);
+		if(state== Modes.Build)
+		{
+			state = Modes.Process;
+			House.SetHouseMode(HouseModes.Sale,null);
+
+		}
 
 	}
 }

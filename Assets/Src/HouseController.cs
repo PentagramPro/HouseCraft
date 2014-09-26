@@ -371,6 +371,13 @@ public class HouseController : BaseController {
 
 	}
 
+	public int EditorGetCellCount()
+	{
+		if(cells==null)
+			return 0;
+
+		return cells.Values.Count;
+	}
 	public void EditorRemoveWall(WallPoint point)
 	{
 		WallController w = null;

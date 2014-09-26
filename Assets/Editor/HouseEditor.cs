@@ -13,7 +13,7 @@ public class HouseEditor : Editor {
 
 	public override void OnInspectorGUI()
 	{
-		
+		HouseController hc = (HouseController) target;
 		DrawDefaultInspector();
 
 		if(GUILayout.Button(state!=Modes.Idle? "Disable editor": "Enable editor"))
@@ -23,7 +23,7 @@ public class HouseEditor : Editor {
 			else
 			{
 				state = Modes.PlaceCell;
-				HouseController hc = (HouseController) target;
+
 				hc.EditorCheckCells();
 			}	
 		}
@@ -52,6 +52,8 @@ public class HouseEditor : Editor {
 			{
 				state = Modes.PlaceGarage;
 			}
+
+			GUILayout.Label("Cells: "+hc.EditorGetCellCount());
 		}
 	}
 
