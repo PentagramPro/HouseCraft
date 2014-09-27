@@ -23,11 +23,11 @@ public class Segmentator : BaseController {
 			if(processed.Contains(cell))
 				continue;
 			Next (cell);
-			if(curRoom.Cells.Count>0)
+			if(curRoom.Size>0)
 			{
 
 				rooms.Add(curRoom);
-				Debug.Log(string.Format("Found room #{1} with {0} cells",curRoom.Cells.Count,curRoom.Number));
+				Debug.Log(string.Format("Found room #{1} with {0} cells",curRoom.Size,curRoom.Number));
 				curRoom = new Room();
 				curRoom.Number = rooms.Count;
 			}
@@ -80,7 +80,7 @@ public class Segmentator : BaseController {
 			}
 			else if(r.ConnectedTo.Count==1)
 			{
-				if(r.Empty && r.Cells.Count<=4)
+				if(r.Empty && r.Size<=4)
 					r.TypeOfRoom = RoomType.Storage;
 				else
 				{
@@ -128,17 +128,17 @@ public class Segmentator : BaseController {
 		{
 			if(r.Contains(CellObjects.Hob))
 			{
-				if(kitchen==null || kitchen.Cells.Count>r.Cells.Count)
+				if(kitchen==null || kitchen.Size>r.Size)
 					kitchen = r;
 			}
 
-			if(smallest.Cells.Count>r.Cells.Count)
+			if(smallest.Size>r.Size)
 				smallest = r;
 		}
 
 		if(kitchen==null)
 			kitchen = smallest;
-		if(kitchen.Cells.Count>16)
+		if(kitchen.Size>16)
 			kitchen.TypeOfRoom = RoomType.Dining;
 		else
 			kitchen.TypeOfRoom = RoomType.Kitchen;
@@ -159,7 +159,7 @@ public class Segmentator : BaseController {
 		WallController w = null;
 		CellController c = null;
 
-		curRoom.Cells.Add(curCell);
+		curRoom.AddCell(curCell);
 		processed.Add(curCell);
 
 

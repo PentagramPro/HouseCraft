@@ -17,7 +17,8 @@ public class Room  {
 	public bool Entrance = false;
 	public bool GarageGate = false;
 	public int Number=0;
-	public List<CellController> Cells = new List<CellController>();
+	List<CellController> Cells = new List<CellController>();
+	public List<MapPoint> VirtualCells = new List<MapPoint>();
 	public List<Door> Doors =new List<Door>();
 	public List<Room> ConnectedTo = new List<Room>();
 	public bool Empty = true;
@@ -30,6 +31,11 @@ public class Room  {
 		}
 	}
 
+	public int Size{
+		get{
+			return Cells.Count+VirtualCells.Count;
+		}
+	}
 	public string Name{
 		get{
 			return System.Enum.GetName(typeof(RoomType),TypeOfRoom);
@@ -41,6 +47,23 @@ public class Room  {
 		if(Doors.Contains(d))
 			return;
 		Doors.Add(d);
+	}
+
+	public void AddCell(CellController cell)
+	{
+		Cells.Add(cell);
+		if(cell.SizeX>1 || cell.SizeY>1)
+		{
+			for(int x=0;x<cell.SizeX;x++)
+			{
+				for(int y = 0;y<cell.SizeY;y++)
+				{
+					if(x==0 && y==0)
+						continue;
+					VirtualCells.Add(new MapPoint(cell.Position.X+x,cell.Position.Y+y));
+				}
+			}
+		}
 	}
 
 	public bool ContainsRectangle(int sizeX, int sizeY)
@@ -98,5 +121,18 @@ public class Room  {
 				return true;
 		}
 		return false;
+	}
+
+	public void ForeachCell(System.Action<MapPoint> action)
+	{
+		foreach(CellController c in Cells)
+		{
+			action(c.Position);
+		}
+
+		foreach(MapPoint p in VirtualCells)
+		{
+			action(p);
+		}
 	}
 }

@@ -31,15 +31,13 @@ public class OverlayController : BaseController {
 
 	public void DrawRoom(Room room)
 	{
-		foreach(CellController cell in room.Cells)
-		{
+		room.ForeachCell((MapPoint p) => {
 			Transform c = Instantiate<Transform>(OverlayCellPrefab);
-			c.position = cell.transform.position;
+			c.position = new Vector3(p.X+0.5f,p.Y+0.5f,0);
 			c.parent = transform;
 			c.GetComponent<SpriteRenderer>().material.SetColor("_TintColor",room.RoomColor);
 
-
-		}
+		});
 
 		Text txt = Instantiate<Text>(OverlayTextPrefab);
 		txt.rectTransform.parent = OverlayCanvas.transform;
