@@ -49,7 +49,7 @@ public class CellController : BaseController {
 	
 	}
 
-	public bool IsRectFree(MapRect rect)
+	public bool IsRectFree(MapRect rect, bool usePhantom)
 	{
 		bool res = true;
 		rect.Foreach((MapPoint p) => {
@@ -58,7 +58,8 @@ public class CellController : BaseController {
 			if(c==null || c.CellObject!=null)
 			{
 				res = false;
-				M.House.Phantom.SetRed(p);
+				if(usePhantom)
+					M.House.Phantom.SetRed(p);
 			}
 			
 			if(p.X>rect.MinX && p.Y>rect.MinY)
@@ -96,7 +97,7 @@ public class CellController : BaseController {
 		bool res = m.House.Phantom.Place(rect);
 
 
-		if(IsRectFree(rect)==false)
+		if(IsRectFree(rect,true)==false)
 			res = false;
 
 

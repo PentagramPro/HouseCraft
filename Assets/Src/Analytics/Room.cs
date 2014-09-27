@@ -71,7 +71,7 @@ public class Room  {
 		foreach(CellController c in Cells)
 		{
 			if(c.IsRectFree(
-				new MapRect(c.Position.X, c.Position.Y, c.Position.X+sizeX-1,c.Position.Y+sizeY-1)))
+				new MapRect(c.Position.X, c.Position.Y, c.Position.X+sizeX-1,c.Position.Y+sizeY-1),false))
 			{
 			   return true;
 			}
