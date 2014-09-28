@@ -20,7 +20,7 @@ public class CellController : BaseController {
 
 	public MapPoint position;
 	HouseController houseController;
-
+	CellRotation rotation = CellRotation.None;
 
 	public MapPoint Position{
 		set{
@@ -33,6 +33,11 @@ public class CellController : BaseController {
 		}
 	}
 
+	public CellRotation Rotation{
+		get{
+			return rotation;
+		}
+	}
 	protected override void Awake ()
 	{
 		base.Awake ();
@@ -41,7 +46,7 @@ public class CellController : BaseController {
 	}
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -141,6 +146,7 @@ public class CellController : BaseController {
 	public void SetRotation(CellRotation rotation)
 	{
 		transform.localRotation = Quaternion.Euler(0,0,angles[rotation]);
+		this.rotation = rotation;
 	}
 	public static CellController InstantiateMe(CellController prefab, Transform parent, MapPoint point)
 	{

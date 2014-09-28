@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class HouseController : BaseController {
 
 	enum Modes{
-		Idle, SetWalls, SetObject, RemoveWall,Sale
+		Idle, SetWalls, SetObject, RemoveWall,RemoveObject,Sale
 	}
 	public CellController CellPrefab;
 	public WallController ThickWallPrefab;
@@ -201,68 +201,109 @@ public class HouseController : BaseController {
 	void OnTap()
 	{
 		Vector3 pz = Camera.main.ScreenToWorldPoint(Input.mousePosition)+transform.position;
-
-		if(state == Modes.SetWalls)
+		switch(state)
 		{
-			WallController wallPrefab = selectedPrefab.GetComponent<WallController>();
-			WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
+		case Modes.SetWalls:
+			OnPlaceWall(pz);
+			break;
+		case Modes.SetObject:
+			OnPlaceObject(pz);
+			break;
+		case Modes.RemoveWall:
+			OnRemoveWall(pz);
+			break;
+		case Modes.RemoveObject:
+			OnRemoveObject(pz);
+			break;
 
-
-			//new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f).Contains(pz)
-			if(IsInsideBuilding(wp) && wallPrefab.PrefabValidatePosition(M,wp))
-			{
-				WallController wall = null, adjWall=null;
-
-				if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
-				{
-					wall = wallPrefab.PrefabSetWall(M,wp);
-				}
-				else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
-				{
-					wall = wallPrefab.PrefabSetWall(M,wp);
-					SetAdjacentWall(wall,Side.Left);
-				}
-				else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
-				{
-					wall = wallPrefab.PrefabSetWall(M,wp);
-					SetAdjacentWall(wall,Side.Top);
-				}
-				else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
-				{
-					wall = wallPrefab.PrefabSetWall(M,wp);
-					SetAdjacentWall(wall,Side.Right);
-				}
-				else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
-				{
-					wall = wallPrefab.PrefabSetWall(M,wp);
-					SetAdjacentWall(wall,Side.Bottom);
-				}
-
-				UpdateWallsAround(wp);
-
-			}
 		}
-		else if(state==Modes.SetObject)
-		{
-			MapPoint mp = new MapPoint(Mathf.FloorToInt(pz.x),Mathf.FloorToInt(pz.y));
-			CellController cellPrefab = selectedPrefab.GetComponent<CellController>();
 
-			if(cellPrefab.PrefabValidatePosition(M,mp,selectedRotation))
-			{
-				ReplaceCell(mp,cellPrefab);
-				Phantom.Remove();
-			}
-		}
-		else if(state==Modes.RemoveWall)
+	}
+
+	private void OnRemoveObject(Vector3 pz)
+	{
+		MapPoint mp = new MapPoint(Mathf.FloorToInt(pz.x),Mathf.FloorToInt(pz.y));
+		CellController cellToRemove = null;
+		if(cells.TryGetValue(mp.toInt(),out cellToRemove))
 		{
-			WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
-			WallController wall = GetWall(wp);
-			if(wall!=null && IsInsideBuilding(wp))
+
+			if(cellToRemove.CellObject!=null)
+				M.TotalCost.AddCost(-cellToRemove.CellObject.GetCost());
+
+			MapRect rect = cellToRemove.GetCellIndexes(cellToRemove.Position,cellToRemove.Rotation);
+			rect.Foreach( (MapPoint p) => {
+				cells.Remove(p.toInt());
+				EditorSetCell(p,CellPrefab);
+			});
+			Destroy(cellToRemove.gameObject);
+		}
+	}
+
+	private void OnPlaceObject(Vector3 pz)
+	{
+		MapPoint mp = new MapPoint(Mathf.FloorToInt(pz.x),Mathf.FloorToInt(pz.y));
+		CellController cellPrefab = selectedPrefab.GetComponent<CellController>();
+		
+		if(cellPrefab.PrefabValidatePosition(M,mp,selectedRotation))
+		{
+
+			CellObjectController cobj = ReplaceCell(mp,cellPrefab).GetComponent<CellObjectController>();
+			if(cobj!=null)
+				M.TotalCost.AddCost(cobj.Cost);
+			Phantom.Remove();
+		}
+	}
+
+	private void OnPlaceWall(Vector3 pz)
+	{
+		WallController wallPrefab = selectedPrefab.GetComponent<WallController>();
+		WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
+		
+		
+		//new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f).Contains(pz)
+		if(IsInsideBuilding(wp) && wallPrefab.PrefabValidatePosition(M,wp))
+		{
+			WallController wall = null, adjWall=null;
+			
+			if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
 			{
-				Destroy(wall.gameObject);
-				walls.Remove(wp.toInt());
-				UpdateWallsAround(wp);
+				wall = wallPrefab.PrefabSetWall(M,wp);
 			}
+			else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+			{
+				wall = wallPrefab.PrefabSetWall(M,wp);
+				SetAdjacentWall(wall,Side.Left);
+			}
+			else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
+			{
+				wall = wallPrefab.PrefabSetWall(M,wp);
+				SetAdjacentWall(wall,Side.Top);
+			}
+			else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+			{
+				wall = wallPrefab.PrefabSetWall(M,wp);
+				SetAdjacentWall(wall,Side.Right);
+			}
+			else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
+			{
+				wall = wallPrefab.PrefabSetWall(M,wp);
+				SetAdjacentWall(wall,Side.Bottom);
+			}
+			
+			UpdateWallsAround(wp);
+			
+		}
+	}
+
+	private void OnRemoveWall(Vector3 pz)
+	{
+		WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
+		WallController wall = GetWall(wp);
+		if(wall!=null && IsInsideBuilding(wp))
+		{
+			Destroy(wall.gameObject);
+			walls.Remove(wp.toInt());
+			UpdateWallsAround(wp);
 		}
 	}
 
@@ -323,6 +364,10 @@ public class HouseController : BaseController {
 			break;
 		case HouseModes.RemoveWalls:
 			state = Modes.RemoveWall;
+			selectedPrefab = null;
+			break;
+		case HouseModes.RemoveObjects:
+			state = Modes.RemoveObject;
 			selectedPrefab = null;
 			break;
 		case HouseModes.Sale:

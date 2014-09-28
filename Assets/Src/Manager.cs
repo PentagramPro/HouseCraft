@@ -17,6 +17,7 @@ public class Manager : MonoBehaviour {
 	public OverlayController Overlay;
 	public TotalCostController TotalCost;
 
+
 	public bool BlockMouseInput 
 	{
 		get

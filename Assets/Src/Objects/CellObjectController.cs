@@ -23,5 +23,10 @@ public class CellObjectController : BaseController, ICellObject {
 		return ObjectType;
 	}
 
+	public int GetCost()
+	{
+		return Cost;
+	}
+
 	#endregion
 }
