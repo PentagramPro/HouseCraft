@@ -59,6 +59,7 @@ public class Manager : MonoBehaviour {
 		if(state== Modes.Build)
 		{
 			state = Modes.Process;
+			UI.OnShowVerify();
 			House.SetHouseMode(HouseModes.Sale,null);
 
 		}
@@ -70,6 +71,8 @@ public class Manager : MonoBehaviour {
 		if(state==Modes.Verify)
 		{
 			state = Modes.Build;
+			UI.OnShowBuild();
+			Overlay.RemoveOverlay();
 			House.SetHouseMode(HouseModes.SetWalls,null);
 		}
 	}

@@ -8,6 +8,10 @@ public class HouseController : BaseController {
 	enum Modes{
 		Idle, SetWalls, SetObject, RemoveWall,RemoveObject,Sale
 	}
+
+	public int PricePerCell = 500;
+	public int ExpectedIncome = 40000;
+
 	public CellController CellPrefab;
 	public WallController ThickWallPrefab;
 	public WallController WallPrefab;
@@ -59,7 +63,8 @@ public class HouseController : BaseController {
 	}
 	// Use this for initialization
 	void Start () {
-
+		M.UI.bCostsPanel.EstimatedProfit.Value = ExpectedIncome;
+		M.UI.bCostsPanel.HouseCost.Value = PricePerCell*cells.Count;
 	}
 	
 	// Update is called once per frame

@@ -9,7 +9,7 @@ public class Segmentator : BaseController {
 	List<CellController> processed = new List<CellController>();
 	List<Room> rooms = new List<Room>();
 	Dictionary<int, Door> doors = new Dictionary<int, Door>();
-	Room curRoom = new Room();
+	Room curRoom = null;
 
 	public void Launch(Dictionary<int,WallController> walls, Dictionary<int,CellController> cells)
 	{
@@ -18,6 +18,8 @@ public class Segmentator : BaseController {
 		Debug.Log("Starting segmentation");
 		rooms.Clear();
 		processed.Clear();
+		doors.Clear();
+		curRoom = new Room();
 		foreach(CellController cell in cells.Values)
 		{
 			if(processed.Contains(cell))

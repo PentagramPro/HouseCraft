@@ -5,6 +5,7 @@ using System.Collections;
 public class NumericFieldController : BaseController {
 
 	float Speed = 1000;
+	float TimeToEquality = 1;
 	Text text;
 	int fieldValue = 0;
 	int displayedValue = 0;
@@ -40,13 +41,19 @@ public class NumericFieldController : BaseController {
 		}
 		set{
 			fieldValue = value;
-			UpdateText();
+			UpdateSpeed();
 		}
 	}
 	public void AddValue(int delta)
 	{
 		fieldValue+=delta;
-		UpdateText();
+		UpdateSpeed();
+	}
+
+	protected void UpdateSpeed()
+	{
+		float delta = Mathf.Abs(fieldValue-displayedValue);
+		Speed = delta/TimeToEquality;
 	}
 
 	protected void UpdateText()
