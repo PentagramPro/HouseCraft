@@ -228,7 +228,7 @@ public class HouseController : BaseController {
 		{
 
 			if(cellToRemove.CellObject!=null)
-				M.TotalCost.AddCost(-cellToRemove.CellObject.GetCost());
+				M.UI.bCostsPanel.Expences.AddValue(-cellToRemove.CellObject.GetCost());
 
 			MapRect rect = cellToRemove.GetCellIndexes(cellToRemove.Position,cellToRemove.Rotation);
 			rect.Foreach( (MapPoint p) => {
@@ -249,7 +249,7 @@ public class HouseController : BaseController {
 
 			CellObjectController cobj = ReplaceCell(mp,cellPrefab).GetComponent<CellObjectController>();
 			if(cobj!=null)
-				M.TotalCost.AddCost(cobj.Cost);
+				M.UI.bCostsPanel.Expences.AddValue(cobj.Cost);
 			Phantom.Remove();
 		}
 	}

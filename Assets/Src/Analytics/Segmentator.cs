@@ -61,7 +61,7 @@ public class Segmentator : BaseController {
 				}
 			}
 		}
-
+		M.OnProcessed();
 	}
 
 	void Recognize()

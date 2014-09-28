@@ -15,8 +15,8 @@ public class Manager : MonoBehaviour {
 
 	public HouseController House;
 	public OverlayController Overlay;
-	public TotalCostController TotalCost;
 
+	public UIController UI;
 
 	public bool BlockMouseInput 
 	{
@@ -54,7 +54,7 @@ public class Manager : MonoBehaviour {
 		camCon.Scroll(delta);
 	}
 
-	public void Sale()
+	public void OnSale()
 	{
 		if(state== Modes.Build)
 		{
@@ -63,5 +63,19 @@ public class Manager : MonoBehaviour {
 
 		}
 
+	}
+
+	public void OnCancelSale()
+	{
+		if(state==Modes.Verify)
+		{
+			state = Modes.Build;
+			House.SetHouseMode(HouseModes.SetWalls,null);
+		}
+	}
+
+	public void OnProcessed()
+	{
+		state = Modes.Verify;
 	}
 }

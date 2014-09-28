@@ -11,6 +11,6 @@ public class SaleButton : BaseController {
 	
 	void OnClick()
 	{
-		M.Sale();
+		M.OnSale();
 	}
 }
