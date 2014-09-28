@@ -2,16 +2,24 @@
 using System;
 using System.Collections.Generic;
 
+
+[RequireComponent (typeof (Evaluator))]
 public class Segmentator : BaseController {
 
-
+	Evaluator evaluator;
 
 	List<CellController> processed = new List<CellController>();
 	List<Room> rooms = new List<Room>();
 	Dictionary<int, Door> doors = new Dictionary<int, Door>();
 	Room curRoom = null;
 
-	public void Launch(Dictionary<int,WallController> walls, Dictionary<int,CellController> cells)
+	protected override void Awake ()
+	{
+		base.Awake ();
+		evaluator = GetComponent<Evaluator>();
+	}
+
+	public void Launch(Dictionary<int,CellController> cells)
 	{
 
 		// STEP 1 - Find rooms
@@ -63,7 +71,7 @@ public class Segmentator : BaseController {
 				}
 			}
 		}
-		M.OnProcessed();
+		evaluator.Launch();
 	}
 
 	void Recognize()
