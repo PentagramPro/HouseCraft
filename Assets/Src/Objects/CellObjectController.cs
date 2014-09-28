@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CellObjectController : BaseController, ICellObject {
 
+	public int Cost = 0;
+
 	public CellObjects ObjectType;
 	// Use this for initialization
 	void Start () {
