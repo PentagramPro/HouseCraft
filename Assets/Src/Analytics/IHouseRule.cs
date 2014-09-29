@@ -1,7 +1,7 @@
 
 public interface IHouseRule
 {
-	void Process(Segmentator s);
+	bool Process(Segmentator s);
 }
 
 

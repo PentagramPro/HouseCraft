@@ -2,7 +2,8 @@
 
 public interface IRoomRule
 {
-	void Process(Segmentator s, Room r);
+	bool Process(Segmentator s, Room r);
+	int Amount {get;}
 }
 
 

@@ -77,8 +77,13 @@ public class Manager : MonoBehaviour {
 		}
 	}
 
-	public void OnProcessed()
+	public void OnProcessed(Segmentator s, Evaluator e)
 	{
 		state = Modes.Verify;
+		UI.vCostsPanel.Expences.Value = 
+			 s.ExpencesCommunications // paid for pipes, etc
+			+UI.bCostsPanel.Expences.Value // paid for objects
+			+e.Penalty; 				// penalties for breaking criterias
+		UI.vCostsPanel.Income.Value = House.ExpectedIncome;
 	}
 }

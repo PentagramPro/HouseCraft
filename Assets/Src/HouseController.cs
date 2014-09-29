@@ -20,6 +20,7 @@ public class HouseController : BaseController {
 	public WallController GaragePrefab;
 
 	public PhantomController Phantom;
+	public LevelConditions LevelConditions;
 
 	Dictionary<int,CellController> cells = new Dictionary<int, CellController>();
 	Dictionary<int,WallController> walls = new Dictionary<int, WallController>();
@@ -387,7 +388,7 @@ public class HouseController : BaseController {
 	private void Sale()
 	{
 		Segmentator s = GetComponent<Segmentator>();
-		s.Launch(cells);
+		s.Launch(LevelConditions,cells);
 	}
 
 	#region Editor Methods

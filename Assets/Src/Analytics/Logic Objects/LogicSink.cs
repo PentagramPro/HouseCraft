@@ -1,6 +1,6 @@
 
 using System;
-public class LogicSink : ILogicObject
+public class LogicSink : ILogicObject, IHotWaterConsumer
 {
 	public bool HasHotWater = false;
 
@@ -9,5 +9,14 @@ public class LogicSink : ILogicObject
 	{
 	
 	}
+
+	#region IHotWaterConsumer implementation
+
+	public void SetHasHotWater (bool has)
+	{
+		HasHotWater=has;
+	}
+
+	#endregion
 }
 

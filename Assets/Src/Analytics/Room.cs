@@ -50,7 +50,7 @@ public class Room  {
 		Doors.Add(d);
 	}
 
-	public void AddCell(CellController cell)
+	public void AddCell(CellController cell, LogicCache cache)
 	{
 		Cells.Add(cell);
 		if(cell.SizeX>1 || cell.SizeY>1)
@@ -70,7 +70,38 @@ public class Room  {
 		{
 			ILogicObject lo = cell.CellObject.Fabricate();
 			if(lo!=null)
+			{
 				LogicObjects.Add(lo);
+
+				switch(lo.ObjectType)
+				{
+				case CellObjects.Shower:
+				case CellObjects.Sink:
+				case CellObjects.Bathtub:
+					cache.HotWaterConsumers.Add(lo as IHotWaterConsumer);
+					break;
+				case CellObjects.Boiler:
+					cache.Boilers.Add(lo as LogicBoiler);
+					break;
+				case CellObjects.Fireplace:
+					break;
+				case CellObjects.Heater:
+					break;
+				case CellObjects.HeatingPipe:
+					break;
+				case CellObjects.Hob:
+					break;
+				case CellObjects.Riser:
+					cache.Risers.Add(lo as LogicRiser);
+					break;
+				case CellObjects.Toilet:
+					break;
+				case CellObjects.Ventshaft:
+					break;
+				}
+			}
+
+
 		}
 	}
 

@@ -12,6 +12,15 @@ public class Segmentator : BaseController {
 	List<Room> rooms = new List<Room>();
 	Dictionary<int, Door> doors = new Dictionary<int, Door>();
 	Room curRoom = null;
+	LogicCache LCache = new LogicCache();
+	LevelConditions Conditions;
+
+	public List<Room> Rooms{
+		get{return rooms;}
+	}
+	public int ExpencesCommunications{
+		get; internal set;
+	}
 
 	protected override void Awake ()
 	{
@@ -19,7 +28,7 @@ public class Segmentator : BaseController {
 		evaluator = GetComponent<Evaluator>();
 	}
 
-	public void Launch(Dictionary<int,CellController> cells)
+	public void Launch(LevelConditions conditions, Dictionary<int,CellController> cells)
 	{
 
 		// STEP 1 - Find rooms
@@ -27,7 +36,9 @@ public class Segmentator : BaseController {
 		rooms.Clear();
 		processed.Clear();
 		doors.Clear();
+		LCache.Clear();
 		curRoom = new Room();
+		Conditions = conditions;
 		foreach(CellController cell in cells.Values)
 		{
 			if(processed.Contains(cell))
@@ -48,6 +59,8 @@ public class Segmentator : BaseController {
 		// STEP 2 - Recognize rooms
 		Recognize();
 
+		// STEP 3 - Calculate connections
+		Connections();
 
 		foreach(Room r in rooms)
 		{
@@ -165,13 +178,42 @@ public class Segmentator : BaseController {
 		}
 	}
 
+
+	void Connections()
+	{
+		ExpencesCommunications = 0;
+		float plumbingLen = 0;
+		foreach(LogicRiser l in LCache.Risers)
+		{
+			LogicBoiler b = LCache.FindClosest<LogicBoiler>(LCache.Boilers,l.Center);
+			if(b!=null)
+			{
+				plumbingLen+=Vector3.Distance(b.Center,l.Center);
+				l.HasHotWater = true;
+			}
+		}
+
+		foreach(IHotWaterConsumer lh in LCache.HotWaterConsumers)
+		{
+			ILogicObject l = lh as ILogicObject;
+			LogicRiser r = LCache.FindClosest<LogicRiser>(LCache.Risers,l.Center);
+			if(r!=null)
+			{
+				plumbingLen+=Vector3.Distance(r.Center,l.Center);
+				lh.SetHasHotWater(true);
+			}
+		}
+
+		ExpencesCommunications =  (int)(plumbingLen*Conditions.PlumbingCost);
+	}
+
 	void Next(CellController curCell)
 	{
 		List<CellController> reachable = new List<CellController>();
 		WallController w = null;
 		CellController c = null;
 
-		curRoom.AddCell(curCell);
+		curRoom.AddCell(curCell,LCache);
 		processed.Add(curCell);
 
 

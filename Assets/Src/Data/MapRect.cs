@@ -59,7 +59,13 @@ public class MapRect
 		return p1.Equals(p.p1) && p2.Equals(p.p2);
 	}
 
-
+	public Vector3 Center{
+		get{
+			return new Vector3( ( (float)(p1.X+p2.X+1) )/2f,
+			                   ( (float)(p1.Y+p2.Y+1) )/2f,
+			                   0);
+		}
+	}
 
 }
 
