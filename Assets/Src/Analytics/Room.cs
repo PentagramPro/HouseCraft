@@ -21,6 +21,7 @@ public class Room  {
 	public List<MapPoint> VirtualCells = new List<MapPoint>();
 	public List<Door> Doors =new List<Door>();
 	public List<Room> ConnectedTo = new List<Room>();
+	public List<ILogicObject> LogicObjects = new List<ILogicObject>();
 	public bool Empty = true;
 
 	public MapPoint LabelPos = null;
@@ -63,6 +64,13 @@ public class Room  {
 					VirtualCells.Add(new MapPoint(cell.Position.X+x,cell.Position.Y+y));
 				}
 			}
+		}
+
+		if(cell.CellObject!=null)
+		{
+			ILogicObject lo = cell.CellObject.Fabricate();
+			if(lo!=null)
+				LogicObjects.Add(lo);
 		}
 	}
 

@@ -109,6 +109,11 @@ public class CellController : BaseController {
 		return res;
 	}
 
+	public MapRect GetCurCellIndexes()
+	{
+		return GetCellIndexes(Position,Rotation);
+	}
+
 	public MapRect GetCellIndexes(MapPoint point, CellRotation rotation)
 	{
 		int minX = point.X;

@@ -52,7 +52,9 @@ public class Segmentator : BaseController {
 		foreach(Room r in rooms)
 		{
 			M.Overlay.DrawRoom(r);
-			Debug.Log(string.Format("Room #{0} is {1}", r.Number, Enum.GetName(typeof(RoomType),r.TypeOfRoom)));
+			Debug.Log(string.Format("Room #{0} is {1}, {2} objects", r.Number,
+			                        Enum.GetName(typeof(RoomType),r.TypeOfRoom),
+			                        r.LogicObjects.Count));
 			foreach(Door d in r.Doors)
 			{
 				if(d.Rooms.Count==1)
