@@ -18,6 +18,14 @@ public class Evaluator : BaseController {
 		new ColdWater(-100)
 	};
 
+	List<IHouseRule> HouseRules = new List<IHouseRule>()
+	{
+		new NoRoom(RoomType.Bedroom,RoomType.Bedroom,-2000),
+		new NoRoom(RoomType.Kitchen,RoomType.Dining,-2000),
+		new NoRoom(RoomType.Bathroom,RoomType.ToiletBathroom,-2000),
+		new NoRoom(RoomType.Toilet,RoomType.ToiletBathroom,-2000)
+	};
+
 	protected override void Awake ()
 	{
 		base.Awake ();
@@ -54,6 +62,11 @@ public class Evaluator : BaseController {
 				if(rule.Process(segmentator,obj))
 					ApplyRule(rule as BaseRule);
 			}
+		}
+		foreach(IHouseRule rule in HouseRules)
+		{
+			if(rule.Process(segmentator))
+				ApplyRule(rule as BaseRule);
 		}
 		Debug.Log("Total penalty: "+Penalty);
 		M.OnProcessed(segmentator,this);
