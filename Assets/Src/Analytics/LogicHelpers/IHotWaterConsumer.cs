@@ -1,7 +1,7 @@
 
 public interface IHotWaterConsumer
 {
-	void SetHasHotWater(bool has);
+	bool HasHotWater{get;set;}
 }
 
 

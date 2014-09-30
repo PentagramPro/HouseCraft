@@ -69,10 +69,12 @@ public class Room  {
 		if(cell.CellObject!=null)
 		{
 			ILogicObject lo = cell.CellObject.Fabricate();
+			if(lo.ObjectType!=cell.CellObject.GetCellObjectType())
+				throw new UnityException("Wrong object type!");
 			if(lo!=null)
 			{
 				LogicObjects.Add(lo);
-
+				cache.Objects.Add(lo);
 				switch(lo.ObjectType)
 				{
 				case CellObjects.Shower:

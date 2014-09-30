@@ -12,7 +12,7 @@ public class Segmentator : BaseController {
 	List<Room> rooms = new List<Room>();
 	Dictionary<int, Door> doors = new Dictionary<int, Door>();
 	Room curRoom = null;
-	LogicCache LCache = new LogicCache();
+	public LogicCache LCache = new LogicCache();
 	LevelConditions Conditions;
 
 	public List<Room> Rooms{
@@ -200,7 +200,7 @@ public class Segmentator : BaseController {
 			if(r!=null)
 			{
 				plumbingLen+=Vector3.Distance(r.Center,l.Center);
-				lh.SetHasHotWater(true);
+				lh.HasHotWater = true;
 			}
 		}
 

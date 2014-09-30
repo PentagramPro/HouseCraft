@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 public class LogicCache
 {
+	public List<ILogicObject> Objects = new List<ILogicObject>();
 	public List<LogicRiser> Risers = new List<LogicRiser>();
 	public List<IHotWaterConsumer> HotWaterConsumers = new List<IHotWaterConsumer>();
 	public List<LogicBoiler> Boilers = new List<LogicBoiler>();
@@ -11,6 +12,7 @@ public class LogicCache
 		Risers.Clear();
 		HotWaterConsumers.Clear();
 		Boilers.Clear();
+		Objects.Clear();
 	}
 
 	public T FindClosest<T>(List<T> lobjects, Vector3 position) where T : ILogicObject
