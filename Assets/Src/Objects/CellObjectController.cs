@@ -27,25 +27,25 @@ public class CellObjectController : BaseController, ICellObject {
 		case CellObjects.Bathtub:
 			return new LogicBathtub(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Boiler:
-			break;
+			return new LogicBoiler(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Fireplace:
-			break;
+			return new LogicFireplace(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Heater:
-			break;
+			return new LogicHeater(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.HeatingPipe:
-			break;
+			return new LogicHeatingPipe(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Hob:
-			break;
+			return new LogicHob(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Riser:
 			return new LogicRiser(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Shower:
-			break;
+			return new LogicShower(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Sink:
 			return new LogicSink(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Toilet:
-			break;
+			return new LogicToilet(cell.GetCurCellIndexes(),Cost);
 		case CellObjects.Ventshaft:
-			break;
+			return new LogicVentshaft(cell.GetCurCellIndexes(),Cost);
 		}
 		return null;
 	}
