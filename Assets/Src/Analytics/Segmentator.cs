@@ -8,8 +8,8 @@ public class Segmentator : BaseController {
 
 	Evaluator evaluator;
 
-
-	List<CellController> processed = new List<CellController>();
+	Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
+	List<LogicCell> processed = new List<LogicCell>();
 	List<Room> rooms = new List<Room>();
 	Dictionary<int, Door> doors = new Dictionary<int, Door>();
 	Room curRoom = null;
@@ -31,16 +31,66 @@ public class Segmentator : BaseController {
 
 	public void Launch(LevelConditions conditions, Dictionary<int,CellController> cells)
 	{
-
-		// STEP 1 - Find rooms
-		Debug.Log("Starting segmentation");
 		rooms.Clear();
 		processed.Clear();
 		doors.Clear();
 		LCache.Clear();
+		LogicCells.Clear();
 		curRoom = new Room();
 		Conditions = conditions;
+
+		// Filling logic cells
 		foreach(CellController cell in cells.Values)
+		{
+			if(LogicCells.ContainsKey(cell.Position.toInt()))
+				continue;
+			LogicCells.Add(cell.Position.toInt(),new LogicCell(cell.Position));
+			if(cell.SizeX>1 || cell.SizeY>1)
+			{
+				MapRect rect = cell.GetCurCellIndexes();
+				rect.Foreach((MapPoint p) => {
+					if(!LogicCells.ContainsKey(p.toInt()))
+						LogicCells.Add(p.toInt(),new LogicCell(p));
+				});
+
+			}
+
+		}
+
+		// Calculating reaches
+		foreach(LogicCell cell in LogicCells.Values)
+		{
+			WallController w = null;
+			LogicCell c = null;
+		
+			
+			//left
+			c = GetLogicCell(cell.Position.X-1, cell.Position.Y);
+			w = GetWall(cell.Position.X, cell.Position.Y);
+			if(c!=null && (w==null || w.wallSprite.Top==false))
+				cell.ReachableCells.Add(c);
+			
+			//right
+			c = GetLogicCell(cell.Position.X+1, cell.Position.Y);
+			w = GetWall(cell.Position.X+1, cell.Position.Y+1);
+			if(c!=null && (w==null || w.wallSprite.Bottom==false))
+				cell.ReachableCells.Add(c);
+			
+			//top
+			c = GetLogicCell(cell.Position.X, cell.Position.Y+1);
+			w = GetWall(cell.Position.X+1, cell.Position.Y+1);
+			if(c!=null && (w==null || w.wallSprite.Left==false))
+				cell.ReachableCells.Add(c);
+			
+			//bottom
+			c = GetLogicCell(cell.Position.X, cell.Position.Y-1);
+			w = GetWall(cell.Position.X, cell.Position.Y);
+			if(c!=null && (w==null || w.wallSprite.Right==false))
+				cell.ReachableCells.Add(c);
+		}
+		// Finding Rooms
+
+		foreach(LogicCell cell in LogicCells.Values)
 		{
 			if(processed.Contains(cell))
 				continue;
@@ -208,39 +258,13 @@ public class Segmentator : BaseController {
 		ExpencesCommunications =  (int)(plumbingLen*Conditions.PlumbingCost);
 	}
 
-	void Next(CellController curCell)
+	void Next(LogicCell curCell)
 	{
-		List<CellController> reachable = new List<CellController>();
-		WallController w = null;
-		CellController c = null;
 
-		curRoom.AddCell(curCell,LCache);
+
+		curRoom.AddCell(curCell,LCache,M.House.GetCell(curCell.Position));
 		processed.Add(curCell);
 
-
-		//left
-		c = GetCell(curCell.Position.X-1, curCell.Position.Y);
-		w = GetWall(curCell.Position.X, curCell.Position.Y);
-		if(c!=null && (w==null || w.wallSprite.Top==false))
-			reachable.Add(c);
-
-		//right
-		c = GetCell(curCell.Position.X+1, curCell.Position.Y);
-		w = GetWall(curCell.Position.X+1, curCell.Position.Y+1);
-		if(c!=null && (w==null || w.wallSprite.Bottom==false))
-			reachable.Add(c);
-
-		//top
-		c = GetCell(curCell.Position.X, curCell.Position.Y+1);
-		w = GetWall(curCell.Position.X+1, curCell.Position.Y+1);
-		if(c!=null && (w==null || w.wallSprite.Left==false))
-			reachable.Add(c);
-		
-		//bottom
-		c = GetCell(curCell.Position.X, curCell.Position.Y-1);
-		w = GetWall(curCell.Position.X, curCell.Position.Y);
-		if(c!=null && (w==null || w.wallSprite.Right==false))
-			reachable.Add(c);
 
 		M.House.ForEachWall(curCell.Position, (WallPoint wp, WallController wc) => {
 			if(wc==null)
@@ -267,13 +291,20 @@ public class Segmentator : BaseController {
 			}
 		});
 
-		foreach(CellController nc in reachable)
+		foreach(LogicCell nc in curCell.ReachableCells)
 		{
 			if(!processed.Contains(nc))
 				Next (nc);
 		}
 	}
 
+	LogicCell GetLogicCell(int x, int y)
+	{
+		int key = new MapPoint(x,y).toInt();
+		if(LogicCells.ContainsKey(key))
+			return LogicCells[key];
+		return null;
+	}
 	WallController GetWall(int x, int y)
 	{
 

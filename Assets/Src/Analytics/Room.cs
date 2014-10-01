@@ -17,9 +17,10 @@ public class Room  {
 	public bool Entrance = false;
 	public bool GarageGate = false;
 	public int Number=0;
+
 	List<CellController> Cells = new List<CellController>();
 	Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
-	public List<MapPoint> VirtualCells = new List<MapPoint>();
+	//public List<MapPoint> VirtualCells = new List<MapPoint>();
 	public List<Door> Doors =new List<Door>();
 	public List<Room> ConnectedTo = new List<Room>();
 	public List<ILogicObject> LogicObjects = new List<ILogicObject>();
@@ -35,7 +36,7 @@ public class Room  {
 
 	public int Size{
 		get{
-			return Cells.Count+VirtualCells.Count;
+			return LogicCells.Count;
 		}
 	}
 	public string Name{
@@ -52,30 +53,18 @@ public class Room  {
 
 	}
 
-	public void AddCell(CellController cell, LogicCache cache)
+	public void AddCell(LogicCell cell, LogicCache cache, CellController phCell)
 	{
-		Cells.Add(cell);
+	
 		LogicCells[cell.Position.toInt()] = new LogicCell(cell.Position);
 
-		if(cell.SizeX>1 || cell.SizeY>1)
+		if(Cells.Contains(phCell))
+			return;
+		Cells.Add(phCell);
+		if(phCell.CellObject!=null)
 		{
-			for(int x=0;x<cell.SizeX;x++)
-			{
-				for(int y = 0;y<cell.SizeY;y++)
-				{
-					if(x==0 && y==0)
-						continue;
-					MapPoint pt = new MapPoint(cell.Position.X+x,cell.Position.Y+y);
-					VirtualCells.Add(pt);
-					LogicCells[pt.toInt()] = new LogicCell(pt);
-				}
-			}
-		}
-
-		if(cell.CellObject!=null)
-		{
-			ILogicObject lo = cell.CellObject.Fabricate();
-			if(lo.ObjectType!=cell.CellObject.GetCellObjectType())
+			ILogicObject lo = phCell.CellObject.Fabricate();
+			if(lo.ObjectType!=phCell.CellObject.GetCellObjectType())
 				throw new UnityException("Wrong object type!");
 			if(lo!=null)
 			{
@@ -172,14 +161,10 @@ public class Room  {
 
 	public void ForeachCell(System.Action<MapPoint> action)
 	{
-		foreach(CellController c in Cells)
+		foreach(LogicCell c in LogicCells.Values)
 		{
 			action(c.Position);
 		}
 
-		foreach(MapPoint p in VirtualCells)
-		{
-			action(p);
-		}
 	}
 }
