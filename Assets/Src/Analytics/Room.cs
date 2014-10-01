@@ -19,7 +19,7 @@ public class Room  {
 	public int Number=0;
 
 	List<CellController> Cells = new List<CellController>();
-	Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
+	public Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
 	//public List<MapPoint> VirtualCells = new List<MapPoint>();
 	public List<Door> Doors =new List<Door>();
 	public List<Room> ConnectedTo = new List<Room>();
@@ -56,7 +56,7 @@ public class Room  {
 	public void AddCell(LogicCell cell, LogicCache cache, CellController phCell)
 	{
 	
-		LogicCells[cell.Position.toInt()] = new LogicCell(cell.Position);
+		LogicCells[cell.Position.toInt()] = cell;
 
 		if(Cells.Contains(phCell))
 			return;

@@ -11,7 +11,8 @@ public class Evaluator : BaseController {
 
 	List<IRoomRule> RoomRules = new List<IRoomRule>()
 	{
-		new CleanHands(100)
+		new CleanHands(100),
+		new NarrowCoridor(-500)
 	};
 	List<IObjectRule> ObjectRules = new List<IObjectRule>()
 	{
