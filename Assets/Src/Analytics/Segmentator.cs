@@ -8,6 +8,7 @@ public class Segmentator : BaseController {
 
 	Evaluator evaluator;
 
+
 	List<CellController> processed = new List<CellController>();
 	List<Room> rooms = new List<Room>();
 	Dictionary<int, Door> doors = new Dictionary<int, Door>();
@@ -249,7 +250,7 @@ public class Segmentator : BaseController {
 				Door door = null;
 				if(!doors.TryGetValue(wp.toInt(),out door))
 				{
-					door = new Door();
+					door = new Door(wp);
 					doors.Add(wp.toInt(),door);
 				}
 

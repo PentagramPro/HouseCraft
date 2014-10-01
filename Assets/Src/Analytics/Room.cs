@@ -18,6 +18,7 @@ public class Room  {
 	public bool GarageGate = false;
 	public int Number=0;
 	List<CellController> Cells = new List<CellController>();
+	Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
 	public List<MapPoint> VirtualCells = new List<MapPoint>();
 	public List<Door> Doors =new List<Door>();
 	public List<Room> ConnectedTo = new List<Room>();
@@ -48,11 +49,14 @@ public class Room  {
 		if(Doors.Contains(d))
 			return;
 		Doors.Add(d);
+
 	}
 
 	public void AddCell(CellController cell, LogicCache cache)
 	{
 		Cells.Add(cell);
+		LogicCells[cell.Position.toInt()] = new LogicCell(cell.Position);
+
 		if(cell.SizeX>1 || cell.SizeY>1)
 		{
 			for(int x=0;x<cell.SizeX;x++)
@@ -61,7 +65,9 @@ public class Room  {
 				{
 					if(x==0 && y==0)
 						continue;
-					VirtualCells.Add(new MapPoint(cell.Position.X+x,cell.Position.Y+y));
+					MapPoint pt = new MapPoint(cell.Position.X+x,cell.Position.Y+y);
+					VirtualCells.Add(pt);
+					LogicCells[pt.toInt()] = new LogicCell(pt);
 				}
 			}
 		}
