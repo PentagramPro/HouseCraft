@@ -74,7 +74,7 @@ public class NarrowCoridor : BaseRule, IRoomRule
 		if(toProcess.Count==0)
 			return;
 
-		if(cell.ReachableCells.Count>2 || (cell.ReachableCells.Count==2 && wasWithDoor))
+		if( (cell.ReachableCells.Count>2 && cell.AdjacentWalls<3) || (cell.ReachableCells.Count==2 && wasWithDoor))
 		{
 			foreach(LogicCell c in cell.ReachableCells )
 			{

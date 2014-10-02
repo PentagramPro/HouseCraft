@@ -12,7 +12,15 @@ public class Evaluator : BaseController {
 	List<IRoomRule> RoomRules = new List<IRoomRule>()
 	{
 		new CleanHands(100),
-		new NarrowCoridor(-500)
+		new NarrowCoridor(-500),
+		new HotRoom(-200,1,2),
+		new HotRoom(-200,-1,1),
+		new RoomWithout(RoomType.Kitchen,CellObjects.Hob,-500),
+		new RoomWithout(RoomType.Dining,CellObjects.Hob,-500),
+		new RoomWithout(RoomType.Kitchen,CellObjects.Sink,-500),
+		new RoomWithout(RoomType.Dining,CellObjects.Sink,-500)
+
+
 	};
 	List<IObjectRule> ObjectRules = new List<IObjectRule>()
 	{
@@ -24,7 +32,8 @@ public class Evaluator : BaseController {
 		new NoRoom(RoomType.Bedroom,RoomType.Bedroom,-2000),
 		new NoRoom(RoomType.Kitchen,RoomType.Dining,-2000),
 		new NoRoom(RoomType.Bathroom,RoomType.ToiletBathroom,-2000),
-		new NoRoom(RoomType.Toilet,RoomType.ToiletBathroom,-2000)
+		new NoRoom(RoomType.Toilet,RoomType.ToiletBathroom,-2000),
+		new ColdHouse(-500)
 	};
 
 	protected override void Awake ()

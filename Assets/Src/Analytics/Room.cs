@@ -18,6 +18,7 @@ public class Room  {
 	public bool GarageGate = false;
 	public int Number=0;
 
+
 	List<CellController> Cells = new List<CellController>();
 	public Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
 	//public List<MapPoint> VirtualCells = new List<MapPoint>();
@@ -83,8 +84,10 @@ public class Room  {
 				case CellObjects.Fireplace:
 					break;
 				case CellObjects.Heater:
+					cache.Heaters.Add(lo as LogicHeater);
 					break;
 				case CellObjects.HeatingPipe:
+					cache.HeatingPipes.Add(lo as LogicHeatingPipe);
 					break;
 				case CellObjects.Hob:
 					break;
@@ -104,6 +107,7 @@ public class Room  {
 
 	public bool ContainsRectangle(int sizeX, int sizeY)
 	{
+
 		foreach(CellController c in Cells)
 		{
 			if(c.IsRectFree(
@@ -151,11 +155,12 @@ public class Room  {
 
 	public bool Contains(CellObjects o)
 	{
-		foreach(CellController c in Cells)
+		foreach(ILogicObject l in LogicObjects)
 		{
-			if(c.CellObject!=null && c.CellObject.GetCellObjectType()==o)
+			if(l.ObjectType==o)
 				return true;
 		}
+
 		return false;
 	}
 

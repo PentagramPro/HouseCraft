@@ -16,6 +16,9 @@ public class Segmentator : BaseController {
 	public LogicCache LCache = new LogicCache();
 	LevelConditions Conditions;
 
+	public int CellsCount{
+		get{return LogicCells.Count;}
+	}
 	public List<Room> Rooms{
 		get{return rooms;}
 	}
@@ -69,7 +72,8 @@ public class Segmentator : BaseController {
 			w = GetWall(cell.Position.X, cell.Position.Y);
 			if(c!=null && (w==null || w.wallSprite.Top==false))
 				cell.ReachableCells.Add(c);
-			
+
+
 			//right
 			c = GetLogicCell(cell.Position.X+1, cell.Position.Y);
 			w = GetWall(cell.Position.X+1, cell.Position.Y+1);
@@ -87,6 +91,11 @@ public class Segmentator : BaseController {
 			w = GetWall(cell.Position.X, cell.Position.Y);
 			if(c!=null && (w==null || w.wallSprite.Right==false))
 				cell.ReachableCells.Add(c);
+
+			cell.AdjacentWalls+=GetWall(cell.Position.X, cell.Position.Y)==null?0:1;
+			cell.AdjacentWalls+=GetWall(cell.Position.X+1, cell.Position.Y)==null?0:1;
+			cell.AdjacentWalls+=GetWall(cell.Position.X, cell.Position.Y+1)==null?0:1;
+			cell.AdjacentWalls+=GetWall(cell.Position.X+1, cell.Position.Y+1)==null?0:1;
 		}
 		// Finding Rooms
 
@@ -234,6 +243,9 @@ public class Segmentator : BaseController {
 	{
 		ExpencesCommunications = 0;
 		float plumbingLen = 0;
+		float heatingLen = 0;
+		// HOT WATER
+		// looking for closest boiler
 		foreach(LogicRiser l in LCache.Risers)
 		{
 			LogicBoiler b = LCache.FindClosest<LogicBoiler>(LCache.Boilers,l.Center);
@@ -242,8 +254,13 @@ public class Segmentator : BaseController {
 				plumbingLen+=Vector3.Distance(b.Center,l.Center);
 				l.HasHotWater = true;
 			}
+			else
+			{
+				l.HasHotWater = Conditions.HotWater;
+			}
 		}
 
+		//looking for risers
 		foreach(IHotWaterConsumer lh in LCache.HotWaterConsumers)
 		{
 			ILogicObject l = lh as ILogicObject;
@@ -251,11 +268,26 @@ public class Segmentator : BaseController {
 			if(r!=null)
 			{
 				plumbingLen+=Vector3.Distance(r.Center,l.Center);
-				lh.HasHotWater = true;
+				lh.HasHotWater = r.HasHotWater;
 			}
 		}
 
-		ExpencesCommunications =  (int)(plumbingLen*Conditions.PlumbingCost);
+		// HEATING
+		foreach(LogicHeatingPipe h in LCache.HeatingPipes)
+			h.HasHotWater = Conditions.HotWater;
+
+		foreach(LogicHeater h in LCache.Heaters)
+		{
+			LogicHeatingPipe pipe = LCache.FindClosest<LogicHeatingPipe>(LCache.HeatingPipes,h.Center);
+			if(pipe!=null)
+			{
+				heatingLen+=Vector3.Distance(h.Center,pipe.Center);
+				h.Operates = pipe.HasHotWater;
+			}
+		}
+
+		ExpencesCommunications =  (int)(plumbingLen*Conditions.PlumbingCost
+		                                +heatingLen*Conditions.HeatingCost);
 	}
 
 	void Next(LogicCell curCell)
