@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 
 public class Room  {
@@ -29,6 +29,13 @@ public class Room  {
 	public bool Empty = true;
 
 	public MapPoint LabelPos = null;
+	public Segmentator Seg;
+
+	public Room(Segmentator s)
+	{
+		Seg = s;
+	}
+
 	//public int LabelSize;
 	public Color RoomColor{
 		get{
@@ -107,13 +114,51 @@ public class Room  {
 		}
 	}
 
+	public bool IsRectFree(MapRect rect)
+	{
+		bool res = true;
+		rect.Foreach((MapPoint p) => {
+			LogicCell c = null;
+			if(res && !LogicCells.TryGetValue(p.toInt(), out c))
+			{
+				res = false;
+			}
+
+			if(res && p.X>rect.MinX && p.Y>rect.MinY)
+			{
+				LogicWall w = null;
+				if(Seg.LogicWalls.TryGetValue(new WallPoint(p.X,p.Y).toInt(),out w))
+					res = false;
+			}
+			
+		});
+		if(res)
+		{
+			for(int x = rect.MinX+1;x<=rect.MaxX;x++)
+			{
+				LogicWall w = null;
+				if(Seg.LogicWalls.TryGetValue(new WallPoint(x,rect.MinY).toInt(),out w)   && w.Top)
+					res = false;
+			}
+			
+			for(int y = rect.MinY+1;y<=rect.MaxY;y++)
+			{
+				LogicWall w = null;
+				if(Seg.LogicWalls.TryGetValue(new WallPoint(rect.MinX,y).toInt(),out w)   && w.Right)
+					res = false;
+			}
+		}
+		return res;
+	}
+
 	public bool ContainsRectangle(int sizeX, int sizeY)
 	{
 
-		foreach(CellController c in Cells)
+		foreach(LogicCell c in LogicCells.Values)
 		{
-			if(c.IsRectFree(
-				new MapRect(c.Position.X, c.Position.Y, c.Position.X+sizeX-1,c.Position.Y+sizeY-1),false))
+
+			if(IsRectFree(
+				new MapRect(c.Position.X, c.Position.Y, c.Position.X+sizeX-1,c.Position.Y+sizeY-1)))
 			{
 			   return true;
 			}

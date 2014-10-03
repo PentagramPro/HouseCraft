@@ -9,9 +9,11 @@ public class Segmentator : BaseController {
 	Evaluator evaluator;
 
 	Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
+	public Dictionary<int, LogicWall> LogicWalls = new Dictionary<int, LogicWall>();
 	List<LogicCell> processed = new List<LogicCell>();
 	List<Room> rooms = new List<Room>();
 	Dictionary<int, Door> doors = new Dictionary<int, Door>();
+
 	Room curRoom = null;
 	public LogicCache LCache = new LogicCache();
 	LevelConditions Conditions;
@@ -32,15 +34,22 @@ public class Segmentator : BaseController {
 		evaluator = GetComponent<Evaluator>();
 	}
 
-	public void Launch(LevelConditions conditions, Dictionary<int,CellController> cells)
+	public void Launch(LevelConditions conditions, Dictionary<int,CellController> cells,
+	                   Dictionary<int,WallController> walls)
 	{
 		rooms.Clear();
 		processed.Clear();
 		doors.Clear();
 		LCache.Clear();
 		LogicCells.Clear();
-		curRoom = new Room();
 		Conditions = conditions;
+
+		// Filling logic walls
+		foreach(WallController w in walls.Values)
+			LogicWalls[w.Position.toInt()]  = new LogicWall(w.Position,w.wallSprite.Top,
+			                                                w.wallSprite.Bottom,
+			                                                w.wallSprite.Left,
+			                                                w.wallSprite.Right);
 
 		// Filling logic cells
 		foreach(CellController cell in cells.Values)
@@ -92,13 +101,14 @@ public class Segmentator : BaseController {
 			if(c!=null && (w==null || w.wallSprite.Right==false))
 				cell.ReachableCells.Add(c);
 
+
 			cell.AdjacentWalls+=GetWall(cell.Position.X, cell.Position.Y)==null?0:1;
 			cell.AdjacentWalls+=GetWall(cell.Position.X+1, cell.Position.Y)==null?0:1;
 			cell.AdjacentWalls+=GetWall(cell.Position.X, cell.Position.Y+1)==null?0:1;
 			cell.AdjacentWalls+=GetWall(cell.Position.X+1, cell.Position.Y+1)==null?0:1;
 		}
 		// Finding Rooms
-
+		curRoom = new Room(this);
 		foreach(LogicCell cell in LogicCells.Values)
 		{
 			if(processed.Contains(cell))
@@ -109,7 +119,7 @@ public class Segmentator : BaseController {
 
 				rooms.Add(curRoom);
 				Debug.Log(string.Format("Found room #{1} with {0} cells",curRoom.Size,curRoom.Number));
-				curRoom = new Room();
+				curRoom = new Room(this);
 				curRoom.Number = rooms.Count;
 			}
 
