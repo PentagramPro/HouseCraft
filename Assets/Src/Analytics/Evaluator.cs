@@ -18,7 +18,13 @@ public class Evaluator : BaseController {
 		new RoomWithout(RoomType.Kitchen,CellObjects.Hob,-500),
 		new RoomWithout(RoomType.Dining,CellObjects.Hob,-500),
 		new RoomWithout(RoomType.Kitchen,CellObjects.Sink,-500),
-		new RoomWithout(RoomType.Dining,CellObjects.Sink,-500)
+		new RoomWithout(RoomType.Dining,CellObjects.Sink,-500),
+		new StiffyRoom(-100,RoomType.Kitchen),
+		new StiffyRoom(-100,RoomType.Dining),
+		new StiffyRoom(-500,RoomType.Bathroom),
+		new StiffyRoom(-500,RoomType.ToiletBathroom),
+		new StiffyRoom(-500,RoomType.Toilet),
+		new StiffyRoom(-500,RoomType.Garage)
 
 
 	};

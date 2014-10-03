@@ -244,6 +244,7 @@ public class Segmentator : BaseController {
 		ExpencesCommunications = 0;
 		float plumbingLen = 0;
 		float heatingLen = 0;
+		float ventsLen = 0;
 		// HOT WATER
 		// looking for closest boiler
 		foreach(LogicRiser l in LCache.Risers)
@@ -286,8 +287,40 @@ public class Segmentator : BaseController {
 			}
 		}
 
+		if(LCache.Vents.Count>0)
+		{
+			// Vents
+			foreach(Room r in Rooms)
+			{
+				if(r.TypeOfRoom!=RoomType.Kitchen &&
+				   r.TypeOfRoom!=RoomType.Garage &&
+				   r.TypeOfRoom!=RoomType.Dining &&
+				   r.TypeOfRoom!=RoomType.Bathroom &&
+				   r.TypeOfRoom!=RoomType.Toilet &&
+				   r.TypeOfRoom!=RoomType.ToiletBathroom)
+					continue;
+
+				float distance = -1;
+				LogicVentshaft closest = null;
+				foreach(LogicVentshaft v in LCache.Vents)
+				{
+					float d = r.CalcDistance(v.Center);
+					if(closest==null || distance>d)
+					{
+						closest = v;
+						distance = d;
+					}
+				}
+				ventsLen+=distance;
+				r.Ventilated = true;
+
+			}
+		}
+		Debug.Log(string.Format("pipes len {0}, heating len {1}, vents len {2}",
+		                        plumbingLen,heatingLen,ventsLen));
 		ExpencesCommunications =  (int)(plumbingLen*Conditions.PlumbingCost
-		                                +heatingLen*Conditions.HeatingCost);
+		                                +heatingLen*Conditions.HeatingCost
+		                                +ventsLen*Conditions.VentsCost);
 	}
 
 	void Next(LogicCell curCell)

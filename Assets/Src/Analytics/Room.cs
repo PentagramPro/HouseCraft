@@ -17,6 +17,7 @@ public class Room  {
 	public bool Entrance = false;
 	public bool GarageGate = false;
 	public int Number=0;
+	public bool Ventilated = false;
 
 
 	List<CellController> Cells = new List<CellController>();
@@ -97,6 +98,7 @@ public class Room  {
 				case CellObjects.Toilet:
 					break;
 				case CellObjects.Ventshaft:
+					cache.Vents.Add(lo as LogicVentshaft);
 					break;
 				}
 			}
@@ -152,6 +154,19 @@ public class Room  {
 		
 	}
 
+	public float CalcDistance(Vector3 point)
+	{
+
+		float distance = -1;
+		foreach(LogicCell cell in LogicCells.Values)
+		{
+			float d = Vector3.Distance(point,cell.Center);
+			if(distance==-1 || distance>d)
+				distance = d;
+		}
+		return distance;
+
+	}
 
 	public bool Contains(CellObjects o)
 	{
