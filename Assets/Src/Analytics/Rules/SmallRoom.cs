@@ -1,3 +1,4 @@
+using System;
 
 public class SmallRoom : BaseRule, IRoomRule
 {
@@ -19,7 +20,7 @@ public class SmallRoom : BaseRule, IRoomRule
 
 	public bool Process (Segmentator s, Room r)
 	{
-		if(r.TypeOfRoom==type)
+		if(r.TypeOfRoom==TypeOfRoom)
 		{
 			return !r.ContainsRectangle(sizeX,sizeY);
 		}

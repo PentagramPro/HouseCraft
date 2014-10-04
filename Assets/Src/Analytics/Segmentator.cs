@@ -159,8 +159,50 @@ public class Segmentator : BaseController {
 		evaluator.Launch();
 	}
 
+	bool FilterRoom(Room room, List<Room> local, List<Room> global)
+	{
+		bool preserve = room.Entrance || room.GarageGate;
+		local.Add(room);
+		global.Add(room);
+
+		foreach(Room r in room.ConnectedTo)
+		{
+			if(!global.Contains(r))
+				preserve |= FilterRoom(r,local,global);
+		}
+		return preserve;
+	}
 	void Recognize()
 	{
+		// FILTER - remove rooms which cannot be entered
+		List<Room> filterProcessed = new List<Room>();
+		List<Room> roomsToRemove = new List<Room>();
+		foreach(Room room in Rooms)
+		{
+			if(filterProcessed.Contains(room))
+				continue;
+
+			List<Room> local = new List<Room>();
+			if(!FilterRoom(room,local,filterProcessed))
+			{
+				roomsToRemove.AddRange(local);
+			}
+			
+		}
+
+		foreach(Room room in roomsToRemove)
+		{
+			Rooms.Remove(room);
+
+			foreach(Door door in room.Doors)
+			{
+				if(doors.ContainsKey(door.Position.toInt()))
+				{
+					doors.Remove(door.Position.toInt());
+				}
+			}
+		}
+
 		List<Room> unrecognized = new List<Room>();
 
 		// PHASE 1 - small rooms
