@@ -1,8 +1,8 @@
 
-public class HotRoom : BaseRule, IRoomRule
+public class ColdRoom : BaseRule, IRoomRule
 {
 
-	public HotRoom(int a) : base(a) {
+	public ColdRoom(int a) : base(a) {
 
 	}
 
@@ -14,8 +14,7 @@ public class HotRoom : BaseRule, IRoomRule
 		if(r.TypeOfRoom==RoomType.Coridor 
 		   || r.TypeOfRoom==RoomType.Storage
 		   || r.TypeOfRoom==RoomType.Garage
-		   || r.TypeOfRoom==RoomType.Bathroom
-		   || r.TypeOfRoom==RoomType.ToiletBathroom)
+		   || r.TypeOfRoom==RoomType.Toilet)
 			return false;
 
 		foreach(ILogicObject o in r.LogicObjects)
@@ -28,7 +27,7 @@ public class HotRoom : BaseRule, IRoomRule
 			}
 		}
 
-		if(totalPower>r.LogicCells.Count*2)
+		if(totalPower<r.LogicCells.Count)
 			return true;
 		return false;
 	}

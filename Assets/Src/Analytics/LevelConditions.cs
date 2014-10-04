@@ -11,6 +11,11 @@ public class LevelConditions
 	public int VentsCost = 30;
 	public int HeatingCost = 20;
 
+	public SceneryType NorthScenery,
+					SouthScenery,
+					EastScenery,
+					WestScenery;
+
 }
 
 

@@ -13,8 +13,8 @@ public class Evaluator : BaseController {
 	{
 		new CleanHands(100),
 		new NarrowCoridor(-500),
-		new HotRoom(-200,1,2),
-		new HotRoom(-200,-1,1),
+		new HotRoom(-200),
+		new ColdRoom(-200),
 		new RoomWithout(RoomType.Kitchen,CellObjects.Hob,-500),
 		new RoomWithout(RoomType.Dining,CellObjects.Hob,-500),
 		new RoomWithout(RoomType.Kitchen,CellObjects.Sink,-500),
@@ -28,8 +28,11 @@ public class Evaluator : BaseController {
 		new TightKitchen(-200),
 		new DarkRoom(-1000,RoomType.Kitchen),
 		new DarkRoom(-1000,RoomType.Dining),
-		new DarkRoom(-1000,RoomType.Bedroom)
-
+		new DarkRoom(-1000,RoomType.Bedroom),
+		new SunnyRoom(-50,RoomType.Kitchen),
+		new FreshAir(1000,RoomType.Bedroom),
+		new FreshAir(-500,RoomType.Bedroom),
+		new SmallRoom(-1000, RoomType.Garage,3,3)
 
 	};
 	List<IObjectRule> ObjectRules = new List<IObjectRule>()
@@ -43,7 +46,8 @@ public class Evaluator : BaseController {
 		new NoRoom(RoomType.Kitchen,RoomType.Dining,-2000),
 		new NoRoom(RoomType.Bathroom,RoomType.ToiletBathroom,-2000),
 		new NoRoom(RoomType.Toilet,RoomType.ToiletBathroom,-2000),
-		new ColdHouse(-500)
+		new ColdHouse(-500),
+		new WastingSpace(-1000)
 	};
 
 	protected override void Awake ()

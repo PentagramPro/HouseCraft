@@ -8,7 +8,7 @@ public class Segmentator : BaseController {
 
 	Evaluator evaluator;
 
-	Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
+	public Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
 	public Dictionary<int, LogicWall> LogicWalls = new Dictionary<int, LogicWall>();
 	List<LogicCell> processed = new List<LogicCell>();
 	List<Room> rooms = new List<Room>();
@@ -16,7 +16,7 @@ public class Segmentator : BaseController {
 
 	Room curRoom = null;
 	public LogicCache LCache = new LogicCache();
-	LevelConditions Conditions;
+	public LevelConditions Conditions;
 
 	public int CellsCount{
 		get{return LogicCells.Count;}
