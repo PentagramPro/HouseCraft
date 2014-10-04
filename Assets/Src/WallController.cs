@@ -71,6 +71,8 @@ public class WallController : BaseController {
 				wallSprite.Top = true;
 
 			wallSprite.UpdateWall();
+			if(WallObject!=null)
+				WallObject.UpdateWall();
 		}
 	}
 
@@ -139,6 +141,9 @@ public class WallController : BaseController {
 		
 		wallSprite.UpdateWall();
 
+		IWallObject wo = GetComponentInterface<IWallObject>();
+		if(wo!=null && wo is WindowController)
+			(wo as WindowController).EditorUpdateWall(houseController);
 		return false;
 	}
 }

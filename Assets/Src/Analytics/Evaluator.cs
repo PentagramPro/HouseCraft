@@ -24,7 +24,11 @@ public class Evaluator : BaseController {
 		new StiffyRoom(-500,RoomType.Bathroom),
 		new StiffyRoom(-500,RoomType.ToiletBathroom),
 		new StiffyRoom(-500,RoomType.Toilet),
-		new StiffyRoom(-500,RoomType.Garage)
+		new StiffyRoom(-500,RoomType.Garage),
+		new TightKitchen(-200),
+		new DarkRoom(-1000,RoomType.Kitchen),
+		new DarkRoom(-1000,RoomType.Dining),
+		new DarkRoom(-1000,RoomType.Bedroom)
 
 
 	};

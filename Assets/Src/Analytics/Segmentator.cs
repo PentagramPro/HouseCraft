@@ -364,6 +364,14 @@ public class Segmentator : BaseController {
 			{
 				curRoom.GarageGate = true;
 			}
+			else if(wc.WallObject is WindowController)
+			{
+				WindowController window = wc.WallObject as WindowController;
+				curRoom.NorthWindows |= window.North;
+				curRoom.SouthWindows |= window.South;
+				curRoom.EastWindows |= window.East;
+				curRoom.WestWindows |= window.West;
+			}
 		});
 
 		foreach(LogicCell nc in curCell.ReachableCells)

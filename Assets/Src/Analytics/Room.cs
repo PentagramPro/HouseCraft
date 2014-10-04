@@ -19,6 +19,7 @@ public class Room  {
 	public int Number=0;
 	public bool Ventilated = false;
 
+	public bool SouthWindows=false, NorthWindows=false, EastWindows=false, WestWindows=false;
 
 	List<CellController> Cells = new List<CellController>();
 	public Dictionary<int,LogicCell> LogicCells = new Dictionary<int, LogicCell>();
@@ -112,6 +113,17 @@ public class Room  {
 
 
 		}
+	}
+
+	public List<T> GetObjects<T>() where T : ILogicObject
+	{
+		List<T> res = new List<T>();
+		foreach(ILogicObject o in LogicObjects)
+		{
+			if(o is T)
+				res.Add(o as T);
+		}
+		return res;
 	}
 
 	public bool IsRectFree(MapRect rect)

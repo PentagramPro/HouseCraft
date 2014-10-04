@@ -14,7 +14,12 @@ public class GarageGateController : BaseController, IWallObject {
 	}
 
 	#region IWallObject implementation
-	
+
+	public void UpdateWall ()
+	{
+		
+	}
+
 	public bool PrefabValidatePosition(Manager m, WallPoint point)
 	{
 		return false;

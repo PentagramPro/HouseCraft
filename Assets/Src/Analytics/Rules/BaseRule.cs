@@ -10,7 +10,7 @@ public class BaseRule
 		Amount = amount;
 	}
 
-	public string Name{
+	public virtual string Name{
 		get{
 			return this.GetType().Name;
 		}

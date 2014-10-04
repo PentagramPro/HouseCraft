@@ -15,6 +15,11 @@ public class DoorController : BaseController, IWallObject {
 
 	#region IWallObject implementation
 
+	public void UpdateWall ()
+	{
+		
+	}
+
 	private bool PrefabGetNeighbours(Manager m, WallPoint point, out WallController w1, out WallController w2)
 	{
 		WallController left = m.House.GetWall(new WallPoint(point.X-1,point.Y));
