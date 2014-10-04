@@ -38,7 +38,8 @@ public class Evaluator : BaseController {
 	};
 	List<IObjectRule> ObjectRules = new List<IObjectRule>()
 	{
-		new ColdWater(-100)
+		new ColdWater(-100),
+		new BlockedDoor(-200)
 	};
 
 	List<IHouseRule> HouseRules = new List<IHouseRule>()

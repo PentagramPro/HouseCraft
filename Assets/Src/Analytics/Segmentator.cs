@@ -12,7 +12,7 @@ public class Segmentator : BaseController {
 	public Dictionary<int, LogicWall> LogicWalls = new Dictionary<int, LogicWall>();
 	List<LogicCell> processed = new List<LogicCell>();
 	List<Room> rooms = new List<Room>();
-	Dictionary<int, Door> doors = new Dictionary<int, Door>();
+	public Dictionary<int, Door> Doors = new Dictionary<int, Door>();
 
 	Room curRoom = null;
 	public LogicCache LCache = new LogicCache();
@@ -39,7 +39,7 @@ public class Segmentator : BaseController {
 	{
 		rooms.Clear();
 		processed.Clear();
-		doors.Clear();
+		Doors.Clear();
 		LCache.Clear();
 		LogicCells.Clear();
 		Conditions = conditions;
@@ -196,9 +196,9 @@ public class Segmentator : BaseController {
 
 			foreach(Door door in room.Doors)
 			{
-				if(doors.ContainsKey(door.Position.toInt()))
+				if(Doors.ContainsKey(door.Position.toInt()))
 				{
-					doors.Remove(door.Position.toInt());
+					Doors.Remove(door.Position.toInt());
 				}
 			}
 		}
@@ -389,10 +389,10 @@ public class Segmentator : BaseController {
 			if(wc.WallObject is DoorController)
 			{
 				Door door = null;
-				if(!doors.TryGetValue(wp.toInt(),out door))
+				if(!Doors.TryGetValue(wp.toInt(),out door))
 				{
 					door = new Door(wp);
-					doors.Add(wp.toInt(),door);
+					Doors.Add(wp.toInt(),door);
 				}
 
 				door.AddRoom(curRoom);
