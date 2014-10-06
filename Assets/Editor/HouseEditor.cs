@@ -16,7 +16,7 @@ public class HouseEditor : Editor {
 		HouseController hc = (HouseController) target;
 		DrawDefaultInspector();
 		GUILayout.Label("Cells: "+hc.EditorGetCellCount());
-		GUILayout.Label("House price: "+hc.EditorGetCellCount()*hc.PricePerCell);
+		GUILayout.Label("House price: "+hc.EditorGetCellCount()*hc.LevelConditions.PricePerCell);
 
 		if(GUILayout.Button(state!=Modes.Idle? "Disable editor": "Enable editor"))
 		{

@@ -4,6 +4,9 @@ using System;
 [Serializable]
 public class LevelConditions
 {
+	public int PricePerCell = 500;
+	public int ExpectedIncome = 40000;
+
 	public bool HotWater = true;
 
 	// Per meter

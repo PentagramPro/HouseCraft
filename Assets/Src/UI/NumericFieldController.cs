@@ -4,12 +4,16 @@ using System.Collections;
 
 public class NumericFieldController : BaseController {
 
+	public Color NegativeColor = new Color(1,0.3f,0.3f);
+	public Color PositiveColor = new Color(0.3f,1,0.3f);
+
 	float Speed = 1000;
 	float TimeToEquality = 1;
 	Text text;
 	int fieldValue = 0;
 	int displayedValue = 0;
 
+	public bool useColors = false;
 	protected override void Awake ()
 	{
 		base.Awake ();
@@ -18,7 +22,7 @@ public class NumericFieldController : BaseController {
 
 	// Use this for initialization
 	void Start () {
-	
+		UpdateText();
 	}
 	
 	// Update is called once per frame
@@ -58,6 +62,13 @@ public class NumericFieldController : BaseController {
 
 	protected void UpdateText()
 	{
-		text.text = displayedValue.ToString();
+		text.text = displayedValue.ToString("'$'#,##0");
+		if(useColors)
+		{
+			if(displayedValue>=0)
+				text.color = PositiveColor;
+			else
+				text.color = NegativeColor;
+		}
 	}
 }

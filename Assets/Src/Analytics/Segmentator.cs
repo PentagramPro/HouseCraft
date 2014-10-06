@@ -24,9 +24,9 @@ public class Segmentator : BaseController {
 	public List<Room> Rooms{
 		get{return rooms;}
 	}
-	public int ExpencesCommunications{
+	/*public int ExpencesCommunications{
 		get; internal set;
-	}
+	}*/
 
 	protected override void Awake ()
 	{
@@ -293,7 +293,7 @@ public class Segmentator : BaseController {
 
 	void Connections()
 	{
-		ExpencesCommunications = 0;
+		//ExpencesCommunications = 0;
 		float plumbingLen = 0;
 		float heatingLen = 0;
 		float ventsLen = 0;
@@ -370,7 +370,7 @@ public class Segmentator : BaseController {
 		}
 		Debug.Log(string.Format("pipes len {0}, heating len {1}, vents len {2}",
 		                        plumbingLen,heatingLen,ventsLen));
-		ExpencesCommunications =  (int)(plumbingLen*Conditions.PlumbingCost
+		M.Statistic.CommunicationsCost =  (int)(plumbingLen*Conditions.PlumbingCost
 		                                +heatingLen*Conditions.HeatingCost
 		                                +ventsLen*Conditions.VentsCost);
 	}

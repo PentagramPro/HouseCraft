@@ -8,6 +8,9 @@ public class Evaluator : BaseController {
 	public int Penalty{
 		get; internal set;
 	}
+	public int Bonus{
+		get; internal set;
+	}
 
 	List<IRoomRule> RoomRules = new List<IRoomRule>()
 	{
@@ -95,12 +98,17 @@ public class Evaluator : BaseController {
 				ApplyRule(rule as BaseRule);
 		}
 		Debug.Log("Total penalty: "+Penalty);
+		M.Statistic.Penalty = Penalty;
+		M.Statistic.Bonus = Bonus;
 		M.OnProcessed(segmentator,this);
 	}
 
 	void ApplyRule(BaseRule rule)
 	{
-		Penalty-=rule.Amount;
+		if(rule.Amount<0)
+			Penalty-=rule.Amount;
+		else
+			Bonus+=rule.Amount;
 		Debug.Log(string.Format("Rule '{0}' for ${1}",rule.Name,rule.Amount));
 	}
 }

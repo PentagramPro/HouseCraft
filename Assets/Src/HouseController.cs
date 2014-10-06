@@ -9,8 +9,7 @@ public class HouseController : BaseController {
 		Idle, SetWalls, SetObject, RemoveWall,RemoveObject,Sale
 	}
 
-	public int PricePerCell = 500;
-	public int ExpectedIncome = 40000;
+
 
 	public CellController CellPrefab;
 	public WallController ThickWallPrefab;
@@ -64,8 +63,13 @@ public class HouseController : BaseController {
 	}
 	// Use this for initialization
 	void Start () {
-		M.UI.bCostsPanel.EstimatedProfit.Value = ExpectedIncome;
-		M.UI.bCostsPanel.HouseCost.Value = PricePerCell*cells.Count;
+
+
+		M.Statistic.StartPrice = LevelConditions.PricePerCell*cells.Count;
+		M.Statistic.SellPrice = LevelConditions.ExpectedIncome;
+
+		M.UI.bCostsPanel.EstimatedProfit.Value = M.Statistic.SellPrice;
+		M.UI.bCostsPanel.HouseCost.Value = M.Statistic.StartPrice;
 	}
 	
 	// Update is called once per frame
@@ -389,6 +393,7 @@ public class HouseController : BaseController {
 	{
 		Segmentator s = GetComponent<Segmentator>();
 		s.Launch(LevelConditions,cells,walls);
+		M.Statistic.EquipmentCost = M.UI.bCostsPanel.Expences.Value;
 	}
 
 	#region Editor Methods
