@@ -83,4 +83,9 @@ public class Manager : MonoBehaviour {
 		state = Modes.Verify;
 		UI.OnShowVerify();
 	}
+
+	public void OnVerified()
+	{
+		UI.OnShowResults();
+	}
 }
