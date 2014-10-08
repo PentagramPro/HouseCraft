@@ -19,6 +19,8 @@ public class LevelConditions
 					EastScenery,
 					WestScenery;
 
+	public string LevelName = "Level name";
+
 }
 
 

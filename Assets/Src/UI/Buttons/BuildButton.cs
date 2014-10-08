@@ -1,20 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class VerifyCommandsPanel : BaseController {
+public class BuildButton : BaseController {
 
-	public ConfirmButton ConfButton;
 	// Use this for initialization
 	void Start () {
+		GetComponent<Button>().onClick.AddListener(OnClick);
+	}
 	
-	}
-
-	void OnEnabled()
-	{
-
-	}
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnClick()
+	{
+		M.OnBuild();
 	}
 }

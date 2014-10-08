@@ -4,10 +4,10 @@ using System.Collections;
 public class Manager : MonoBehaviour {
 
 	enum Modes{
-		Build,Process,Verify,Sold
+		Conditions,Build,Process,Verify,Sold
 	}
 
-	Modes state = Modes.Build;
+	Modes state = Modes.Conditions;
 
 	CameraController camCon;
 
@@ -86,6 +86,13 @@ public class Manager : MonoBehaviour {
 
 	public void OnVerified()
 	{
+		state = Modes.Sold;
 		UI.OnShowResults();
+	}
+
+	public void OnBuild()
+	{
+		state = Modes.Build;
+		UI.OnShowBuild();
 	}
 }
