@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class NumericFieldController : BaseController {
+public class NumericFieldController : MonoBehaviour {
 
 	public Color NegativeColor = new Color(1,0.3f,0.3f);
 	public Color PositiveColor = new Color(0.3f,1,0.3f);
@@ -15,9 +15,9 @@ public class NumericFieldController : BaseController {
 
 	public bool runMode = true;
 	public bool useColors = false;
-	protected override void Awake ()
+	protected void Awake ()
 	{
-		base.Awake ();
+	
 		text = GetComponent<Text>();
 	}
 

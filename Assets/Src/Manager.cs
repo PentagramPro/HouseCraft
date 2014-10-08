@@ -103,4 +103,15 @@ public class Manager : MonoBehaviour {
 		state = Modes.Build;
 		UI.OnShowBuild();
 	}
+
+	public void OnCompleteLevel()
+	{
+		PlayerProfile profile = GetComponent<PlayerProfile>();
+
+		int old = profile.GetProfitForLevel(Application.loadedLevelName);
+		if(old<Statistic.Profit)
+			profile.SetProfitForLevel(Application.loadedLevelName,Statistic.Profit);
+
+		Application.LoadLevel("main_menu");
+	}
 }
