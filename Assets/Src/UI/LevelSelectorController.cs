@@ -29,5 +29,7 @@ public class LevelSelectorController : MonoBehaviour {
 	{
 		if(selectedLevel==null)
 			return;
+
+		Application.LoadLevel(selectedLevel.SceneName);
 	}
 }

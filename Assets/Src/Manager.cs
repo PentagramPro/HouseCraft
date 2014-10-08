@@ -39,7 +39,12 @@ public class Manager : MonoBehaviour {
 	void Awake()
 	{
 
-		UI = GetComponent<UIController>();
+		GameObject ui = GameObject.Find("HouseCraftUI");
+		if(ui==null)
+			throw new UnityException("Cannot find ui object!");
+		UI = ui.GetComponent<UIController>();
+		if(UI==null)
+			throw new UnityException("Cannot find ui component!");
 
 		camCon = Camera.main.GetComponent<CameraController>();
 	}

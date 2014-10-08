@@ -32,6 +32,8 @@ public class LevelItemController : MonoBehaviour {
 
 	public void Deselect()
 	{
+		if(image==null)
+			return;
 		image.color = baseColor;
 	}
 }
