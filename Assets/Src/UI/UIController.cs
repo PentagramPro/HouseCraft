@@ -14,6 +14,8 @@ public class UIController : BaseController {
 	public VerifyCommandsPanel vCommandsPanel;
 	public VerifyCostsPanel vCostsPanel;
 
+	public ResultsPanel ResultsPanel;
+
 	Modes state = Modes.Build;
 	// Use this for initialization
 	void Start () {
@@ -33,6 +35,13 @@ public class UIController : BaseController {
 
 		vCommandsPanel.gameObject.SetActive(true);
 		vCostsPanel.gameObject.SetActive(true);
+
+		ResultsPanel.gameObject.SetActive(false);
+
+		if(M.Statistic.Profit<=0)
+			vCommandsPanel.ConfButton.gameObject.SetActive(false);
+		else
+			vCommandsPanel.ConfButton.gameObject.SetActive(true);
 	}
 
 	public void OnShowBuild()
@@ -43,6 +52,8 @@ public class UIController : BaseController {
 		
 		vCommandsPanel.gameObject.SetActive(false);
 		vCostsPanel.gameObject.SetActive(false);
+
+		ResultsPanel.gameObject.SetActive(false);
 	}
 
 	public void OnShowResults()
@@ -53,5 +64,7 @@ public class UIController : BaseController {
 		
 		vCommandsPanel.gameObject.SetActive(false);
 		vCostsPanel.gameObject.SetActive(false);
+
+		ResultsPanel.gameObject.SetActive(true);
 	}
 }

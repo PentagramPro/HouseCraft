@@ -65,16 +65,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="354.37691"
-     inkscape:cy="464.56461"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="1148.945"
+     inkscape:cy="579.66225"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1134"
-     inkscape:window-x="1019"
-     inkscape:window-y="-5"
+     inkscape:window-width="1024"
+     inkscape:window-height="740"
+     inkscape:window-x="-5"
+     inkscape:window-y="177"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -84,7 +84,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1689,5 +1689,69 @@
          inkscape:box3dsidetype="3"
          d="m 570.98232,536.08202 21.45993,4.89472 0,40.68656 -21.45993,-21.04717 z" />
     </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2985-7-1-3-1"
+       width="544.47223"
+       height="417.19299"
+       x="1392.7639"
+       y="462.3371"
+       ry="7.3091724e-007" />
+    <text
+       xml:space="preserve"
+       style="font-size:77.47917175px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#00d400;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1486.9879"
+       y="598.89618"
+       id="text4781-74"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96945875,1.0315034)"><tspan
+         sodipodi:role="line"
+         id="tspan4783-0"
+         x="1486.9879"
+         y="598.89618">$3 200</tspan></text>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:0.99999988"
+       id="rect6389-8"
+       width="181.08702"
+       height="273.73465"
+       x="1716.7064"
+       y="495.38281"
+       ry="8.7240244e-007" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.7077446px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1771.4745"
+       y="501.61786"
+       id="text4438-3-2"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99993301,1.000067)"><tspan
+         sodipodi:role="line"
+         id="tspan4440-89-4"
+         x="1771.4745"
+         y="501.61786">Недостатки:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.78216171px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1744.2133"
+       y="535.76331"
+       id="text4454-5"
+       sodipodi:linespacing="125%"
+       transform="scale(0.9999551,1.0000449)"><tspan
+         sodipodi:role="line"
+         x="1744.2133"
+         y="535.76331"
+         id="tspan4150">узкий коридор</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.57782745px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#aa0000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1784.4885"
+       y="555.9707"
+       id="text4442-8-1"
+       sodipodi:linespacing="125%"
+       transform="scale(0.9999551,1.0000449)"><tspan
+         sodipodi:role="line"
+         id="tspan4444-6-7"
+         x="1784.4885"
+         y="555.9707">$4 000</tspan></text>
   </g>
 </svg>

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class Stats : BaseController {
 
@@ -9,6 +9,7 @@ public class Stats : BaseController {
 	public int Penalty;
 	public int SellPrice;
 	public int Bonus;
+	public List<AppliedRule> WorstRulesBroken = new List<AppliedRule>();
 
 	public int TotalExpences{
 		get{

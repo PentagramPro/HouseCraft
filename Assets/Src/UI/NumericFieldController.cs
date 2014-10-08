@@ -13,6 +13,7 @@ public class NumericFieldController : BaseController {
 	int fieldValue = 0;
 	int displayedValue = 0;
 
+	public bool runMode = true;
 	public bool useColors = false;
 	protected override void Awake ()
 	{
@@ -29,13 +30,19 @@ public class NumericFieldController : BaseController {
 	void Update () {
 		if(displayedValue!=fieldValue)
 		{
-			int  iDelta = fieldValue - displayedValue;
+			if(runMode)
+			{
+				int  iDelta = fieldValue - displayedValue;
 
-			iDelta=(int)Mathf.Sign(iDelta)*Mathf.Min( (int)(Speed*Time.smoothDeltaTime),Mathf.Abs(iDelta));
+				iDelta=(int)Mathf.Sign(iDelta)*Mathf.Min( (int)(Speed*Time.smoothDeltaTime),Mathf.Abs(iDelta));
 
-			displayedValue+=iDelta;
+				displayedValue+=iDelta;
+			}
+			else
+			{
+				displayedValue = fieldValue;
+			}
 			UpdateText();
-
 		}
 	}
 

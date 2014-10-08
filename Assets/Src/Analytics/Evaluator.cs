@@ -4,6 +4,7 @@ using System.Collections.Generic;
 [RequireComponent (typeof (Segmentator))]
 public class Evaluator : BaseController {
 
+	List<AppliedRule> AppliedRules = new List<AppliedRule>();
 	Segmentator segmentator;
 	public int Penalty{
 		get; internal set;
@@ -75,6 +76,8 @@ public class Evaluator : BaseController {
 	public void Launch()
 	{
 		Penalty = 0;
+		AppliedRules.Clear();
+
 		foreach(IRoomRule rule in RoomRules)
 		{
 			foreach(Room room in segmentator.Rooms)
@@ -100,15 +103,30 @@ public class Evaluator : BaseController {
 		Debug.Log("Total penalty: "+Penalty);
 		M.Statistic.Penalty = Penalty;
 		M.Statistic.Bonus = Bonus;
+
+		AppliedRules.Sort();
+		M.Statistic.WorstRulesBroken.Clear();
+		int count =0;
+		foreach(AppliedRule r in AppliedRules)
+		{
+
+			M.Statistic.WorstRulesBroken.Add(r);
+			count++; if(count>=5) break;
+		}
+
 		M.OnProcessed(segmentator,this);
 	}
 
 	void ApplyRule(BaseRule rule)
 	{
 		if(rule.Amount<0)
+		{
 			Penalty-=rule.Amount;
+			AppliedRules.Add(new AppliedRule(rule.Name,rule.Amount));
+		}
 		else
 			Bonus+=rule.Amount;
+
 		Debug.Log(string.Format("Rule '{0}' for ${1}",rule.Name,rule.Amount));
 	}
 }

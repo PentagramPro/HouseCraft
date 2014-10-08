@@ -4,22 +4,28 @@ using System.Collections;
 
 public class ResultsPanel : BaseController {
 
+	public BrokenRulesPanel BrokenRules;
+	public NumericFieldController Profit;
 
-	float t=0;
 	public Animator animator;
 	// Use this for initialization
 	void Start () {
 
 
 	}
+
+	void OnEnable()
+	{
+		Profit.Value = M.Statistic.Profit;
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		t+=Time.smoothDeltaTime;
-		if(t>4)
-		{
-			t=0;
-			animator.SetTrigger("Reset");
-		}
+
+	}
+
+	public void OnSecondStep()
+	{
+		BrokenRules.SlideIn();
 	}
 }
