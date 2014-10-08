@@ -25,7 +25,11 @@ public class NumericFieldController : BaseController {
 	void Start () {
 		UpdateText();
 	}
-	
+
+	void OnEnable()
+	{
+		displayedValue = 0;
+	}
 	// Update is called once per frame
 	void Update () {
 		if(displayedValue!=fieldValue)
