@@ -16,7 +16,7 @@ public class BaseController : MonoBehaviour {
 	{
 		if (manager == null) 
 		{
-			GameObject m = GameObject.Find("SceneObject");
+			GameObject m = GameObject.Find("HouseCraftScene");
 			if(m==null)
 				throw new UnityException("Cannot find manager object!");
 			manager = m.GetComponent<Manager>();

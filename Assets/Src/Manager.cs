@@ -17,7 +17,7 @@ public class Manager : MonoBehaviour {
 	public HouseController House;
 	public OverlayController Overlay;
 
-	public UIController UI;
+	public UIController UI{get;internal set;}
 
 	public bool BlockMouseInput 
 	{
@@ -38,6 +38,9 @@ public class Manager : MonoBehaviour {
 
 	void Awake()
 	{
+
+		UI = GetComponent<UIController>();
+
 		camCon = Camera.main.GetComponent<CameraController>();
 	}
 	// Use this for initialization
