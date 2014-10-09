@@ -174,6 +174,12 @@ public class Segmentator : BaseController {
 	}
 	void Recognize()
 	{
+		foreach(Room r in Rooms)
+		{
+			r.PrepareToRecognition();
+		}
+
+
 		// FILTER - remove rooms which cannot be entered
 		List<Room> filterProcessed = new List<Room>();
 		List<Room> roomsToRemove = new List<Room>();
@@ -208,7 +214,7 @@ public class Segmentator : BaseController {
 		// PHASE 1 - small rooms
 		foreach(Room r in rooms)
 		{
-			r.PrepareToRecognition();
+
 
 
 			if(r.GarageGate)

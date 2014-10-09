@@ -11,40 +11,41 @@ public class Manager : MonoBehaviour {
 
 	CameraController camCon;
 
-	int mouseBlockCount = 0;
 
 	public Stats Statistic;
 	public HouseController House;
 	public OverlayController Overlay;
 
-	public UIController UI{get;internal set;}
+	UIController ui;
+	public UIController UI{
+		get{
+			if(ui==null)
+			{
+				GameObject o = GameObject.Find("HouseCraftUI");
+				if(o==null)
+				{
+					throw new UnityException("Cannot find ui object!");
+				}
+				ui = o.GetComponent<UIController>();
+				if(ui==null)
+					throw new UnityException("Cannot find ui component!");
+			}
 
-	public bool BlockMouseInput 
-	{
-		get
-		{
-			return mouseBlockCount>0;
-		}
-		set
-		{
-			if(value)
-				mouseBlockCount++;
-			else
-				mouseBlockCount--;
-			if(mouseBlockCount<0)
-				mouseBlockCount=0;
+			return ui;
 		}
 	}
+
+
 
 	void Awake()
 	{
 
 		GameObject ui = GameObject.Find("HouseCraftUI");
 		if(ui==null)
-			throw new UnityException("Cannot find ui object!");
-		UI = ui.GetComponent<UIController>();
-		if(UI==null)
-			throw new UnityException("Cannot find ui component!");
+		{
+			Application.LoadLevelAdditive("UIScene");
+		}
+
 
 		camCon = Camera.main.GetComponent<CameraController>();
 	}

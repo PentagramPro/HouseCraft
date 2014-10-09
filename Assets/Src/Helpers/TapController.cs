@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class TapController : BaseController {
 
@@ -15,12 +16,13 @@ public class TapController : BaseController {
 
 	public void OnMouseDown()
 	{
-
-        if (M.BlockMouseInput)
-            return;
+		if(EventSystem.current.IsPointerOverGameObject())
+			return;
+        	
 		curPanDistance = 0;
 		lastMousePos = Input.mousePosition;
 		mouseDown = true;
+
 	}
 	
 	public void OnMouseDrag()
@@ -28,8 +30,8 @@ public class TapController : BaseController {
 		if(!mouseDown)
 			return;
 
-        if (M.BlockMouseInput)
-            return;
+		if(EventSystem.current.IsPointerOverGameObject())
+			return;
 
 		Vector2 touchDeltaPosition = new Vector2(lastMousePos.x-Input.mousePosition.x,
 		                                         lastMousePos.y-Input.mousePosition.y);
@@ -44,8 +46,8 @@ public class TapController : BaseController {
 	
 	public void OnMouseUp()
 	{
-        if (M.BlockMouseInput)
-            return;
+		if(EventSystem.current.IsPointerOverGameObject())
+			return;
 
 		if (curPanDistance < panDistance && OnTap!=null)
 			OnTap();

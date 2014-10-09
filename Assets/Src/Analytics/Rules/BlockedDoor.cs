@@ -9,6 +9,12 @@ public class BlockedDoor : BaseRule, IObjectRule
 	{
 		bool res = false;
 	
+		if(o.ObjectType == CellObjects.Heater || 
+		   o.ObjectType == CellObjects.HeatingPipe || 
+		   o.ObjectType == CellObjects.Sink ||
+		   o.ObjectType == CellObjects.Toilet)
+			return false;
+
 		o.ObjectRect.Foreach((MapPoint p) => {
 
 			WallPoint wp;
