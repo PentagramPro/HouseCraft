@@ -20,10 +20,10 @@
      id="defs4">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="533.80988 : 583.63325 : 1"
+       inkscape:vp_x="539.08318 : 583.63325 : 1"
        inkscape:vp_y="0 : 197.52603 : 0"
-       inkscape:vp_z="719.75856 : 587.02232 : 1"
-       inkscape:persp3d-origin="656.13485 : 644.36151 : 1"
+       inkscape:vp_z="710.78327 : 587.02232 : 1"
+       inkscape:persp3d-origin="652.03482 : 644.36151 : 1"
        id="perspective6828" />
     <linearGradient
        id="linearGradient6375"
@@ -79,18 +79,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="484.77243"
-     inkscape:cy="-144.68757"
+     inkscape:zoom="11.2"
+     inkscape:cx="-435.02471"
+     inkscape:cy="795.97534"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1920"
      inkscape:window-height="1134"
      inkscape:window-x="1019"
      inkscape:window-y="-5"
      inkscape:window-maximized="1"
-     inkscape:snap-grids="true">
+     inkscape:snap-grids="false"
+     inkscape:object-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid4111"
@@ -109,7 +110,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -118,13 +119,16 @@
      id="layer2"
      inkscape:label="фон">
     <rect
-       style="fill:#0066ff;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:4, 2;stroke-dashoffset:0;fill-opacity:1"
+       style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4200"
        width="50"
        height="50"
        x="200"
        y="1152.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\hob.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4202"
@@ -132,7 +136,10 @@
        height="50"
        x="250"
        y="1152.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\sink.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4204"
@@ -140,7 +147,10 @@
        height="50"
        x="300"
        y="1152.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\toilet.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4206"
@@ -148,7 +158,10 @@
        height="50"
        x="350"
        y="1152.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\shower.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4208"
@@ -156,7 +169,10 @@
        height="50"
        x="400"
        y="1152.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\bathtub.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4210"
@@ -164,7 +180,10 @@
        height="50"
        x="500"
        y="1152.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\ventshaft.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4214"
@@ -172,7 +191,10 @@
        height="50"
        x="200"
        y="1202.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\heater.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4216"
@@ -180,7 +202,10 @@
        height="50"
        x="250"
        y="1202.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\heating_pipe.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4218"
@@ -188,7 +213,10 @@
        height="50"
        x="300"
        y="1202.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\riser.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4221"
@@ -196,7 +224,10 @@
        height="50"
        x="350"
        y="1202.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\fireplace.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4223"
@@ -204,7 +235,10 @@
        height="50"
        x="400"
        y="1202.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\fireplace.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4225"
@@ -220,7 +254,10 @@
        height="50"
        x="500"
        y="1202.3622"
-       ry="4.9022776e-007" />
+       ry="4.9022776e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\objects\boiler.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4230"
@@ -512,45 +549,6 @@
        y="468.93781"
        ry="0" />
     <rect
-       style="fill:#c87137;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect4253"
-       width="114.08596"
-       height="56.821079"
-       x="508.68839"
-       y="655.9826" />
-    <text
-       xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-       x="514.43549"
-       y="705.22748"
-       id="text4257"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4259"
-         x="514.43549"
-         y="705.22748">плита</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:12.2914114px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-       x="588.99445"
-       y="671.97552"
-       id="text4279"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4281"
-         x="588.99445"
-         y="671.97552">$200</tspan></text>
-    <path
-       style="fill:#0000ff;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 598.44774,675.38975 c 0,0 6.97221,11.25691 0,11.19146 -6.97222,-0.0655 0,-11.19146 0,-11.19146 z"
-       id="path3964-4"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#ff0000;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 608.36254,675.42233 c 0,0 6.97221,11.25691 0,11.19147 -6.9722,-0.0654 0,-11.19147 0,-11.19147 z"
-       id="path3964-1-3"
-       inkscape:connector-curvature="0" />
-    <rect
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4304"
        width="251.31505"
@@ -605,7 +603,10 @@
        style="fill:#000000;fill-opacity:1;stroke:#0066ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 205.35714,473.25504 0,46.96428"
        id="path4356"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\vert_blue_line.png"
+       inkscape:export-xdpi="450.29941"
+       inkscape:export-ydpi="450.29941" />
     <text
        xml:space="preserve"
        style="font-size:7.54045534px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -1262,16 +1263,25 @@
        style="fill:#0000ff;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m -463.20612,222.69152 c 0,0 10.62174,17.29918 0,17.1986 -10.62176,-0.10058 0,-17.1986 0,-17.1986 z"
        id="path3964-0"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\res_water_cold.png"
+       inkscape:export-xdpi="618.50726"
+       inkscape:export-ydpi="618.50726" />
     <path
        style="fill:#ff0000;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m -448.10151,222.74159 c 0,0 10.62174,17.29918 0,17.19861 -10.62173,-0.10058 0,-17.19861 0,-17.19861 z"
        id="path3964-1-7"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\res_water_hot.png"
+       inkscape:export-xdpi="618.50726"
+       inkscape:export-ydpi="618.50726" />
     <g
        id="g4148-1"
        transform="matrix(0.57749293,0,0,0.56322948,-655.11943,-64.880181)"
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.75341213">
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.75341213"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\res_steam.png"
+       inkscape:export-xdpi="618.50726"
+       inkscape:export-ydpi="618.50726">
       <path
          inkscape:connector-curvature="0"
          id="path4068-7"
@@ -1625,58 +1635,6 @@
        sodipodi:ry="6.5659914"
        d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
        transform="translate(22.349613,22.097091)" />
-    <g
-       id="g6743"
-       transform="matrix(0.52005359,0,0,0.52005359,247.2928,363.06921)">
-      <rect
-         ry="6.8119306e-007"
-         y="575.84747"
-         x="518.12811"
-         height="46.600887"
-         width="46.600887"
-         id="rect6415-0-0-2"
-         style="fill:#0066ff;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
-      <path
-         transform="translate(268.51201,-25.373228)"
-         d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
-         sodipodi:ry="6.5659914"
-         sodipodi:rx="6.5659914"
-         sodipodi:cy="614.96613"
-         sodipodi:cx="263.14474"
-         id="path6661-4"
-         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-      <path
-         transform="translate(288.71505,-25.373218)"
-         d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
-         sodipodi:ry="6.5659914"
-         sodipodi:rx="6.5659914"
-         sodipodi:cy="614.96613"
-         sodipodi:cx="263.14474"
-         id="path6661-8-9"
-         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-      <path
-         transform="translate(268.51201,-6.0540578)"
-         d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
-         sodipodi:ry="6.5659914"
-         sodipodi:rx="6.5659914"
-         sodipodi:cy="614.96613"
-         sodipodi:cx="263.14474"
-         id="path6661-6-0"
-         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-      <path
-         transform="translate(288.71505,-6.0540578)"
-         d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
-         sodipodi:ry="6.5659914"
-         sodipodi:rx="6.5659914"
-         sodipodi:cy="614.96613"
-         sodipodi:cx="263.14474"
-         id="path6661-8-0-2"
-         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-    </g>
     <rect
        style="fill:#c87137;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4253-2"
@@ -1805,94 +1763,6 @@
          id="tspan6824-5"
          x="515.96863"
          y="518.63263">стена</tspan></text>
-    <g
-       sodipodi:type="inkscape:box3d"
-       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="g6844"
-       inkscape:perspectiveID="#perspective6828"
-       inkscape:corner0="2.6534044 : -0.44223934 : 0 : 1"
-       inkscape:corner7="1.2030136 : -0.8870589 : 0.25 : 1">
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6854"
-         style="fill:none;stroke:#ffffff;stroke-width:1.17033172"
-         inkscape:box3dsidetype="13"
-         d="m 567.29234,500.06654 22.04374,20.63164 13.29207,-5.64187 -25.57086,-17.21389 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6846"
-         style="fill:none;stroke:#ffffff;stroke-width:1.17033172"
-         inkscape:box3dsidetype="6"
-         d="m 567.29234,476.0168 0,24.04974 9.76495,-2.22412 0,-22.50944 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6856"
-         style="fill:none;stroke:#ffffff;stroke-width:1.17033172"
-         inkscape:box3dsidetype="11"
-         d="m 577.05729,475.33298 25.57086,3.90476 0,35.81857 -25.57086,-17.21389 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6848"
-         style="fill:none;stroke:#ffffff;stroke-width:1.17033172"
-         inkscape:box3dsidetype="5"
-         d="m 567.29234,476.0168 22.04374,4.79809 13.29207,-1.57715 -25.57086,-3.90476 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6852"
-         style="fill:none;stroke:#ffffff;stroke-width:1.17033172"
-         inkscape:box3dsidetype="14"
-         d="m 589.33608,480.81489 0,39.88329 13.29207,-5.64187 0,-35.81857 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6850"
-         style="fill:none;stroke:#ffffff;stroke-width:1.17033172"
-         inkscape:box3dsidetype="3"
-         d="m 567.29234,476.0168 22.04374,4.79809 0,39.88329 -22.04374,-20.63164 z" />
-    </g>
-    <g
-       sodipodi:type="inkscape:box3d"
-       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0"
-       id="g6844-0"
-       inkscape:perspectiveID="#perspective6828-4"
-       inkscape:corner0="2.6534044 : -0.44223934 : 0 : 1"
-       inkscape:corner7="1.2030136 : -0.8870589 : 0.25 : 1">
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6854-3"
-         style="fill:none;stroke:#ffffff;stroke-width:1.50009799;stroke-miterlimit:4;stroke-dasharray:3.00019598, 1.500098;stroke-dashoffset:0"
-         inkscape:box3dsidetype="13"
-         d="m 571.32481,561.65687 20.3754,19.99099 12.28609,-5.46668 -23.63558,-16.67938 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6846-4"
-         style="fill:none;stroke:#ffffff;stroke-width:1.50009799;stroke-miterlimit:4;stroke-dasharray:3.00019598, 1.500098;stroke-dashoffset:0"
-         inkscape:box3dsidetype="6"
-         d="m 571.32481,538.3539 0,23.30297 9.02591,-2.15507 0,-21.81049 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6856-1"
-         style="fill:none;stroke:#ffffff;stroke-width:1.50009799;stroke-miterlimit:4;stroke-dasharray:3.00019598, 1.500098;stroke-dashoffset:0"
-         inkscape:box3dsidetype="11"
-         d="m 580.35072,537.69131 23.63558,3.78352 0,34.70635 -23.63558,-16.67938 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6848-2"
-         style="fill:none;stroke:#ffffff;stroke-width:1.50009799;stroke-miterlimit:4;stroke-dasharray:3.00019598, 1.500098;stroke-dashoffset:0"
-         inkscape:box3dsidetype="5"
-         d="m 571.32481,538.3539 20.3754,4.6491 12.28609,-1.52817 -23.63558,-3.78352 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6852-2"
-         style="fill:none;stroke:#ffffff;stroke-width:1.50009799;stroke-miterlimit:4;stroke-dasharray:3.00019598, 1.500098;stroke-dashoffset:0"
-         inkscape:box3dsidetype="14"
-         d="m 591.70021,543.003 0,38.64486 12.28609,-5.46668 0,-34.70635 z" />
-      <path
-         sodipodi:type="inkscape:box3dside"
-         id="path6850-9"
-         style="fill:none;stroke:#ffffff;stroke-width:1.50009799;stroke-miterlimit:4;stroke-dasharray:3.00019598, 1.500098;stroke-dashoffset:0"
-         inkscape:box3dsidetype="3"
-         d="m 571.32481,538.3539 20.3754,4.6491 0,38.64486 -20.3754,-19.99099 z" />
-    </g>
     <rect
        style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect2985-7-1-3-1"
@@ -2549,19 +2419,158 @@
          inkscape:box3dsidetype="3"
          d="m 1080.5748,1129.2712 21.4599,4.8947 0,40.6866 -21.4599,-21.0472 z" />
     </g>
+    <g
+       id="g4291"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_wall.png"
+       inkscape:export-xdpi="458.4375"
+       inkscape:export-ydpi="458.4375">
+      <path
+         sodipodi:nodetypes="cccccccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path4232"
+         d="m 590,476.375 -0.25,0.0312 -20,5 -0.75,0.1875 0,0.78125 0,30 0,0.59375 0.5625,0.28125 20,10 0.4375,0.125 1,-1 0,-45 z m -1,2.28125 0,42.09375 -18,-9 0,-28.59375 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+      <path
+         sodipodi:nodetypes="ccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path4234"
+         d="m 590,476.375 0,2 9,0 0,43 -9,0 0,2 10,0 1,0 0,-1 0,-45 0,-1 -1,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+    </g>
+    <g
+       id="g4273"
+       transform="matrix(0.61532681,0.43663735,-0.42268881,0.6356323,461.31664,-48.86725)"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_remove_wall.png"
+       inkscape:export-xdpi="458.4375"
+       inkscape:export-ydpi="458.4375">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4269"
+         d="m 580,592.36218 0,-35 -20,0 0,-20 50,0 0,20 -20,0 0,35 -10,0"
+         style="fill:none;stroke:#ffffff;stroke-width:2.63595605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4271"
+         d="m 580,557.36218 10,0"
+         style="fill:none;stroke:#ffffff;stroke-width:2.63595605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g4295"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_remove_object.png"
+       inkscape:export-xdpi="458.4375"
+       inkscape:export-ydpi="458.4375">
+      <path
+         transform="translate(10,0)"
+         d="m 585,622.36218 a 5,5 0 1 1 -10,0 5,5 0 1 1 10,0 z"
+         sodipodi:ry="5"
+         sodipodi:rx="5"
+         sodipodi:cy="622.36218"
+         sodipodi:cx="580"
+         id="path4277"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4281"
+         d="m 570,622.36218 10,0 0,-25"
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4283"
+         d="m 580,607.36218 10,0"
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         y="602.36218"
+         x="590"
+         height="15"
+         width="15"
+         id="rect4287"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         transform="translate(10,0)"
+         d="m 600,622.36218 a 5,5 0 1 1 -10,0 5,5 0 1 1 10,0 z"
+         sodipodi:ry="5"
+         sodipodi:rx="5"
+         sodipodi:cy="622.36218"
+         sodipodi:cx="595"
+         id="path4289"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+    </g>
     <rect
-       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:4.00000007, 2.00000004;stroke-dashoffset:0"
-       id="rect4178"
-       width="28.928574"
-       height="28.928574"
-       x="576.96429"
-       y="599.50507" />
-    <rect
-       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:4.00000007, 2.00000004;stroke-dashoffset:0"
-       id="rect4178-2"
-       width="28.928574"
-       height="28.928574"
-       x="581.27319"
-       y="604.79504" />
+       style="fill:#0066ff;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4253-7-1-2"
+       width="114.08596"
+       height="56.821079"
+       x="511.23538"
+       y="649.68884" />
+    <text
+       xml:space="preserve"
+       style="font-size:15.55341434px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="527.17615"
+       y="686.74359"
+       id="text6822-7-5"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98401507,1.0162446)"><tspan
+         sodipodi:role="line"
+         id="tspan6824-1-0"
+         x="527.17615"
+         y="686.74359">дверь</tspan></text>
+    <g
+       id="g4368"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_door.png"
+       inkscape:export-xdpi="320.25601"
+       inkscape:export-ydpi="320.25601">
+      <path
+         inkscape:export-ydpi="320.25601"
+         inkscape:export-xdpi="320.25601"
+         inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_door.png"
+         inkscape:connector-curvature="0"
+         id="path4344"
+         d="m 552.16446,672.36218 69.69687,0"
+         style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2,1;stroke-dashoffset:4.2" />
+      <path
+         inkscape:export-ydpi="320.25601"
+         inkscape:export-xdpi="320.25601"
+         inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_door.png"
+         inkscape:connector-curvature="0"
+         id="path4346"
+         d="m 585,656.86793 0,39.07516"
+         style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2,1;stroke-dashoffset:3.5" />
+      <g
+         inkscape:export-ydpi="320.25601"
+         inkscape:export-xdpi="320.25601"
+         inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_door.png"
+         style="fill:none;stroke:#ffffff"
+         transform="translate(-89.821429,-12.499997)"
+         id="g4361">
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 695,687.36218 -40,0 0,-5 40,0 z"
+           id="path4350"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 695,682.36218 5,0 0,5 -5,0"
+           id="path4352"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 655,682.36218 -5,0 0,5 5,0"
+           id="path4354"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 640,677.36218 10,0 0,15 -10,0"
+           id="path4357"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 710,692.36218 -10,0 0,-15 10,0"
+           id="path4359"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
   </g>
 </svg>

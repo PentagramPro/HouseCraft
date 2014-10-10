@@ -91,6 +91,11 @@ public class CellController : BaseController {
 		}
 		return res;
 	}
+
+	public int PrefabGetCost()
+	{
+		return GetComponentInterface<ICellObject>().GetCost();
+	}
 	
 	// we need manager here because we call this method in prefab context
 	public bool PrefabValidatePosition(Manager m, MapPoint point, CellRotation rotation)
