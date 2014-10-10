@@ -28,7 +28,7 @@ public class HouseController : BaseController {
 
 	CellController.CellRotation selectedRotation = CellController.CellRotation.None;
 
-	Modes state = Modes.SetWalls;
+	Modes state = Modes.Idle;
 
 	Vector3 markerPos;
 	public Vector3 MarkerPosition{

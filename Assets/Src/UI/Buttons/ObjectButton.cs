@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 [RequireComponent (typeof (Button))]
-public class ObjectButton : BaseController {
+public class ObjectButton : BaseButtonController {
 
 	public CellController CellPrefab;
 	public NumericFieldController CostText;
@@ -22,8 +22,9 @@ public class ObjectButton : BaseController {
 	
 	}
 
-	void OnClick()
+	protected override void OnClick()
 	{
+		base.OnClick();
 		M.House.SetHouseMode(HouseModes.SetObject,CellPrefab.gameObject);
 	}
 }

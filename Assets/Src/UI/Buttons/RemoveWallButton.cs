@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class RemoveWallButton : BaseController {
+public class RemoveWallButton : BaseButtonController {
 
 	// Use this for initialization
 	void Start () {
@@ -10,8 +10,9 @@ public class RemoveWallButton : BaseController {
 	}
 	
 	// Update is called once per frame
-	void OnClick()
+	protected override void OnClick()
 	{
+		base.OnClick();
 		M.House.SetHouseMode(HouseModes.RemoveWalls,null);
 	}
 }

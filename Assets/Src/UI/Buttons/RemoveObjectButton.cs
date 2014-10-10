@@ -2,15 +2,16 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class RemoveObjectButton : BaseController {
+public class RemoveObjectButton : BaseButtonController {
 
 	// Use this for initialization
 	void Start () {
 		GetComponent<Button>().onClick.AddListener(OnClick);
 	}
 	
-	void OnClick()
+	protected override void OnClick()
 	{
+		base.OnClick();
 		M.House.SetHouseMode(HouseModes.RemoveObjects,null);
 	}
 }
