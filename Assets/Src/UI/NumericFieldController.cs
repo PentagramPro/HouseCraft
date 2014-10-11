@@ -29,6 +29,7 @@ public class NumericFieldController : MonoBehaviour {
 	void OnEnable()
 	{
 		displayedValue = 0;
+		UpdateSpeed();
 	}
 	// Update is called once per frame
 	void Update () {
