@@ -391,9 +391,10 @@ public class HouseController : BaseController {
 
 	private void Sale()
 	{
+		M.Statistic.EquipmentCost = M.UI.bCostsPanel.Expences.Value;
 		Segmentator s = GetComponent<Segmentator>();
 		s.Launch(LevelConditions,cells,walls);
-		M.Statistic.EquipmentCost = M.UI.bCostsPanel.Expences.Value;
+
 	}
 
 	#region Editor Methods
@@ -444,6 +445,34 @@ public class HouseController : BaseController {
 		}
 	}
 
+	public void EditorRemoveAll()
+	{
+		foreach(CellController c in cells.Values)
+		{
+			DestroyImmediate(c.gameObject);
+		}
+		foreach(WallController w in walls.Values)
+		{
+			DestroyImmediate(w.gameObject);
+		}
+		cells.Clear();
+		walls.Clear();
+
+	}
+
+	public void EditorRemoveCell(MapPoint point)
+	{
+		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)
+			return;
+
+		int key = point.toInt();
+		if(!cells.ContainsKey(key))
+			return;
+
+		DestroyImmediate(cells[key].gameObject);
+		cells.Remove(key);
+
+	}
 	public CellController EditorSetCell(MapPoint point, CellController prefab)
 	{
 		if(point.X<0 || point.Y<0 || point.X>0xffff || point.Y>0xffff)

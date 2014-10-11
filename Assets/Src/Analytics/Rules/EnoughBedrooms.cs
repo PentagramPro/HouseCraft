@@ -7,7 +7,7 @@ public class EnoughBedrooms : BaseRule, IHouseRule
 
 	public bool Process (Segmentator s)
 	{
-		return s.LCache.BedroomsCount>((s.Conditions.FamilySize+1)/2);
+		return s.LCache.BedroomsCount>=((s.Conditions.FamilySize+1)/2);
 	}
 
 

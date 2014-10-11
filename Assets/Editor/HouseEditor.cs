@@ -6,7 +6,7 @@ using System.Collections;
 public class HouseEditor : Editor {
 
 	enum Modes {
-		Idle, PlaceCell, PlaceWindow, PlaceThickWall, PlaceEntrance, PlaceGarage
+		Idle, PlaceCell, PlaceWindow, PlaceThickWall, PlaceEntrance, PlaceGarage, RemoveCell
 	}
 	Modes state = Modes.Idle;
 	EditorMouseInput input;
@@ -38,6 +38,10 @@ public class HouseEditor : Editor {
 			{
 				state = Modes.PlaceCell;
 			}
+			if(GUILayout.Button("Delete cell"))
+			{
+				state = Modes.RemoveCell;
+			}
 			if(GUILayout.Button("Place thick walls"))
 			{
 				state = Modes.PlaceThickWall;
@@ -54,7 +58,12 @@ public class HouseEditor : Editor {
 			{
 				state = Modes.PlaceGarage;
 			}
+			if(GUILayout.Button("Clear Level"))
+			{
 
+				if(EditorUtility.DisplayDialog("Clear Level?","Everything will be removed (no undo)","Ok","Cancel"))
+					hc.EditorRemoveAll();
+			}
 
 		}
 	}
@@ -100,6 +109,9 @@ public class HouseEditor : Editor {
 					case Modes.PlaceCell:
 						PlaceCell(hc,input.GetCellPositionFromMouseLocation());
 						break;
+					case Modes.RemoveCell:
+						RemoveCell(hc,input.GetCellPositionFromMouseLocation());
+						break;
 					case Modes.PlaceWindow:
 						PlaceWall(hc,input.GetWallPositionFromMouseLocation(), hc.WindowPrefab);
 						break;
@@ -129,7 +141,11 @@ public class HouseEditor : Editor {
 		*/
 	}
 
-
+	private void RemoveCell(HouseController hc, MapPoint p)
+	{
+		hc.EditorRemoveCell(p);
+		hc.EditorUpdateThickWalls(p);
+	}
 	private void PlaceCell(HouseController hc, MapPoint p)
 	{
 		hc.EditorSetCell(p, hc.CellPrefab);
@@ -168,7 +184,7 @@ public class HouseEditor : Editor {
 		
 		// set the TileMap.MarkerPosition value
 		Vector3 offset;
-		if(state==Modes.PlaceCell)
+		if(state==Modes.PlaceCell || state==Modes.RemoveCell)
 		{
 			var tilepos = input.GetCellPositionFromMouseLocation();
 			offset = new Vector3(tilepos.X+0.5f, tilepos.Y+0.5f,0.5f);

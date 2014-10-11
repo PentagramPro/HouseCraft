@@ -129,10 +129,11 @@ public class WallController : BaseController {
 		CellController bl = houseController.GetCell(new MapPoint(position.X-1,position.Y-1));
 
 		if(tr!=null && tl!=null && br!=null && bl!=null)
-		{
-
 			return true;
-		}
+		if(tr==null && tl==null && br==null && bl==null)
+			return true;
+
+
 		wallSprite.Top = (tr==null) ^ (tl==null);
 		wallSprite.Bottom = (br==null) ^ (bl==null);
 		

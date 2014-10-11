@@ -33,7 +33,7 @@ public class LogicCache
 		foreach(T l in lobjects)
 		{
 			float dist = Vector3.Distance(position,l.Center);
-			if(closest==null || min<dist)
+			if(closest==null || min>dist)
 			{
 				closest = l;
 				min = dist;
