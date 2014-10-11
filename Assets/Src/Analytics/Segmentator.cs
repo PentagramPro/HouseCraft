@@ -236,6 +236,8 @@ public class Segmentator : BaseController {
 							r.TypeOfRoom = RoomType.ToiletBathroom;
 						else
 							r.TypeOfRoom = RoomType.Toilet;
+
+						LCache.ToiletsCount++;
 					}
 					else if(bathtub || shower)
 						r.TypeOfRoom = RoomType.Bathroom;
@@ -293,6 +295,7 @@ public class Segmentator : BaseController {
 		foreach(Room r in unrecognized)
 		{
 			r.TypeOfRoom = RoomType.Bedroom;
+			LCache.BedroomsCount++;
 		}
 	}
 

@@ -10,8 +10,13 @@ public class LogicCache
 	public List<LogicHeater> Heaters = new List<LogicHeater>();
 	public List<LogicVentshaft> Vents = new List<LogicVentshaft>();
 
+	public int BedroomsCount=0;
+	public int ToiletsCount=0;
+
 	public void Clear()
 	{
+		BedroomsCount = 0;
+		ToiletsCount = 0;
 		Risers.Clear();
 		HotWaterConsumers.Clear();
 		Boilers.Clear();

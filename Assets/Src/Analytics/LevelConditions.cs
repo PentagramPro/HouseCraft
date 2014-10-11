@@ -4,6 +4,7 @@ using System;
 [Serializable]
 public class LevelConditions
 {
+	public int FamilySize = 2;
 	public int PricePerCell = 500;
 	public int ExpectedIncome = 40000;
 

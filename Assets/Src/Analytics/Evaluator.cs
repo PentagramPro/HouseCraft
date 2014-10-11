@@ -37,7 +37,9 @@ public class Evaluator : BaseController {
 		new FreshAir(1000,RoomType.Bedroom),
 		new FreshAir(-500,RoomType.Bedroom),
 		new SmallRoom(-1000, RoomType.Garage,3,3),
-		new UglyObject(-400)
+		new UglyObject(-400),
+		new Studio(500),
+		new EatingTogether(300)
 
 	};
 	List<IObjectRule> ObjectRules = new List<IObjectRule>()
@@ -53,7 +55,9 @@ public class Evaluator : BaseController {
 		new NoRoom(RoomType.Bathroom,RoomType.ToiletBathroom,-2000),
 		new NoRoom(RoomType.Toilet,RoomType.ToiletBathroom,-2000),
 		new ColdHouse(-500),
-		new WastingSpace(-1000)
+		new WastingSpace(-1000),
+		new EnoughBedrooms(700),
+		new EnoughToilets(300)
 	};
 
 	protected override void Awake ()

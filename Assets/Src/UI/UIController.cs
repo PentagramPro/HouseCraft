@@ -23,7 +23,9 @@ public class UIController : BaseController {
 	Modes state = Modes.Build;
 	protected override void Awake ()
 	{
+
 		base.Awake ();
+
 		panels = new List<GameObject>(){
 			ConditionsPanel.gameObject,
 			bCommandsPanel.gameObject,
