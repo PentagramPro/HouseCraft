@@ -6,6 +6,7 @@ public class ConditionsPanel : BaseController {
 
 	public ConditionSideController ToNorth, ToSouth, ToEast, ToWest;
 	public Text LevelName;
+	public ResourcesIndicator ResIndicator;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +15,8 @@ public class ConditionsPanel : BaseController {
 		ToNorth.SideType = M.House.LevelConditions.NorthScenery;
 		ToSouth.SideType = M.House.LevelConditions.SouthScenery;
 		LevelName.text =  M.House.LevelConditions.LevelName;
+
+
 	}
 	
 	// Update is called once per frame
