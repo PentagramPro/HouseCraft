@@ -84,7 +84,7 @@ public class Manager : MonoBehaviour {
 			state = Modes.Build;
 			UI.OnShowBuild();
 			Overlay.RemoveOverlay();
-			House.SetHouseMode(HouseModes.SetWalls,null);
+			House.SetHouseMode(HouseModes.Idle,null);
 		}
 	}
 

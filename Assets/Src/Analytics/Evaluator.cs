@@ -50,10 +50,10 @@ public class Evaluator : BaseController {
 
 	List<IHouseRule> HouseRules = new List<IHouseRule>()
 	{
-		new NoRoom(RoomType.Bedroom,RoomType.Bedroom,-2000),
-		new NoRoom(RoomType.Kitchen,RoomType.Dining,-2000),
-		new NoRoom(RoomType.Bathroom,RoomType.ToiletBathroom,-2000),
-		new NoRoom(RoomType.Toilet,RoomType.ToiletBathroom,-2000),
+		new NoRoom(-2000,RoomType.Bedroom, RoomType.Studio),
+		new NoRoom(-2000,RoomType.Kitchen,RoomType.Dining, RoomType.Studio),
+		new NoRoom(-2000,RoomType.Bathroom,RoomType.ToiletBathroom),
+		new NoRoom(-2000,RoomType.Toilet,RoomType.ToiletBathroom),
 		new ColdHouse(-900),
 		new WastingSpace(-1000),
 		new EnoughBedrooms(700),

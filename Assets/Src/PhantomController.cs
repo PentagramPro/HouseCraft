@@ -60,6 +60,9 @@ public class PhantomController : BaseController {
 	}
 	void InstantiateIndicator(WallPoint p, bool isDoor)
 	{
+		if(indicators.ContainsKey(p.toInt()))
+			return;
+
 		Transform ph = Instantiate<Transform>(isDoor?DoorIndicator:PlaceIndicator);
 		ph.parent = transform;
 		ph.localPosition = new Vector3(p.X,p.Y,0);
@@ -92,9 +95,21 @@ public class PhantomController : BaseController {
 		bool isDoor =  wallPrefab.PrefabIsDoor();
 		foreach(CellController c in cells.Values)
 		{
-			WallPoint wp = new WallPoint(c.Position.X,c.Position.Y);
-			if(  (isDoor || !walls.ContainsKey(wp.toInt())) && wallPrefab.PrefabValidatePosition(M,wp))
-				InstantiateIndicator(wp, isDoor);
+			if(c.IsMultiCell)
+			{
+				MapRect rect = c.GetCurCellIndexes();
+				rect.Foreach((MapPoint p) => {
+					WallPoint wp = new WallPoint(p.X,p.Y);
+					if(  (isDoor || !walls.ContainsKey(wp.toInt())) && wallPrefab.PrefabValidatePosition(M,wp))
+						InstantiateIndicator(wp, isDoor);
+				});
+			}
+			else
+			{
+				WallPoint wp = new WallPoint(c.Position.X,c.Position.Y);
+				if(  (isDoor || !walls.ContainsKey(wp.toInt())) && wallPrefab.PrefabValidatePosition(M,wp))
+					InstantiateIndicator(wp, isDoor);
+			}
 		}
 	}
 }

@@ -16,6 +16,7 @@ public class TapController : BaseController {
 
 	public void OnMouseDown()
 	{
+
 		if(EventSystem.current.IsPointerOverGameObject())
 			return;
         	

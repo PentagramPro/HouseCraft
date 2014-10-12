@@ -1,11 +1,10 @@
 
 public class NoRoom : BaseRule, IHouseRule
 {
-	RoomType TypeOfRoom1 = RoomType.Unknown,
-		TypeOfRoom2 = RoomType.Unknown;
-	public NoRoom(RoomType type1,RoomType type2,int a) : base(a) {
-		TypeOfRoom1 = type1;
-		TypeOfRoom2 = type2;
+	RoomType[] Rooms;
+		
+	public NoRoom(int a, params RoomType[] rooms) : base(a) {
+		Rooms = rooms;
 	}
 
 	#region IRoomRule implementation
@@ -14,8 +13,9 @@ public class NoRoom : BaseRule, IHouseRule
 	{
 		foreach(Room room in s.Rooms)
 		{
-			if(room.TypeOfRoom==TypeOfRoom1 || room.TypeOfRoom==TypeOfRoom2)
-				return false;
+			foreach(RoomType rt in Rooms)
+				if(rt==room.TypeOfRoom)
+					return false;
 		}
 		return true;
 	}

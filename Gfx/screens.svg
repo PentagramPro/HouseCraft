@@ -79,9 +79,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.919596"
-     inkscape:cx="-616.38263"
-     inkscape:cy="328.98482"
+     inkscape:zoom="11.2"
+     inkscape:cx="-335.39161"
+     inkscape:cy="895.91819"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -2576,9 +2576,9 @@
     </g>
     <g
        id="g4189"
-       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\fig_man.png"
-       inkscape:export-xdpi="900"
-       inkscape:export-ydpi="900">
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\fig_man_small.png"
+       inkscape:export-xdpi="120"
+       inkscape:export-ydpi="120">
       <path
          transform="translate(2.7147849,0.5682108)"
          d="m -358.35162,133.31277 a 3.3461304,3.3461304 0 1 1 -6.69226,0 3.3461304,3.3461304 0 1 1 6.69226,0 z"
@@ -2608,9 +2608,9 @@
     </g>
     <g
        id="g4194"
-       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\fig_woman.png"
-       inkscape:export-xdpi="900"
-       inkscape:export-ydpi="900">
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\fig_woman_small.png"
+       inkscape:export-xdpi="104.41087"
+       inkscape:export-ydpi="104.41087">
       <path
          transform="matrix(0.88679246,0,0,0.88679246,-23.648038,16.575674)"
          d="m -358.35162,133.31277 a 3.3461304,3.3461304 0 1 1 -6.69226,0 3.3461304,3.3461304 0 1 1 6.69226,0 z"
@@ -2638,9 +2638,9 @@
     </g>
     <g
        id="g4199"
-       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\fig_child.png"
-       inkscape:export-xdpi="900"
-       inkscape:export-ydpi="900">
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\fig_child_small.png"
+       inkscape:export-xdpi="105.36585"
+       inkscape:export-ydpi="105.36585">
       <path
          transform="matrix(0.68686869,0,0,0.70010073,-81.52581,49.315401)"
          d="m -358.35162,133.31277 a 3.3461304,3.3461304 0 1 1 -6.69226,0 3.3461304,3.3461304 0 1 1 6.69226,0 z"
@@ -3346,11 +3346,13 @@
        inkscape:export-ydpi="235.10204" />
     <rect
        style="fill:#00ff00;fill-opacity:1;stroke:#008000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect4511"
-       width="30"
-       height="30"
-       x="-625"
-       y="697.36218"
-       ry="0" />
+       id="rect4513"
+       width="20"
+       height="20"
+       x="-620"
+       y="702.36218"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\place_indicator_door.png"
+       inkscape:export-xdpi="480"
+       inkscape:export-ydpi="480" />
   </g>
 </svg>

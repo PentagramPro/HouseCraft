@@ -114,6 +114,12 @@ public class CellController : BaseController {
 		return res;
 	}
 
+	public bool IsMultiCell
+	{
+		get{
+			return SizeX>1 || SizeY>1;
+		}
+	}
 	public MapRect GetCurCellIndexes()
 	{
 		return GetCellIndexes(Position,Rotation);

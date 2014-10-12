@@ -39,7 +39,7 @@ public class HouseController : BaseController {
 		}
 	}
 
-	public void RestoreCache()
+	public void RestoreCache(bool removeDuplicates)
 	{
 		CellController[] c = GetComponentsInChildren<CellController>();
 		if(c.Length>0)
@@ -49,9 +49,21 @@ public class HouseController : BaseController {
 			MapBounds.xMax = MapBounds.xMin+1;
 			MapBounds.yMax = MapBounds.yMin+1;
 		}
+
 		foreach(CellController cell in c)
 		{
-			cells.Add(cell.Position.toInt(),cell);
+			if(cells.ContainsKey(cell.Position.toInt()))
+			{
+				if(removeDuplicates)
+					GameObject.DestroyImmediate(cell.gameObject);
+
+				continue;
+			}
+			else
+			{
+				cells.Add(cell.Position.toInt(),cell);
+			}
+
 
 			if(cell.Position.X>=MapBounds.xMax)
 				MapBounds.xMax = cell.Position.X+1;
@@ -70,14 +82,23 @@ public class HouseController : BaseController {
 		
 		foreach(WallController wall in w)
 		{
-			walls.Add(wall.Position.toInt(),wall);
+			if(walls.ContainsKey(wall.Position.toInt()))
+			{
+				if(removeDuplicates)
+					GameObject.DestroyImmediate(wall.gameObject);
+				continue;
+			}
+			else
+			{
+				walls.Add(wall.Position.toInt(),wall);
+			}
 		}
 	}
 	protected override void Awake ()
 	{
 		base.Awake ();
 		selectedPrefab = WallPrefab.gameObject;
-		RestoreCache();
+		RestoreCache(false);
 
 		GetComponent<TapController>().OnTap+=OnTap;
 	}
@@ -438,7 +459,7 @@ public class HouseController : BaseController {
 	{
 		cells.Clear();
 		walls.Clear();
-		RestoreCache();
+		RestoreCache(true);
 	}
 
 	public void EditorUpdateThickWalls (MapPoint point)

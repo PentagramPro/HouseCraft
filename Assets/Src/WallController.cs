@@ -105,6 +105,8 @@ public class WallController : BaseController {
 		if(wo!=null && wo.PrefabValidatePosition(m,point)==false)
 			return false;
 
+		if(!m.House.IsInsideBuilding(point))
+			return false;
 		WallController w = null;
 
 		w = m.House.GetWall(new WallPoint(point.X-1,point.Y));
