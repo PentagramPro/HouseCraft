@@ -85,7 +85,7 @@ public class WallController : BaseController {
 	public WallController PrefabSetWall(Manager m, WallPoint point)
 	{
 		IWallObject wo = GetComponentInterface<IWallObject>();
-		WallController w = m.House.SetWall(point,this);
+		WallController w = m.House.ReplaceWall(point,this);
 		if(wo!=null)
 		{
 			wo.PrefabPrepareWall(m,w);

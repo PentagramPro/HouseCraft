@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class HouseController : BaseController {
 
 	enum Modes{
-		Idle, SetWalls, SetObject, RemoveWall,RemoveObject,Sale
+		Idle, SetWalls, SetDoors, SetObject, RemoveWall,RemoveObject,Sale
 	}
 
 
@@ -234,7 +234,10 @@ public class HouseController : BaseController {
 		switch(state)
 		{
 		case Modes.SetWalls:
-			OnPlaceWall(pz);
+			OnPlaceWall(pz,false);
+			break;
+		case Modes.SetDoors:
+			OnPlaceWall(pz,true);
 			break;
 		case Modes.SetObject:
 			OnPlaceObject(pz);
@@ -284,7 +287,7 @@ public class HouseController : BaseController {
 		}
 	}
 
-	private void OnPlaceWall(Vector3 pz)
+	private void OnPlaceWall(Vector3 pz, bool door)
 	{
 		WallController wallPrefab = selectedPrefab.GetComponent<WallController>();
 		WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
@@ -388,6 +391,10 @@ public class HouseController : BaseController {
 			break;
 		case HouseModes.SetWalls:
 			state = Modes.SetWalls;
+			selectedPrefab = prefab;
+			break;
+		case HouseModes.SetDoors:
+			state = Modes.SetDoors;
 			selectedPrefab = prefab;
 			break;
 		case HouseModes.SetObject:
