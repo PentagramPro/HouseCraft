@@ -283,7 +283,7 @@ public class HouseController : BaseController {
 			CellObjectController cobj = ReplaceCell(mp,cellPrefab).GetComponent<CellObjectController>();
 			if(cobj!=null)
 				M.UI.bCostsPanel.Expences.AddValue(cobj.Cost);
-			Phantom.Remove();
+			Phantom.RemovePhantom();
 		}
 	}
 
@@ -326,6 +326,8 @@ public class HouseController : BaseController {
 			UpdateWallsAround(wp);
 			
 		}
+		Phantom.RemoveIndicators();
+		Phantom.PlaceIndicators(cells,walls,wallPrefab);
 	}
 
 
@@ -383,6 +385,9 @@ public class HouseController : BaseController {
 	}
 	public void SetHouseMode(HouseModes mode, GameObject prefab)
 	{
+		if(state==Modes.SetWalls)
+			Phantom.RemoveIndicators();
+
 		switch(mode)
 		{
 		case HouseModes.Idle:
@@ -392,6 +397,7 @@ public class HouseController : BaseController {
 		case HouseModes.SetWalls:
 			state = Modes.SetWalls;
 			selectedPrefab = prefab;
+			Phantom.PlaceIndicators(cells,walls,prefab.GetComponent<WallController>());
 			break;
 		case HouseModes.SetDoors:
 			state = Modes.SetDoors;

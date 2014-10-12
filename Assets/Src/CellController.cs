@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 
 [RequireComponent (typeof (StructureController))]
@@ -64,7 +64,7 @@ public class CellController : BaseController {
 			{
 				res = false;
 				if(usePhantom)
-					M.House.Phantom.SetRed(p);
+					M.House.Phantom.SetRedPhantom(p);
 			}
 			
 			if(p.X>rect.MinX && p.Y>rect.MinY)
@@ -104,7 +104,7 @@ public class CellController : BaseController {
 
 		MapRect rect = GetCellIndexes(point,rotation);
 
-		bool res = m.House.Phantom.Place(rect);
+		bool res = m.House.Phantom.PlacePhantom(rect);
 
 
 		if(IsRectFree(rect,true)==false)

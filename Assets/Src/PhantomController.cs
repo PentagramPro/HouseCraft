@@ -4,9 +4,11 @@ using System.Collections.Generic;
 public class PhantomController : BaseController {
 
 	Dictionary<int,Transform> phantoms = new Dictionary<int,Transform>();
+	Dictionary<int,Transform> indicators = new Dictionary<int,Transform>();
 	MapRect lastRect = new MapRect(-1,-1,-1,-1);
 
 	public Transform Red,Green;
+	public Transform PlaceIndicator;
 
 	// Use this for initialization
 	void Start () {
@@ -19,16 +21,16 @@ public class PhantomController : BaseController {
 	}
 
 	//returns true if this phantom already has been placed
-	public bool Place(MapRect rect)
+	public bool PlacePhantom(MapRect rect)
 	{
 
 		if(lastRect.Equals(rect))
 			return true;
 
-		Remove();
+		RemovePhantom();
 
 		rect.Foreach((MapPoint p) => {
-			Create(p,true);
+			InstantiatePhantom(p,true);
 		});
 
 	
@@ -36,7 +38,7 @@ public class PhantomController : BaseController {
 		return false;
 	}
 
-	public void SetRed(MapPoint p)
+	public void SetRedPhantom(MapPoint p)
 	{
 		Transform ph= null;
 		if(phantoms.TryGetValue(p.toInt(),out ph))
@@ -45,17 +47,25 @@ public class PhantomController : BaseController {
 			phantoms.Remove(p.toInt());
 		}
 
-		Create(p,false);
+		InstantiatePhantom(p,false);
 	}
 
-	void Create(MapPoint p, bool isGreen)
+	void InstantiatePhantom(MapPoint p, bool isGreen)
 	{
 		Transform ph = Instantiate<Transform>(isGreen?Green:Red);
 		ph.parent = transform;
 		ph.localPosition = new Vector3(p.X+0.5f,p.Y+0.5f,0);
 		phantoms.Add(p.toInt(),ph);
 	}
-	public void Remove()
+	void InstantiateIndicator(WallPoint p)
+	{
+		Transform ph = Instantiate<Transform>(PlaceIndicator);
+		ph.parent = transform;
+		ph.localPosition = new Vector3(p.X,p.Y,0);
+		indicators.Add(p.toInt(),ph);
+	}
+
+	public void RemovePhantom()
 	{
 		foreach(Transform s in phantoms.Values)
 		{
@@ -64,4 +74,26 @@ public class PhantomController : BaseController {
 		phantoms.Clear();
 	}
 
+
+	public void RemoveIndicators()
+	{
+		foreach(Transform s in indicators.Values)
+		{
+			Destroy(s.gameObject);
+		}
+		indicators.Clear();
+	}
+
+	public void PlaceIndicators(Dictionary<int, CellController> cells, 
+	                            Dictionary<int, WallController> walls, 
+	                            WallController wallPrefab)
+	{
+
+		foreach(CellController c in cells.Values)
+		{
+			WallPoint wp = new WallPoint(c.Position.X,c.Position.Y);
+			if(!walls.ContainsKey(wp.toInt()) && wallPrefab.PrefabValidatePosition(M,wp))
+				InstantiateIndicator(wp);
+		}
+	}
 }
