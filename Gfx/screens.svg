@@ -79,9 +79,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
-     inkscape:cx="-355.2502"
-     inkscape:cy="915.63138"
+     inkscape:zoom="7.919596"
+     inkscape:cx="-616.38263"
+     inkscape:cy="328.98482"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -90,9 +90,10 @@
      inkscape:window-x="1019"
      inkscape:window-y="-5"
      inkscape:window-maximized="1"
-     inkscape:snap-grids="false"
+     inkscape:snap-grids="true"
      inkscape:object-nodes="false"
-     inkscape:snap-nodes="false">
+     inkscape:snap-nodes="true"
+     inkscape:snap-object-midpoints="true">
     <inkscape:grid
        type="xygrid"
        id="grid4111"
@@ -2667,5 +2668,689 @@
          id="rect4117-8"
          style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:4.2" />
     </g>
+    <rect
+       style="fill:#0066ff;fill-opacity:1;stroke:none"
+       id="rect2985-9-1"
+       width="544.47223"
+       height="417.19299"
+       x="-732.58771"
+       y="581.22766"
+       ry="7.3091724e-007" />
+    <rect
+       style="fill:#ffffff;stroke:none"
+       id="rect4251-7"
+       width="115.66247"
+       height="419.21332"
+       x="-303.15033"
+       y="580.15625"
+       ry="0" />
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4304-4"
+       width="251.31505"
+       height="54.790787"
+       x="-732.15515"
+       y="580.5755" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.54045534px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-725.40009"
+       y="589.28418"
+       id="text4306-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4308-9"
+         x="-725.40009"
+         y="589.28418">дом куплен за:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.54045534px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-726.96106"
+       y="612.64355"
+       id="text4306-1-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4308-2-8"
+         x="-726.96106"
+         y="612.64355">приблизительная конечная цена:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.56890583px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-726.36932"
+       y="603.04126"
+       id="text4331-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4333-2"
+         x="-726.36932"
+         y="603.04126">$48 000</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.56890583px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-727.90686"
+       y="627.09613"
+       id="text4331-3-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4333-3-5"
+         x="-727.90686"
+         y="627.09613">$55 000</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#0066ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -604.50722,584.47345 0,46.96428"
+       id="path4356-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\vert_blue_line.png"
+       inkscape:export-xdpi="450.29941"
+       inkscape:export-ydpi="450.29941" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.54045534px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-597.83588"
+       y="590.62347"
+       id="text4306-4-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4308-1-7"
+         x="-597.83588"
+         y="590.62347">текущие расходы:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.02361488px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-599.32031"
+       y="615.68036"
+       id="text4331-1-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4333-38-1"
+         x="-599.32031"
+         y="615.68036">$1 200</tspan></text>
+    <rect
+       style="fill:#ffcc00;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4390-5"
+       width="87.378197"
+       height="39.39595"
+       x="-722.99127"
+       y="945.89276" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-711.87958"
+       y="969.63135"
+       id="text4392-27"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4394-6"
+         x="-711.87958"
+         y="969.63135">В меню</tspan></text>
+    <rect
+       style="fill:#ffcc00;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4390-4-1"
+       width="87.378197"
+       height="39.39595"
+       x="-624.24884"
+       y="946.39783" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-615.15747"
+       y="969.63135"
+       id="text4392-2-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4394-7-2"
+         x="-615.15747"
+         y="969.63135">Продать</tspan></text>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-3"
+       width="49"
+       height="49"
+       x="-659.36438"
+       y="814.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-2"
+       width="49"
+       height="49"
+       x="-659.36438"
+       y="764.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-19-2"
+       width="49"
+       height="49"
+       x="-609.36438"
+       y="814.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-9-1"
+       width="49"
+       height="49"
+       x="-609.36438"
+       y="764.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-0-6"
+       width="49"
+       height="49"
+       x="-559.36438"
+       y="814.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-5-8"
+       width="49"
+       height="49"
+       x="-559.36438"
+       y="764.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-19-9-5"
+       width="49"
+       height="49"
+       x="-509.36435"
+       y="814.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-9-4-7"
+       width="49"
+       height="49"
+       x="-509.36435"
+       y="764.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-6-6"
+       width="49"
+       height="49"
+       x="-659.36438"
+       y="714.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-3-18"
+       width="49"
+       height="49"
+       x="-659.36438"
+       y="664.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-19-4-9"
+       width="49"
+       height="49"
+       x="-609.36438"
+       y="714.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-9-9-2"
+       width="49"
+       height="49"
+       x="-609.36438"
+       y="664.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-0-0-7"
+       width="46.600887"
+       height="46.600887"
+       x="-558.10168"
+       y="715.21704"
+       ry="6.8119306e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-5-5-9"
+       width="49"
+       height="49"
+       x="-559.36438"
+       y="664.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-19-9-3-5"
+       width="49"
+       height="49"
+       x="-509.36435"
+       y="714.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-9-4-9-4"
+       width="49"
+       height="49"
+       x="-509.36435"
+       y="664.08063"
+       ry="7.1626232e-007" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6553-3"
+       width="6.3134532"
+       height="80.559662"
+       x="-662.12958"
+       y="786.7937" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6553-1-1"
+       width="6.3134532"
+       height="80.559662"
+       x="-662.76093"
+       y="660.39838" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6553-2-2"
+       width="6.3134532"
+       height="207.08127"
+       x="660.39838"
+       y="455.42709"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6553-2-8-3"
+       width="6.3134532"
+       height="204.55589"
+       x="860.91364"
+       y="457.32114"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6553-2-8-8-3"
+       width="6.3134532"
+       height="24.243656"
+       x="455.42709"
+       y="-684.76837"
+       transform="scale(-1,-1)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6553-2-8-8-1-4"
+       width="6.3134532"
+       height="24.243656"
+       x="454.92203"
+       y="-867.10083"
+       transform="scale(-1,-1)" />
+    <rect
+       style="fill:#00ffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6645-1"
+       width="12.626906"
+       height="157.07872"
+       x="-465.14984"
+       y="685.02087" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path6661-1"
+       sodipodi:cx="263.14474"
+       sodipodi:cy="614.96613"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="6.5659914"
+       d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
+       transform="translate(-807.71779,113.99633)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path6661-8-3"
+       sodipodi:cx="263.14474"
+       sodipodi:cy="614.96613"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="6.5659914"
+       d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
+       transform="translate(-787.51475,113.99634)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path6661-6-8"
+       sodipodi:cx="263.14474"
+       sodipodi:cy="614.96613"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="6.5659914"
+       d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
+       transform="translate(-807.71779,133.3155)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path6661-8-0-7"
+       sodipodi:cx="263.14474"
+       sodipodi:cy="614.96613"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="6.5659914"
+       d="m 269.71074,614.96613 a 6.5659914,6.5659914 0 1 1 -13.13199,0 6.5659914,6.5659914 0 1 1 13.13199,0 z"
+       transform="translate(-787.51475,133.3155)" />
+    <rect
+       style="fill:#c87137;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4253-2-4"
+       width="114.08596"
+       height="56.821079"
+       x="-301.25699"
+       y="826.75183" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-295.50989"
+       y="875.99677"
+       id="text4257-1-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4259-5-7"
+         x="-295.50989"
+         y="875.99677">плита</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12.2914114px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-220.95099"
+       y="842.74481"
+       id="text4279-4-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4281-4-9"
+         x="-220.95099"
+         y="842.74481">$200</tspan></text>
+    <path
+       style="fill:#0000ff;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -211.49763,846.15898 c 0,0 6.97221,11.25691 0,11.19146 -6.97222,-0.0655 0,-11.19146 0,-11.19146 z"
+       id="path3964-4-4-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ff0000;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -201.58283,846.19156 c 0,0 6.97221,11.25691 0,11.19147 -6.9722,-0.0654 0,-11.19147 0,-11.19147 z"
+       id="path3964-1-3-2-1"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g6743-5-9"
+       transform="matrix(0.52005359,0,0,0.52005359,-562.65257,533.83843)">
+      <rect
+         ry="6.8119306e-007"
+         y="575.84747"
+         x="518.12811"
+         height="46.600887"
+         width="46.600887"
+         id="rect6415-0-0-2-0-8"
+         style="fill:#0066ff;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         transform="translate(268.51201,-25.373228)"
+         d="m 269.71074,614.96613 c 0,3.62629 -2.9397,6.56599 -6.566,6.56599 -3.62629,0 -6.56599,-2.9397 -6.56599,-6.56599 0,-3.6263 2.9397,-6.566 6.56599,-6.566 3.6263,0 6.566,2.9397 6.566,6.566 z"
+         sodipodi:ry="6.5659914"
+         sodipodi:rx="6.5659914"
+         sodipodi:cy="614.96613"
+         sodipodi:cx="263.14474"
+         id="path6661-4-4-6"
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <path
+         transform="translate(288.71505,-25.373218)"
+         d="m 269.71074,614.96613 c 0,3.62629 -2.9397,6.56599 -6.566,6.56599 -3.62629,0 -6.56599,-2.9397 -6.56599,-6.56599 0,-3.6263 2.9397,-6.566 6.56599,-6.566 3.6263,0 6.566,2.9397 6.566,6.566 z"
+         sodipodi:ry="6.5659914"
+         sodipodi:rx="6.5659914"
+         sodipodi:cy="614.96613"
+         sodipodi:cx="263.14474"
+         id="path6661-8-9-2-5"
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <path
+         transform="translate(268.51201,-6.0540578)"
+         d="m 269.71074,614.96613 c 0,3.62629 -2.9397,6.56599 -6.566,6.56599 -3.62629,0 -6.56599,-2.9397 -6.56599,-6.56599 0,-3.6263 2.9397,-6.566 6.56599,-6.566 3.6263,0 6.566,2.9397 6.566,6.566 z"
+         sodipodi:ry="6.5659914"
+         sodipodi:rx="6.5659914"
+         sodipodi:cy="614.96613"
+         sodipodi:cx="263.14474"
+         id="path6661-6-0-1-0"
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <path
+         transform="translate(288.71505,-6.0540578)"
+         d="m 269.71074,614.96613 c 0,3.62629 -2.9397,6.56599 -6.566,6.56599 -3.62629,0 -6.56599,-2.9397 -6.56599,-6.56599 0,-3.6263 2.9397,-6.566 6.56599,-6.566 3.6263,0 6.566,2.9397 6.566,6.566 z"
+         sodipodi:ry="6.5659914"
+         sodipodi:rx="6.5659914"
+         sodipodi:cy="614.96613"
+         sodipodi:cx="263.14474"
+         id="path6661-8-0-2-2-2"
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+    </g>
+    <rect
+       style="fill:#0066ff;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4253-7-8"
+       width="114.08596"
+       height="56.821079"
+       x="-301.19305"
+       y="644.27716" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.74986935px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-304.14063"
+       y="668.84711"
+       id="text6822-6"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96577832,1.0354343)"><tspan
+         sodipodi:role="line"
+         id="tspan6824-02"
+         x="-304.14063"
+         y="668.84711">удаление стен</tspan></text>
+    <rect
+       style="fill:#0066ff;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4253-7-9-4"
+       width="114.08596"
+       height="56.821079"
+       x="-301.2959"
+       y="582.15485" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-293.89575"
+       y="629.85107"
+       id="text6822-5-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6824-5-6"
+         x="-293.89575"
+         y="629.85107">стена</tspan></text>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6415-1-3-1-5"
+       width="49"
+       height="49"
+       x="-377.93582"
+       y="897.65204"
+       ry="7.1626232e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\empty_cell.png"
+       inkscape:export-xdpi="230"
+       inkscape:export-ydpi="230" />
+    <rect
+       style="fill:#0066ff;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4253-7-1-0"
+       width="114.08596"
+       height="56.821079"
+       x="-298.629"
+       y="704.08618" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.11677837px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-295.84415"
+       y="741.15308"
+       id="text6822-7-9"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98401507,1.0162446)"><tspan
+         sodipodi:role="line"
+         id="tspan6824-1-00"
+         x="-295.84415"
+         y="741.15308">удаление объектов</tspan></text>
+    <g
+       transform="translate(-809.86436,111.21841)"
+       id="g4291-6"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_wall.png"
+       inkscape:export-xdpi="458.4375"
+       inkscape:export-ydpi="458.4375">
+      <path
+         sodipodi:nodetypes="cccccccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path4232-1"
+         d="m 590,476.375 -0.25,0.0312 -20,5 -0.75,0.1875 0,0.78125 0,30 0,0.59375 0.5625,0.28125 20,10 0.4375,0.125 1,-1 0,-45 z m -1,2.28125 0,42.09375 -18,-9 0,-28.59375 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+      <path
+         sodipodi:nodetypes="ccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path4234-3"
+         d="m 590,476.375 0,2 9,0 0,43 -9,0 0,2 10,0 1,0 0,-1 0,-45 0,-1 -1,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+    </g>
+    <g
+       id="g4273-8"
+       transform="matrix(0.61532681,0.43663735,-0.42268881,0.6356323,-348.54772,62.351165)"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_remove_wall.png"
+       inkscape:export-xdpi="458.4375"
+       inkscape:export-ydpi="458.4375">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4269-9"
+         d="m 580,592.36218 0,-35 -20,0 0,-20 50,0 0,20 -20,0 0,35 -10,0"
+         style="fill:none;stroke:#ffffff;stroke-width:2.63595605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4271-3"
+         d="m 580,557.36218 10,0"
+         style="fill:none;stroke:#ffffff;stroke-width:2.63595605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="translate(-809.86436,111.21841)"
+       id="g4295-4"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_remove_object.png"
+       inkscape:export-xdpi="458.4375"
+       inkscape:export-ydpi="458.4375">
+      <path
+         transform="translate(10,0)"
+         d="m 585,622.36218 c 0,2.76143 -2.23858,5 -5,5 -2.76142,0 -5,-2.23857 -5,-5 0,-2.76142 2.23858,-5 5,-5 2.76142,0 5,2.23858 5,5 z"
+         sodipodi:ry="5"
+         sodipodi:rx="5"
+         sodipodi:cy="622.36218"
+         sodipodi:cx="580"
+         id="path4277-4"
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4281-6"
+         d="m 570,622.36218 10,0 0,-25"
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4283-0"
+         d="m 580,607.36218 10,0"
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         y="602.36218"
+         x="590"
+         height="15"
+         width="15"
+         id="rect4287-6"
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         transform="translate(10,0)"
+         d="m 600,622.36218 c 0,2.76143 -2.23858,5 -5,5 -2.76142,0 -5,-2.23857 -5,-5 0,-2.76142 2.23858,-5 5,-5 2.76142,0 5,2.23858 5,5 z"
+         sodipodi:ry="5"
+         sodipodi:rx="5"
+         sodipodi:cy="622.36218"
+         sodipodi:cx="595"
+         id="path4289-6"
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+    </g>
+    <rect
+       style="fill:#0066ff;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4253-7-1-2-1"
+       width="114.08596"
+       height="56.821079"
+       x="-298.629"
+       y="760.90729" />
+    <text
+       xml:space="preserve"
+       style="font-size:15.55341434px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-295.84415"
+       y="796.18414"
+       id="text6822-7-5-8"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98401507,1.0162446)"><tspan
+         sodipodi:role="line"
+         id="tspan6824-1-0-4"
+         x="-295.84415"
+         y="796.18414">дверь</tspan></text>
+    <g
+       transform="translate(-809.86436,111.21841)"
+       id="g4368-9"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_door.png"
+       inkscape:export-xdpi="320.25601"
+       inkscape:export-ydpi="320.25601">
+      <path
+         inkscape:export-ydpi="320.25601"
+         inkscape:export-xdpi="320.25601"
+         inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_door.png"
+         inkscape:connector-curvature="0"
+         id="path4344-6"
+         d="m 552.16446,672.36218 69.69687,0"
+         style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 1;stroke-dashoffset:4.2" />
+      <path
+         inkscape:export-ydpi="320.25601"
+         inkscape:export-xdpi="320.25601"
+         inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_door.png"
+         inkscape:connector-curvature="0"
+         id="path4346-3"
+         d="m 585,656.86793 0,39.07516"
+         style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 1;stroke-dashoffset:3.5" />
+      <g
+         inkscape:export-ydpi="320.25601"
+         inkscape:export-xdpi="320.25601"
+         inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_place_door.png"
+         style="fill:none;stroke:#ffffff"
+         transform="translate(-89.821429,-12.499997)"
+         id="g4361-7">
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 695,687.36218 -40,0 0,-5 40,0 z"
+           id="path4350-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 695,682.36218 5,0 0,5 -5,0"
+           id="path4352-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 655,682.36218 -5,0 0,5 5,0"
+           id="path4354-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 640,677.36218 10,0 0,15 -10,0"
+           id="path4357-9"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 710,692.36218 -10,0 0,-15 10,0"
+           id="path4359-1"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <path
+       style="fill:#00ff00;fill-opacity:1;stroke:#008000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m -768.3227,705.51072 0,17.5 -17.5,0 0,10 17.5,0 0,17.5 10,0 0,-17.5 17.5,0 0,-10 -17.5,0 0,-17.5 -10,0 z"
+       id="rect4486"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\place_indicator.png"
+       inkscape:export-xdpi="235.10204"
+       inkscape:export-ydpi="235.10204" />
+    <rect
+       style="fill:#00ff00;fill-opacity:1;stroke:#008000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4511"
+       width="30"
+       height="30"
+       x="-625"
+       y="697.36218"
+       ry="0" />
   </g>
 </svg>

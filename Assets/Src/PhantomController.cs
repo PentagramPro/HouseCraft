@@ -9,6 +9,7 @@ public class PhantomController : BaseController {
 
 	public Transform Red,Green;
 	public Transform PlaceIndicator;
+	public Transform DoorIndicator;
 
 	// Use this for initialization
 	void Start () {
@@ -57,9 +58,9 @@ public class PhantomController : BaseController {
 		ph.localPosition = new Vector3(p.X+0.5f,p.Y+0.5f,0);
 		phantoms.Add(p.toInt(),ph);
 	}
-	void InstantiateIndicator(WallPoint p)
+	void InstantiateIndicator(WallPoint p, bool isDoor)
 	{
-		Transform ph = Instantiate<Transform>(PlaceIndicator);
+		Transform ph = Instantiate<Transform>(isDoor?DoorIndicator:PlaceIndicator);
 		ph.parent = transform;
 		ph.localPosition = new Vector3(p.X,p.Y,0);
 		indicators.Add(p.toInt(),ph);
@@ -88,12 +89,12 @@ public class PhantomController : BaseController {
 	                            Dictionary<int, WallController> walls, 
 	                            WallController wallPrefab)
 	{
-
+		bool isDoor =  wallPrefab.PrefabIsDoor();
 		foreach(CellController c in cells.Values)
 		{
 			WallPoint wp = new WallPoint(c.Position.X,c.Position.Y);
-			if(!walls.ContainsKey(wp.toInt()) && wallPrefab.PrefabValidatePosition(M,wp))
-				InstantiateIndicator(wp);
+			if(  (isDoor || !walls.ContainsKey(wp.toInt())) && wallPrefab.PrefabValidatePosition(M,wp))
+				InstantiateIndicator(wp, isDoor);
 		}
 	}
 }

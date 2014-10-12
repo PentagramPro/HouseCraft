@@ -385,7 +385,7 @@ public class HouseController : BaseController {
 	}
 	public void SetHouseMode(HouseModes mode, GameObject prefab)
 	{
-		if(state==Modes.SetWalls)
+		if(state==Modes.SetWalls || state==Modes.SetDoors)
 			Phantom.RemoveIndicators();
 
 		switch(mode)
@@ -402,6 +402,7 @@ public class HouseController : BaseController {
 		case HouseModes.SetDoors:
 			state = Modes.SetDoors;
 			selectedPrefab = prefab;
+			Phantom.PlaceIndicators(cells,walls,prefab.GetComponent<WallController>());
 			break;
 		case HouseModes.SetObject:
 			state = Modes.SetObject;

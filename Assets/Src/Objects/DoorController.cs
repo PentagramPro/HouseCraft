@@ -22,11 +22,17 @@ public class DoorController : BaseController, IWallObject {
 
 	private bool PrefabGetNeighbours(Manager m, WallPoint point, out WallController w1, out WallController w2)
 	{
+		w1=null;w2=null;
+
 		WallController left = m.House.GetWall(new WallPoint(point.X-1,point.Y));
 		WallController right = m.House.GetWall(new WallPoint(point.X+1,point.Y));
 		WallController top = m.House.GetWall(new WallPoint(point.X,point.Y+1));
 		WallController bottom = m.House.GetWall(new WallPoint(point.X,point.Y-1));
-		w1=null;w2=null;
+
+		WallController cur = m.House.GetWall(point);
+		if(cur!=null && cur.WallObject!=null)
+		   return false;
+
 		if(left!=null && right!=null)
 		{
 			if(top!=null || bottom!=null)

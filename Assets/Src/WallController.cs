@@ -92,6 +92,12 @@ public class WallController : BaseController {
 		}
 		return w;
 	}
+
+	public bool PrefabIsDoor()
+	{
+		IWallObject wo = GetComponentInterface<IWallObject>();
+		return (wo!=null && wo is DoorController);
+	}
 	public bool PrefabValidatePosition(Manager m, WallPoint point)
 	{
 		IWallObject wo = GetComponentInterface<IWallObject>();
