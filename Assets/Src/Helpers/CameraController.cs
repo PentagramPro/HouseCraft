@@ -36,6 +36,7 @@ public class CameraController : BaseController {
 	{
 		state = Modes.Moving;
 		newTargetPos = mapPoint-targetPosition;
+		newTargetPos.z = transform.position.z;
 	}
 
 
@@ -48,7 +49,9 @@ public class CameraController : BaseController {
 
 			vec*=ScrollFactor;
 
-			transform.position+=vec;
+			if(bounds.Contains(new Vector2(transform.position.x+vec.x,transform.position.y+vec.y)))
+				transform.position+=vec;
+
 			if(OnScrolled!=null)
 				OnScrolled(vec);
 		}

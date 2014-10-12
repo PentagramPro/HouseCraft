@@ -51,7 +51,8 @@ public class Manager : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-
+		camCon.ShowPoint(House.MapBounds.center);
+		camCon.bounds = House.MapBounds;
 	}
 	
 	// Update is called once per frame

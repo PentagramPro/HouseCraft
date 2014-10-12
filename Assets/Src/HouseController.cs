@@ -26,6 +26,8 @@ public class HouseController : BaseController {
 
 	GameObject selectedPrefab = null;
 
+	public Rect MapBounds;
+
 	CellController.CellRotation selectedRotation = CellController.CellRotation.None;
 
 	Modes state = Modes.Idle;
@@ -40,10 +42,28 @@ public class HouseController : BaseController {
 	public void RestoreCache()
 	{
 		CellController[] c = GetComponentsInChildren<CellController>();
-		
+		if(c.Length>0)
+		{
+			MapBounds.xMin = c[0].Position.X;
+			MapBounds.yMin = c[0].Position.Y;
+			MapBounds.xMax = MapBounds.xMin+1;
+			MapBounds.yMax = MapBounds.yMin+1;
+		}
 		foreach(CellController cell in c)
 		{
 			cells.Add(cell.Position.toInt(),cell);
+
+			if(cell.Position.X>=MapBounds.xMax)
+				MapBounds.xMax = cell.Position.X+1;
+
+			if(cell.Position.X<MapBounds.xMin)
+				MapBounds.xMin = cell.Position.X;
+
+			if(cell.Position.Y>=MapBounds.yMax)
+				MapBounds.yMax = cell.Position.Y+1;
+			
+			if(cell.Position.Y<MapBounds.yMin)
+				MapBounds.yMin = cell.Position.Y;
 		}
 		
 		WallController[] w = GetComponentsInChildren<WallController>();
@@ -83,8 +103,8 @@ public class HouseController : BaseController {
 
 	void OnDrawGizmosSelected()
 	{
-
-		
+		Gizmos.color = Color.blue;
+		Gizmos.DrawWireCube(MapBounds.center,MapBounds.size);
 		Gizmos.color = Color.red;    
 		Gizmos.DrawWireCube(markerPos, new Vector3(1,1, 1) * 1.1f);
 	}
@@ -304,6 +324,8 @@ public class HouseController : BaseController {
 			
 		}
 	}
+
+
 
 	private void OnRemoveWall(Vector3 pz)
 	{
