@@ -352,16 +352,40 @@ public class HouseController : BaseController {
 	}
 
 
-
-	private void OnRemoveWall(Vector3 pz)
+	private void DeleteWall(WallPoint wp)
 	{
-		WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
 		WallController wall = GetWall(wp);
-		if(wall!=null && IsInsideBuilding(wp))
+		if(wall!=null)
 		{
 			Destroy(wall.gameObject);
 			walls.Remove(wp.toInt());
 			UpdateWallsAround(wp);
+		}
+	}
+	private void OnRemoveWall(Vector3 pz)
+	{
+		WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
+
+		if(IsInsideBuilding(wp))
+		{
+			DeleteWall(wp);
+
+			WallController w;
+			w = GetWall(new WallPoint(wp.X+1,wp.Y));
+			if(w!=null && w.PrefabIsDoor())
+				DeleteWall(w.Position);
+
+			w = GetWall(new WallPoint(wp.X-1,wp.Y));
+			if(w!=null && w.PrefabIsDoor())
+				DeleteWall(w.Position);
+
+			w = GetWall(new WallPoint(wp.X,wp.Y+1));
+			if(w!=null && w.PrefabIsDoor())
+				DeleteWall(w.Position);
+			
+			w = GetWall(new WallPoint(wp.X,wp.Y-1));
+			if(w!=null && w.PrefabIsDoor())
+				DeleteWall(w.Position);
 		}
 	}
 
