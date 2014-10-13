@@ -111,15 +111,18 @@ public class HouseController : BaseController {
 
 		M.UI.bCostsPanel.EstimatedProfit.Value = M.Statistic.SellPrice;
 		M.UI.bCostsPanel.HouseCost.Value = M.Statistic.StartPrice;
+
+		M.UI.bCommandsPanel.ShowRotateButton(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		// BAD THING
-		if(Input.GetKeyUp(KeyCode.Space))
-		{
-			selectedRotation = selectedRotation.Next();
-		}
+
+	}
+
+	public void SwitchRotation()
+	{
+		selectedRotation = selectedRotation.Next();
 	}
 
 	void OnDrawGizmosSelected()
@@ -432,6 +435,7 @@ public class HouseController : BaseController {
 	{
 		if(state==Modes.SetWalls || state==Modes.SetDoors)
 			Phantom.RemoveIndicators();
+		bool showRotationBtn = false;
 
 		switch(mode)
 		{
@@ -452,6 +456,7 @@ public class HouseController : BaseController {
 		case HouseModes.SetObject:
 			state = Modes.SetObject;
 			selectedPrefab = prefab;
+			showRotationBtn = true;
 			break;
 		case HouseModes.RemoveWalls:
 			state = Modes.RemoveWall;
@@ -468,6 +473,7 @@ public class HouseController : BaseController {
 			break;
 		}
 
+		M.UI.bCommandsPanel.ShowRotateButton(showRotationBtn);
 	}
 
 	private void Sale()

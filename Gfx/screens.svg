@@ -18,6 +18,32 @@
    sodipodi:docname="screens.svg">
   <defs
      id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path4233"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path4230"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="539.08318 : 583.63325 : 1"
@@ -79,9 +105,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="-335.39161"
-     inkscape:cy="895.91819"
+     inkscape:zoom="7.919596"
+     inkscape:cx="-701.32517"
+     inkscape:cy="129.32878"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -90,7 +116,7 @@
      inkscape:window-x="1019"
      inkscape:window-y="-5"
      inkscape:window-maximized="1"
-     inkscape:snap-grids="true"
+     inkscape:snap-grids="false"
      inkscape:object-nodes="false"
      inkscape:snap-nodes="true"
      inkscape:snap-object-midpoints="true">
@@ -112,7 +138,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3354,5 +3380,33 @@
        inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\place_indicator_door.png"
        inkscape:export-xdpi="480"
        inkscape:export-ydpi="480" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffcc00;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4223"
+       sodipodi:cx="-705"
+       sodipodi:cy="897.36218"
+       sodipodi:rx="20"
+       sodipodi:ry="20"
+       d="m -685,897.36218 a 20,20 0 1 1 -40,0 20,20 0 1 1 40,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffcc00;fill-opacity:1;stroke:#ffffff;stroke-width:2.58302854999999990;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       id="path4225"
+       sodipodi:cx="-705"
+       sodipodi:cy="897.36218"
+       sodipodi:rx="15"
+       sodipodi:ry="15"
+       d="m -719.40441,893.17732 a 15,15 0 1 1 13.17533,19.13442"
+       sodipodi:start="3.424336"
+       sodipodi:end="7.9360121"
+       sodipodi:open="true"
+       transform="matrix(0.78209215,0,0,0.76655555,-153.62503,209.48422)" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -703.53969,904.28013 -3.63022,5.52428 6.25032,2.93574"
+       id="path5229"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
   </g>
 </svg>
