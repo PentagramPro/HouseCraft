@@ -107,7 +107,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="7.919596"
      inkscape:cx="-701.32517"
-     inkscape:cy="129.32878"
+     inkscape:cy="134.37954"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -138,7 +138,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3380,33 +3380,39 @@
        inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\place_indicator_door.png"
        inkscape:export-xdpi="480"
        inkscape:export-ydpi="480" />
-    <path
-       sodipodi:type="arc"
-       style="fill:#ffcc00;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="path4223"
-       sodipodi:cx="-705"
-       sodipodi:cy="897.36218"
-       sodipodi:rx="20"
-       sodipodi:ry="20"
-       d="m -685,897.36218 a 20,20 0 1 1 -40,0 20,20 0 1 1 40,0 z" />
-    <path
-       sodipodi:type="arc"
-       style="fill:#ffcc00;fill-opacity:1;stroke:#ffffff;stroke-width:2.58302854999999990;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
-       id="path4225"
-       sodipodi:cx="-705"
-       sodipodi:cy="897.36218"
-       sodipodi:rx="15"
-       sodipodi:ry="15"
-       d="m -719.40441,893.17732 a 15,15 0 1 1 13.17533,19.13442"
-       sodipodi:start="3.424336"
-       sodipodi:end="7.9360121"
-       sodipodi:open="true"
-       transform="matrix(0.78209215,0,0,0.76655555,-153.62503,209.48422)" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -703.53969,904.28013 -3.63022,5.52428 6.25032,2.93574"
-       id="path5229"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
+    <g
+       id="g5231"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\btn_rotate.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         d="m -685,897.36218 a 20,20 0 1 1 -40,0 20,20 0 1 1 40,0 z"
+         sodipodi:ry="20"
+         sodipodi:rx="20"
+         sodipodi:cy="897.36218"
+         sodipodi:cx="-705"
+         id="path4223"
+         style="fill:#ffcc00;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.78209215,0,0,0.76655555,-153.62503,209.48422)"
+         sodipodi:open="true"
+         sodipodi:end="7.9360121"
+         sodipodi:start="3.424336"
+         d="m -719.40441,893.17732 a 15,15 0 1 1 13.17533,19.13442"
+         sodipodi:ry="15"
+         sodipodi:rx="15"
+         sodipodi:cy="897.36218"
+         sodipodi:cx="-705"
+         id="path4225"
+         style="fill:#ffcc00;fill-opacity:1;stroke:#ffffff;stroke-width:2.58302854999999990;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path5229"
+         d="m -703.53969,904.28013 -3.63022,5.52428 6.25032,2.93574"
+         style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
   </g>
 </svg>

@@ -39,7 +39,8 @@ public class Evaluator : BaseController {
 		new SmallRoom(-1000, RoomType.Garage,3,3),
 		new UglyObject(-400),
 		new Studio(500),
-		new EatingTogether(300)
+		new EatingTogether(300),
+		new PassThroughBedroom(-300)
 
 	};
 	List<IObjectRule> ObjectRules = new List<IObjectRule>()
