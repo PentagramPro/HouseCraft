@@ -20,6 +20,10 @@ public class RoomWithout : BaseRule, IRoomRule
 
 	#endregion
 
+	public override string GetLocalizedName (Strings str)
+	{
+		return base.GetLocalizedName (str)+ObjectType.GetLocalizedName(str);
+	}
 
 }
 

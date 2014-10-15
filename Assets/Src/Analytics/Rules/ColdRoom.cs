@@ -35,7 +35,10 @@ public class ColdRoom : BaseRule, IRoomRule
 
 	#endregion
 
-
+	public override string GetLocalizedName (Strings str)
+	{
+		return base.GetLocalizedName (str);
+	}
 }
 
 

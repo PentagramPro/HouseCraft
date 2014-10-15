@@ -7,11 +7,11 @@ public class NoisyRoom : BaseRule, IRoomRule
 		TypeOfRoom = type;
 	}
 
-	public override string Name {
+	/*public override string Name {
 		get {
 			return base.Name+": "+Enum.GetName(typeof(RoomType),TypeOfRoom);
 		}
-	}
+	}*/
 
 	#region IRoomRule implementation
 

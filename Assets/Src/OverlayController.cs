@@ -42,7 +42,7 @@ public class OverlayController : BaseController {
 		Text txt = Instantiate<Text>(OverlayTextPrefab);
 		txt.rectTransform.parent = OverlayCanvas.transform;
 		txt.rectTransform.localScale = new Vector3(1,1,1);
-		txt.text = room.Name;
+		txt.text = room.TypeOfRoom.GetLocalizedName(M.UI.S);
 		txt.rectTransform.position = new Vector3(room.LabelPos.X, room.LabelPos.Y,0);
 	}
 }

@@ -15,10 +15,13 @@ public class BrokenRulesPanel : BaseController {
 	
 	}
 
-	public void AddRule(string Name, int Cost)
+	public void AddRule(string Name, string Description, int Cost)
 	{
 		BrokenRule r = Instantiate<BrokenRule>(BrokenRulePrefab);
 		r.Name = Name;
+		if(Description!=null && Description.Length>0)
+			r.Description=Description;
+
 		r.Value = Cost;
 		r.transform.parent = transform;
 	}
@@ -27,7 +30,7 @@ public class BrokenRulesPanel : BaseController {
 	{
 		foreach(AppliedRule r in M.Statistic.WorstRulesBroken)
 		{
-			AddRule(r.Name,Mathf.Abs(r.Cost));
+			AddRule(r.Name,r.Description,Mathf.Abs(r.Cost));
 		}
 		animator.SetTrigger("Start");
 	}

@@ -8,11 +8,11 @@ public class SunnyRoom : BaseRule, IRoomRule
 		TypeOfRoom = type;
 	}
 	
-	public override string Name {
+	/*public override string Name {
 		get {
 			return base.Name+": "+Enum.GetName(typeof(RoomType),TypeOfRoom);
 		}
-	}
+	}*/
 	#region IRoomRule implementation
 	
 	public bool Process (Segmentator s, Room r)

@@ -5,11 +5,24 @@ using System.Collections;
 public class BrokenRule : MonoBehaviour {
 
 	public Text Header;
+	public Text Descr;
 	public NumericFieldController Cost;
 
 	public string Name{
 		set{
 			Header.text = value;
+		}
+		get{
+			return Header.text;
+		}
+	}
+
+	public string Description{
+		set{
+			Descr.text = value;
+		}
+		get{
+			return Descr.text;
 		}
 	}
 

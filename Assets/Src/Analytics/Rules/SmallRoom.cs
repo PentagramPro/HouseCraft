@@ -9,12 +9,12 @@ public class SmallRoom : BaseRule, IRoomRule
 		this.sizeX = sizeX;
 		this.sizeY = sizeY;
 	}
-
+/*
 	public override string Name {
 		get {
 			return base.Name+": "+Enum.GetName(typeof(RoomType),TypeOfRoom);
 		}
-	}
+	}*/
 
 	#region IRoomRule implementation
 

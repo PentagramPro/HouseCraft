@@ -128,11 +128,11 @@ public class Evaluator : BaseController {
 		if(rule.Amount<0)
 		{
 			Penalty-=rule.Amount;
-			AppliedRules.Add(new AppliedRule(rule.Name,rule.Amount));
+			AppliedRules.Add(new AppliedRule(rule.GetLocalizedName(M.UI.S),rule.GetLocalizedDescr(M.UI.S), rule.Amount));
 		}
 		else
 			Bonus+=rule.Amount;
 
-		Debug.Log(string.Format("Rule '{0}' for ${1}",rule.Name,rule.Amount));
+		Debug.Log(string.Format("Rule '{0}' for ${1} - {2}",rule.Name,rule.Amount,rule.GetLocalizedName(M.UI.S)));
 	}
 }
