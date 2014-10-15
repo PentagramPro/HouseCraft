@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF8"?>
+<Strings Language="Russian" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SimpleStrings>
+  	<String Name="Message.NoStorage">Cannot unload {0}: no suitable inventory available.</String>
+  	<String Name="BtnStart">Старт</String>
+  	<String Name="LabelWall">стена</String>
+  	<String Name="LabelDoor">дверь</String>
+  	<String Name="LabelRemoveWall">удалить стену/дверь</String>
+  	<String Name="LabelRemoveObject">удалить объект</String>
+  	
+  	<String Name="LabelBathtub">ванна</String>
+  	<String Name="LabelBoiler">бойлер</String>
+  	<String Name="LabelRiser">стояк</String>
+  	<String Name="LabelShower">душ</String>
+  	<String Name="LabelSink">раковина</String>
+  	<String Name="LabelToilet">унитаз</String>
+  	<String Name="LabelFireplace">камин</String>
+  	<String Name="LabelHeater">радиатор</String>
+  	<String Name="LabelHeatingPipe">труба отопления</String>
+  	<String Name="LabelHob">плита</String>
+  	<String Name="LabelVent">вентшахта</String>
+  	
+  	<String Name="LabelHouseBoughtFor">дом куплен за:</String>
+  	<String Name="LabelProbablePrice">приблизительная цена:</String>
+  	<String Name="LabelCurrentExpences">текущие расходы:</String>
+  	
+  	<String Name="LabelEquipment">оборудование:</String>
+  	<String Name="LabelCommunications">коммуникации:</String>
+  	<String Name="LabelPenalties">потери из-за плохой планировки:</String>
+  	<String Name="LabelTotalExpences">итого расходы:</String>
+  	<String Name="LabelAveragePrice">средняя рыночная цена:</String>
+  	<String Name="LabelTraded">выторговано за удачные решения:</String>
+  	
+  	<String Name="BtnSale">Продать!</String>
+  	<String Name="BtnBack">Назад</String>
+  	<String Name="BtnNext">Далее</String>
+  	<String Name=""></String>
+  	<String Name=""></String>
+  	<String Name=""></String>
+  	
+  	<String Name="Label"></String>
+  </SimpleStrings>
+</Strings>

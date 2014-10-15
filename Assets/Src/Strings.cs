@@ -6,6 +6,8 @@ using System.IO;
 [XmlRoot("Strings")]
 public class Strings
 {
+	[XmlAttribute("Language")]
+	public string Language = "Unknown";
 	[XmlArray("SimpleStrings"),XmlArrayItem("String")]
 	public List<SimpleString> SimpleStrings;
 
@@ -17,6 +19,11 @@ public class Strings
 		get{
 			return StringsByName[name];
 		}
+	}
+
+	public bool HasString(string name)
+	{
+		return StringsByName.ContainsKey(name);
 	}
 
 	public void Sort()

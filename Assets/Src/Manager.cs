@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class Manager : MonoBehaviour {
 
@@ -11,12 +11,13 @@ public class Manager : MonoBehaviour {
 
 	CameraController camCon;
 
-	public TextAsset stringsFile;
+
+
 
 	public Stats Statistic;
 	public HouseController House;
 	public OverlayController Overlay;
-	public Strings S{get;internal set;}
+
 
 
 
@@ -53,7 +54,7 @@ public class Manager : MonoBehaviour {
 
 		camCon = Camera.main.GetComponent<CameraController>();
 
-		S = Strings.Load(stringsFile.text);
+
 	}
 	// Use this for initialization
 	void Start () {

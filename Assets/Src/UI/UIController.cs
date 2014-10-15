@@ -6,6 +6,10 @@ public class UIController : BaseController {
 	enum Modes{
 		Build,Verify,Results
 	}
+	public Strings S{get;internal set;}
+
+	public List<TextAsset> stringsFiles;
+	public TextAsset defaultStringFile;
 
 	List<GameObject> panels;
 
@@ -25,6 +29,19 @@ public class UIController : BaseController {
 	{
 
 		base.Awake ();
+
+	
+		TextAsset curStringFile = null;
+		foreach(TextAsset sf in stringsFiles)
+		{
+			if(System.IO.Path.GetFileNameWithoutExtension(sf.name)
+			   == System.Enum.GetName(typeof(SystemLanguage),Application.systemLanguage) )
+				curStringFile = sf;
+		}
+		if(curStringFile==null)
+			curStringFile = defaultStringFile;
+		S = Strings.Load(curStringFile.text);
+
 
 		panels = new List<GameObject>(){
 			ConditionsPanel.gameObject,
