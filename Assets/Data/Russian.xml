@@ -2,6 +2,18 @@
 <Strings Language="Russian" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SimpleStrings>
   	<String Name="Message.NoStorage">Cannot unload {0}: no suitable inventory available.</String>
+  	
+  	<String Name="LabelTotalProfit">общий доход:</String>
+  	<String Name="LabelLevelSelectorHeader">Стартовый набор уровней</String>
+  	
+  	<String Name="LevelTraining">Разминка</String>
+  	<String Name="LevelSimpleCottage">Простой коттедж</String>
+  	<String Name="Level"></String>
+  	<String Name="Level"></String>
+  	<String Name="Level"></String>
+  	<String Name="Level"></String>
+  	
+  	
   	<String Name="BtnStart">Старт</String>
   	<String Name="LabelWall">стена</String>
   	<String Name="LabelDoor">дверь</String>
