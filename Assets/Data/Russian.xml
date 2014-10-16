@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF8"?>
 <Strings Language="Russian" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SimpleStrings>
-  	<String Name="Message.NoStorage">Cannot unload {0}: no suitable inventory available.</String>
-  	
   	<String Name="LabelTotalProfit">общий доход:</String>
   	<String Name="LabelLevelSelectorHeader">Стартовый набор уровней</String>
   	
   	<String Name="LevelTraining">Разминка</String>
   	<String Name="LevelSimpleCottage">Простой коттедж</String>
-  	<String Name="Level"></String>
-  	<String Name="Level"></String>
-  	<String Name="Level"></String>
-  	<String Name="Level"></String>
+  	<String Name="LevelBigHouse">Большой дом</String>
+  	<String Name="LevelHugeHouse">Огромный дом</String>
+  	<String Name="LevelColdHouse">Холодный дом</String>
+  	<String Name="LevelGarage">Гараж</String>
   	
   	
   	<String Name="BtnStart">Старт</String>
