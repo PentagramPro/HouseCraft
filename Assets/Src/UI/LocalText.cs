@@ -15,7 +15,9 @@ public class LocalText : BaseController {
 		}
 		catch (UnityException e)
 		{
-
+			StringLoaderController stringLoader = GetComponentInParent<StringLoaderController>();
+			if(stringLoader!=null)
+				S = stringLoader.S;
 		}
 	}
 	// Use this for initialization

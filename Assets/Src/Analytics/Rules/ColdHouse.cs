@@ -13,6 +13,9 @@ public class ColdHouse : BaseRule, IHouseRule
 			if(h.Operates)
 				totalPower+=h.Power;
 		}
+		foreach(LogicFireplace f in s.LCache.Fireplaces)
+			totalPower+=f.Power;
+
 		if(totalPower<s.CellsCount)
 			return true;
 		return false;

@@ -91,6 +91,7 @@ public class Room  {
 					cache.Boilers.Add(lo as LogicBoiler);
 					break;
 				case CellObjects.Fireplace:
+					cache.Fireplaces.Add(lo as LogicFireplace);
 					break;
 				case CellObjects.Heater:
 					cache.Heaters.Add(lo as LogicHeater);

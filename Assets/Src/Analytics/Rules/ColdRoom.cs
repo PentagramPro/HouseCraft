@@ -25,6 +25,11 @@ public class ColdRoom : BaseRule, IRoomRule
 				if(heater.Operates)
 					totalPower+=heater.Power;
 			}
+			if(o is LogicFireplace)
+			{
+				LogicFireplace fire = o as LogicFireplace;
+				totalPower+=fire.Power;
+			}
 		}
 
 		if(totalPower<r.LogicCells.Count)

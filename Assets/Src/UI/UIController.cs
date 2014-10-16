@@ -6,12 +6,16 @@ public class UIController : BaseController {
 	enum Modes{
 		Build,Verify,Results
 	}
-	public Strings S{get;internal set;}
+	public Strings S{get
+		{
+			return stringLoader.S;
+		}
+	}
 
-	public List<TextAsset> stringsFiles;
-	public TextAsset defaultStringFile;
+
 
 	List<GameObject> panels;
+	StringLoaderController stringLoader;
 
 	public ConditionsPanel ConditionsPanel;
 
@@ -29,18 +33,9 @@ public class UIController : BaseController {
 	{
 
 		base.Awake ();
-
+		stringLoader = GetComponent<StringLoaderController>();
 	
-		TextAsset curStringFile = null;
-		foreach(TextAsset sf in stringsFiles)
-		{
-			if(System.IO.Path.GetFileNameWithoutExtension(sf.name)
-			   == System.Enum.GetName(typeof(SystemLanguage),Application.systemLanguage) )
-				curStringFile = sf;
-		}
-		if(curStringFile==null)
-			curStringFile = defaultStringFile;
-		S = Strings.Load(curStringFile.text);
+
 
 
 		panels = new List<GameObject>(){
