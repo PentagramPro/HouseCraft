@@ -3,12 +3,16 @@ using System.Collections.Generic;
 
 public class LevelSelectorController : MonoBehaviour {
 
-	public List<LevelItemController> Levels = new List<LevelItemController>();
+	//public List<LevelItemController> Levels = new List<LevelItemController>();
+	LevelItemController[] Levels;
 	public NumericFieldController TotalProfit;
 	LevelItemController selectedLevel = null;
+	PlayerProfile profile;
+
 	// Use this for initialization
 	void Start () {
-		PlayerProfile profile = GetComponent<PlayerProfile>();
+		profile = GetComponent<PlayerProfile>();
+		Levels= GetComponentsInChildren<LevelItemController>();
 		int total = 0;
 		foreach(LevelItemController level in Levels)
 		{
@@ -40,5 +44,10 @@ public class LevelSelectorController : MonoBehaviour {
 			return;
 
 		Application.LoadLevel(selectedLevel.SceneName);
+	}
+
+	public void OnReset()
+	{
+		profile.Reset();
 	}
 }

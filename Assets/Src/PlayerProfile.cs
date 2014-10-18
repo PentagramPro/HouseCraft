@@ -34,4 +34,8 @@ public class PlayerProfile : MonoBehaviour {
 		PlayerPrefs.Save();
 	}
 
+	public void Reset()
+	{
+		PlayerPrefs.DeleteAll();
+	}
 }
