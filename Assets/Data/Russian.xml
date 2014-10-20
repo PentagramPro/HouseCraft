@@ -118,6 +118,10 @@
 	<String Name="Object.Hob">плита</String>
 	<String Name="Object.Boiler ">бойлер</String>
 
+<!-- New in 0.91-->
+	<String Name="BtnStartGame">Начать игру</String>
+	<String Name="BtnInstructions">Как играть</String>
+	<String Name="BtnExit">Выход</String>
   	<String Name="Label"></String>
   	<String Name=""></String>
   </SimpleStrings>

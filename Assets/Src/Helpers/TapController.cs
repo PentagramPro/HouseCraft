@@ -16,6 +16,8 @@ public class TapController : BaseController {
 
 	public void OnMouseDown()
 	{
+		if(Input.mousePosition.x>Screen.width-316)
+			return;
 
 		if(EventSystem.current.IsPointerOverGameObject())
 			return;
@@ -48,6 +50,9 @@ public class TapController : BaseController {
 	public void OnMouseUp()
 	{
 		if(EventSystem.current.IsPointerOverGameObject())
+			return;
+
+		if(!mouseDown)
 			return;
 
 		if (curPanDistance < panDistance && OnTap!=null)

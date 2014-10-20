@@ -9,6 +9,9 @@ public class LevelSelectorController : MonoBehaviour {
 	LevelItemController selectedLevel = null;
 	PlayerProfile profile;
 
+	public InstructionsPanelController InstructionsPanel;
+	public Animator ProfitPanelAnimator;
+
 	// Use this for initialization
 	void Start () {
 		profile = GetComponent<PlayerProfile>();
@@ -23,10 +26,24 @@ public class LevelSelectorController : MonoBehaviour {
 		TotalProfit.Value = total;
 
 	}
-	
+
+	void OnEnable()
+	{
+		ProfitPanelAnimator.SetTrigger("Start");
+	}
+
+	void OnDisable()
+	{
+		ProfitPanelAnimator.SetTrigger("Stop");
+	}
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void OnInstructions()
+	{
+		InstructionsPanel.gameObject.SetActive(true);
 	}
 
 	public void OnLevelSelected(LevelItemController l)
