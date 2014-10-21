@@ -46,6 +46,10 @@ public class LevelSelectorController : MonoBehaviour {
 		InstructionsPanel.gameObject.SetActive(true);
 	}
 
+	public void OnCloseInstructions()
+	{
+		InstructionsPanel.gameObject.SetActive(false);
+	}
 	public void OnLevelSelected(LevelItemController l)
 	{
 		selectedLevel = l;

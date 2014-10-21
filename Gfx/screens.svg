@@ -19,6 +19,19 @@
   <defs
      id="defs4">
     <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path4843"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
        refY="0.0"
@@ -105,9 +118,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.919596"
-     inkscape:cx="-701.32517"
-     inkscape:cy="134.37954"
+     inkscape:zoom="1.4"
+     inkscape:cx="293.6396"
+     inkscape:cy="1161.8968"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -118,7 +131,7 @@
      inkscape:window-maximized="1"
      inkscape:snap-grids="false"
      inkscape:object-nodes="false"
-     inkscape:snap-nodes="true"
+     inkscape:snap-nodes="false"
      inkscape:snap-object-midpoints="true">
     <inkscape:grid
        type="xygrid"
@@ -145,7 +158,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="фон">
+     inkscape:label="фон"
+     sodipodi:insensitive="true">
     <rect
        style="fill:#0066ff;fill-opacity:1;stroke:none"
        id="rect4200"
@@ -294,6 +308,14 @@
        x="550"
        y="1202.3622"
        ry="4.9022776e-007" />
+    <rect
+       style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.25000000000000000;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3463"
+       width="711.1474"
+       height="429.31482"
+       x="7.0710669"
+       y="-461.85648"
+       ry="6.9952188e-007" />
   </g>
   <g
      inkscape:label="Layer 1"
@@ -3414,5 +3436,528 @@
          d="m -703.53969,904.28013 -3.63022,5.52428 6.25032,2.93574"
          style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
-  </g>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3465"
+       width="100.04316"
+       height="100.04316"
+       x="50.913727"
+       y="-399.8927"
+       ry="1.5395337e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3465-1"
+       width="100.04316"
+       height="100.04316"
+       x="212.62933"
+       y="-400.02161"
+       ry="1.5395337e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <g
+       style="fill:#ffffff"
+       transform="translate(-62.189266,-14.152648)"
+       id="g5467"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704">
+      <g
+         id="g5461"
+         transform="translate(-3.788072,2.0203051)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path5459"
+           style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+           d="m 307.8233,-425.06004 14.60005,26.74813 -28.45057,-10.91733 c 7.52752,-1.66457 13.10172,-8.07573 13.85052,-15.8308 z" />
+      </g>
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 188.52832,-415.80787 c 0,0 15.36987,-27.49494 59.3635,-26.85134 43.99362,0.64359 60.45724,26.63841 60.45724,26.63841"
+         id="path5465"
+         inkscape:connector-curvature="0"
+         transform="translate(-3.0304576,9.5964491)"
+         sodipodi:nodetypes="czc" />
+    </g>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5478"
+       d="m 250.71428,-349.42353 0,25"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5480"
+       d="m 250.71428,-299.78066 0,-14.64287"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5484"
+       d="m 250.71428,-349.42353 -40,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5486"
+       d="m 270.71428,-349.42353 0,-50"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5488"
+       d="m 250.71428,-349.42353 5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5490"
+       d="m 265.71428,-349.42353 5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5492"
+       d="m 270.71428,-349.42353 5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5494"
+       d="m 285.71428,-349.42353 25,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5496"
+       d="m 290.71428,-349.42353 0,10"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5498"
+       d="m 290.71428,-329.42353 0,5 20,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5500"
+       d="m 270.71428,-324.42353 0,25"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5502"
+       d="m 275.71428,-324.42353 -5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5504"
+       d="m 285.71428,-324.42353 5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3465-1-7"
+       width="100.04316"
+       height="100.04316"
+       x="384.05789"
+       y="-401.09305"
+       ry="1.5395337e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5478-4"
+       d="m 422.14285,-350.49496 0,25"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5480-0"
+       d="m 422.14285,-300.85209 0,-14.64287"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5484-9"
+       d="m 422.14285,-350.49496 -40,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5486-4"
+       d="m 442.14285,-350.49496 0,-50"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5488-8"
+       d="m 422.14285,-350.49496 5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5490-8"
+       d="m 437.14285,-350.49496 5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5492-2"
+       d="m 442.14285,-350.49496 5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5494-4"
+       d="m 457.14285,-350.49496 25,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5496-5"
+       d="m 462.14285,-350.49496 0,10"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5498-5"
+       d="m 462.14285,-330.49496 0,5 20,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5500-1"
+       d="m 442.14285,-325.49496 0,25"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5502-7"
+       d="m 447.14285,-325.49496 -5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5504-1"
+       d="m 457.14285,-325.49496 5,0"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="opacity:0.74418604;fill:#ff0000;fill-opacity:1;stroke:none"
+       id="rect5608"
+       width="58.214291"
+       height="50.357132"
+       x="383.92856"
+       y="-401.03067"
+       ry="1.5616853e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="opacity:0.74418604;fill:#00ff00;fill-opacity:1;stroke:none"
+       id="rect5608-6"
+       width="41.785717"
+       height="50.535702"
+       x="442.58929"
+       y="-401.20923"
+       ry="1.5672232e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="opacity:0.74418604;fill:#00ffff;fill-opacity:1;stroke:none"
+       id="rect5608-6-1"
+       width="38.035717"
+       height="48.928558"
+       x="383.75"
+       y="-350.04852"
+       ry="1.5173822e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="opacity:0.74418604;fill:#ffd42a;fill-opacity:1;stroke:none"
+       id="rect5608-6-1-4"
+       width="41.964287"
+       height="24.10713"
+       x="442.23206"
+       y="-325.49493"
+       ry="7.476151e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="opacity:0.74418604;fill:#cc00ff;fill-opacity:1;stroke:none"
+       id="rect5608-6-1-4-2"
+       width="21.428574"
+       height="24.10713"
+       x="462.23212"
+       y="-350.04852"
+       ry="7.476151e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <g
+       style="fill:#ffffff"
+       transform="translate(112.84713,-13.02649)"
+       id="g5467-3"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704">
+      <g
+         id="g5461-2"
+         transform="translate(-3.788072,2.0203051)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path5459-2"
+           style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+           d="m 307.8233,-425.06004 14.60005,26.74813 -28.45057,-10.91733 c 7.52752,-1.66457 13.10172,-8.07573 13.85052,-15.8308 z" />
+      </g>
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 188.52832,-415.80787 c 0,0 15.36987,-27.49494 59.3635,-26.85134 43.99362,0.64359 60.45724,26.63841 60.45724,26.63841"
+         id="path5465-1"
+         inkscape:connector-curvature="0"
+         transform="translate(-3.0304576,9.5964491)"
+         sodipodi:nodetypes="czc" />
+    </g>
+    <g
+       style="fill:#ffffff"
+       transform="translate(283.80919,-9.3031572)"
+       id="g5467-3-6"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704">
+      <g
+         id="g5461-2-8"
+         transform="translate(-3.788072,2.0203051)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path5459-2-5"
+           style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+           d="m 307.8233,-425.06004 14.60005,26.74813 -28.45057,-10.91733 c 7.52752,-1.66457 13.10172,-8.07573 13.85052,-15.8308 z" />
+      </g>
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 188.52832,-415.80787 c 0,0 15.36987,-27.49494 59.3635,-26.85134 43.99362,0.64359 60.45724,26.63841 60.45724,26.63841"
+         id="path5465-1-7"
+         inkscape:connector-curvature="0"
+         transform="translate(-3.0304576,9.5964491)"
+         sodipodi:nodetypes="czc" />
+    </g>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3465-6"
+       width="100.04316"
+       height="100.04316"
+       x="547.48364"
+       y="-399.75113"
+       ry="1.5395337e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="580.33264"
+       y="-328.51633"
+       id="text5754"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704"><tspan
+         sodipodi:role="line"
+         id="tspan5756"
+         x="580.33264"
+         y="-328.51633"
+         style="font-size:64px;fill:#ffffff">$</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect5758"
+       width="6.8185301"
+       height="6.8185296"
+       x="302.03561"
+       y="-346.6991"
+       ry="1.4845504e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect5758-1"
+       width="6.8185301"
+       height="6.8185296"
+       x="302.11856"
+       y="-309.95477"
+       ry="1.4845504e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect5758-8"
+       width="6.8185301"
+       height="6.8185296"
+       x="273.06833"
+       y="-310.02875"
+       ry="1.4845504e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect5758-9"
+       width="6.8185301"
+       height="11.364216"
+       x="301.90933"
+       y="-338.74411"
+       ry="2.4742506e-006"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Assets\Textures\help_algorithm.png"
+       inkscape:export-xdpi="224.54704"
+       inkscape:export-ydpi="224.54704" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="49.285713"
+       y="-259.78067"
+       id="text5792"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="49.285713"
+         y="-259.78067"
+         id="tspan5798">Разбейте дом на комнаты, </tspan><tspan
+         sodipodi:role="line"
+         x="49.285713"
+         y="-237.28069"
+         id="tspan5813">установите необходимое</tspan><tspan
+         sodipodi:role="line"
+         x="49.285713"
+         y="-214.78069"
+         id="tspan5815">оборудование. Помните, </tspan><tspan
+         sodipodi:role="line"
+         x="49.285713"
+         y="-192.28069"
+         id="tspan5849">что размер и расположение</tspan><tspan
+         sodipodi:role="line"
+         x="49.285713"
+         y="-169.78069"
+         id="tspan5851">комнат имеют большое </tspan><tspan
+         sodipodi:role="line"
+         x="49.285713"
+         y="-147.28069"
+         id="tspan5853">значение!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="291.09103"
+       y="-261.14996"
+       id="text5792-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="291.09103"
+         y="-261.14996"
+         id="tspan5815-5" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="375.71426"
+       y="-262.63782"
+       id="text5855"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5857"
+         x="375.71426"
+         y="-262.63782">Когда будете готовы, нажмите </tspan><tspan
+         sodipodi:role="line"
+         x="375.71426"
+         y="-240.13782"
+         id="tspan5861">&quot;продать&quot;, чтобы выяснить цену.</tspan><tspan
+         sodipodi:role="line"
+         x="375.71426"
+         y="-217.63782"
+         id="tspan5865">Вы перепродаете дом с планировкой</tspan><tspan
+         sodipodi:role="line"
+         x="375.71426"
+         y="-195.13782"
+         id="tspan5877">и ваша цель - заработать, поэтому</tspan><tspan
+         sodipodi:role="line"
+         x="375.71426"
+         y="-172.63782"
+         id="tspan5881">уровень вы сможете завершить </tspan><tspan
+         sodipodi:role="line"
+         x="375.71426"
+         y="-150.13782"
+         id="tspan5883">только если доходы превысят расходы.</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5885"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:18px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion5887"><rect
+           id="rect5889"
+           width="37.142857"
+           height="23.571428"
+           x="113.57143"
+           y="-181.92352" /></flowRegion><flowPara
+         id="flowPara5891"></flowPara></flowRoot>  </g>
 </svg>
