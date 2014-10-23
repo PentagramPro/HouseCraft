@@ -41,7 +41,7 @@
   	<String Name="LabelAveragePrice">average price:</String>
   	<String Name="LabelTraded">traded for good solutions:</String>
   	
-  	<String Name="BtnSale">Sale!</String>
+  	<String Name="BtnSale">Sell!</String>
   	<String Name="BtnBack">Back</String>
   	<String Name="BtnNext">Next</String>
   	
@@ -118,6 +118,18 @@
 	<String Name="Object.Hob">cooker</String>
 	<String Name="Object.Boiler ">boiler</String>
 
+<!-- New in 0.91-->
+	<String Name="BtnStartGame">Start Game</String>
+	<String Name="BtnInstructions">How to Play</String>
+	<String Name="BtnExit">Exit</String>
+	                                
+	<String Name="InstructionsLeft">Divide house into rooms, set up necessary equipment. Remember that proper size and position of rooms is very important!</String>
+	<String Name="InstructionsRight">You are reselling the house and your goal is to have good profit. Level can be completed once your income exceeds expences. Press "Sell" to find, where did you spend your money and how big will be your profit.</String>
+                             	
+	<String Name="TipHeater">One heater generates power enough for 10 square meters</String>
+	<String Name="TipVent">One ventshaft is sufficient for a house. The game will calculate cost of airboxes from it to kitchen and bath.</String>
+	<String Name="TipBoiler">Boiler is necessary when house doesn`t connected to central heating.</String>
+	
   	<String Name="Label"></String>
   	<String Name=""></String>
   </SimpleStrings>

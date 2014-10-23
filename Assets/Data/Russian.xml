@@ -122,6 +122,13 @@
 	<String Name="BtnStartGame">Начать игру</String>
 	<String Name="BtnInstructions">Как играть</String>
 	<String Name="BtnExit">Выход</String>
+	
+	<String Name="InstructionsLeft">Разбейте дом на комнаты, установите необходимое оборудование. Помните, что размер и расположение комнат имеют большое значение!</String>
+	<String Name="InstructionsRight">Вы перепродаете дом с планировкой и ваша цель - заработать, поэтому уровень вы сможете завершить только если доходы превысят расходы. Нажмите "продать", чтобы узнать, на что вы потратили деньги и сколько в итоге заработаете</String>
+	<String Name="TipHeater">Одного обогревателя хватает на 10 квадратных метров</String>
+	<String Name="TipVent">Одной вентшахты хватит на целый дом. Игра сама посчитает стоимость прокладки вентиляционных коробов</String>
+	<String Name="TipBoiler">Бойлер нужен в тех случаях, когда горячее водоснабжение недоступно.</String>
+	
   	<String Name="Label"></String>
   	<String Name=""></String>
   </SimpleStrings>

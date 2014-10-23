@@ -13,7 +13,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="icons.svg">
   <defs
      id="defs4">
@@ -51,16 +51,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="1456.8269"
-     inkscape:cy="531.9615"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="1641.8135"
+     inkscape:cy="624.10041"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1134"
-     inkscape:window-x="1019"
-     inkscape:window-y="-5"
+     inkscape:window-height="1018"
+     inkscape:window-x="1016"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -70,7 +70,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -99,129 +99,6 @@
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon4.png"
        inkscape:export-xdpi="56.429924"
        inkscape:export-ydpi="56.429924" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2138.7768,350.29218 c -2.7508,0.43724 147.1681,0 147.1681,0 l 87.6819,-55.74845 -146.8242,-0.21862 z"
-       id="path3005"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2039.9384,418.40488 c -2.7508,0.43724 147.1681,0 147.1681,0 l 87.6819,-55.74845 -146.8242,-0.21862 z"
-       id="path3005-1"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2321.8006,350.68084 c -2.7508,0.43724 147.1681,0 147.1681,0 l 87.6819,-55.74845 -146.8242,-0.21862 z"
-       id="path3005-7"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2222.9623,418.79354 c -2.7508,0.43724 147.1681,0 147.1681,0 l 87.6819,-55.74845 -146.8242,-0.21862 z"
-       id="path3005-1-4"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1933.8895,486.90624 c -2.7509,0.43724 147.168,0 147.168,0 l 87.682,-55.74845 -146.8243,-0.21862 z"
-       id="path3005-0"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2116.9133,487.2949 c -2.7508,0.43724 147.1681,0 147.1681,0 l 87.6819,-55.74845 -146.8242,-0.21862 z"
-       id="path3005-7-4"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2509.5669,350.778 c -2.7508,0.43725 147.1681,0 147.1681,0 l 87.6819,-55.74845 -146.8242,-0.21861 z"
-       id="path3005-8"
-       inkscape:connector-curvature="0" />
-    <g
-       id="g3888"
-       style="fill:none;stroke:#999999;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none"
-       transform="translate(665,-234.28571)">
-      <path
-         inkscape:connector-curvature="0"
-         id="path3882"
-         d="m 1559.2857,648.79075 93.5714,-60 137.8572,4.28572"
-         style="fill:none;stroke:#999999;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path3884"
-         d="m 1654.2857,590.21932 -2.8571,-65 137.1428,-4.28571"
-         style="fill:none;stroke:#999999;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path3886"
-         d="m 1651.4286,525.21932 -95,52.14286"
-         style="fill:none;stroke:#999999;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    </g>
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2410.7286,418.89071 c -2.7508,0.43724 147.1681,0 147.1681,0 l 87.6818,-55.74845 -146.8242,-0.21862 z"
-       id="path3005-1-2"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2304.6796,487.39207 c -2.7508,0.43725 147.1681,0 147.1681,0 l 87.6819,-55.74845 -146.8242,-0.21862 z"
-       id="path3005-0-1"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2222.6763,418.05496 -3.4385,-80.00012 141.6665,-1.15385 7.5647,81.15397 z"
-       id="path3106"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2364.3428,334.84385 90.7766,-52.1759 0,81.2199 -86.6504,54.55173 z"
-       id="path3108"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="fill:none;stroke:#999999;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2314.2857,289.86218 68.9286,-48.92857"
-       id="path3893"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2195.1683,349.86805 92.6536,-53.54294 102.3877,53.62865 90.0358,-55.40009 -96.4643,-53.68578 -95.9362,55.17149 z"
-       id="path3110"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccc" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2219.2857,339.50503 -47.1428,0"
-       id="path3895"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2223.5714,419.14789 -51.4285,0"
-       id="path3897"
-       inkscape:connector-curvature="0" />
-    <g
-       id="g4531"
-       style="fill:#e6e6e6;stroke:none"
-       transform="matrix(1,0,0,0.93856837,665,-197.24409)">
-      <path
-         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
-         d="m 1513.7812,574.875 0,78.5625 1,0 0,-78.5625 -1,0 z"
-         id="path3899"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:#e6e6e6;fill-rule:evenodd;stroke:none;stroke-width:0.8pt;marker-start:none"
-         d="m 1514.2411,582.45147 4,4 -4,-14 -4,14 4,-4 z"
-         id="path4537"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:#e6e6e6;fill-rule:evenodd;stroke:none;stroke-width:0.8pt;marker-start:none"
-         d="m 1514.2857,646.0229 -4,-4 4,14 4,-14 -4,4 z"
-         id="path4539"
-         inkscape:connector-curvature="0" />
-    </g>
-    <path
-       style="fill:#ffffff;stroke:none"
-       d="m 2141.4286,497.36218 7.1428,-299.28572 18.5715,300 255,15 -259.2858,3.57143 z"
-       id="path4546"
-       inkscape:connector-curvature="0" />
     <rect
        style="fill:#e9c6af;stroke:#000000;stroke-width:6;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect3020"
@@ -711,23 +588,23 @@
        id="rect3859"
        width="392.85715"
        height="347.85712"
-       x="1012.8571"
-       y="380.21933"
+       x="1039.1211"
+       y="436.78787"
        ry="6.9952188e-007"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1032.8571,561.6479 -1.4285,150 151.4285,0 0,-153.57143 z"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1059.1211,618.21644 -1.4285,150 151.4285,0 0,-153.57143 z"
        id="path3861"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1207.8571,560.21932 -5,149.28572 176.4286,-0.71429 0,-154.28571 z"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1234.1211,616.78786 -5,149.28572 176.4286,-0.71429 0,-154.28571 z"
        id="path3863"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -735,7 +612,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1235.7143,536.64789 -201.4286,1e-5 -1.4286,-138.57143 L 1240,397.36218 z"
+       d="m 1261.9783,593.21643 -201.4286,1e-5 -1.4286,-138.57143 207.1429,-0.71429 z"
        id="path3867"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
@@ -744,7 +621,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1264.2857,535.21932 1.4286,-135.71428 112.8571,-0.71429 0,137.14286 z"
+       d="m 1290.5497,591.78786 1.4286,-135.71428 112.8571,-0.71429 0,137.14286 z"
        id="path3869"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
@@ -753,7 +630,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="M 963.57143,391.64789 1216.8174,283.07647 1462.1428,390.21932"
+       d="m 989.8354,448.21643 253.246,-108.57142 245.3254,107.14285"
        id="path3871"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
@@ -765,15 +642,15 @@
        id="rect3897"
        width="88.654915"
        height="25.839588"
-       x="1071.9515"
-       y="480.2193"
+       x="1098.2155"
+       y="536.78784"
        ry="7.7518768"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
        style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1071.9516,489.81687 c -25.6953,-14.79628 -20.1175,19.07038 -20.1175,39.12851 20.9611,21.55538 25.6577,-21.84626 20.1175,-39.12851 z"
+       d="m 1098.2156,546.38541 c -25.6953,-14.79628 -20.1175,19.07038 -20.1175,39.12851 20.9611,21.55538 25.6577,-21.84626 20.1175,-39.12851 z"
        id="path3875"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -781,7 +658,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1159.3507,490.17202 c 25.6953,-14.79628 20.1175,19.07038 20.1175,39.12851 -20.9611,21.55538 -25.6577,-21.84626 -20.1175,-39.12851 z"
+       d="m 1185.6147,546.74056 c 25.6953,-14.79628 20.1175,19.07038 20.1175,39.12851 -20.9611,21.55538 -25.6577,-21.84626 -20.1175,-39.12851 z"
        id="path3875-1"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -792,8 +669,8 @@
        id="rect3895"
        width="81.850479"
        height="26.11644"
-       x="1074.8114"
-       y="506.33578"
+       x="1101.0753"
+       y="562.90436"
        ry="9.2956839"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -803,8 +680,8 @@
        id="rect3899"
        width="51.339287"
        height="5.1785712"
-       x="1182.6786"
-       y="503.43362"
+       x="1208.9425"
+       y="560.0022"
        ry="0.53571415"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -814,8 +691,8 @@
        id="rect3921"
        width="31.428572"
        height="2.321604"
-       x="1193.3929"
-       y="517.00507"
+       x="1219.6569"
+       y="573.57361"
        ry="0.50771517"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -825,8 +702,8 @@
        id="rect3901"
        width="4.1964283"
        height="24.285715"
-       x="1190.5358"
-       y="509.59433"
+       x="1216.7997"
+       y="566.1629"
        ry="0.50771517"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -836,15 +713,15 @@
        id="rect3901-7"
        width="4.1964283"
        height="24.285715"
-       x="1223.2589"
-       y="509.68362"
+       x="1249.5228"
+       y="566.2522"
        ry="0.50771517"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1134.5802,398.74418 c 0.072,12.82438 -2.98,25.06912 -20.1334,25.35894"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1160.8442,455.31272 c 0.072,12.82438 -2.98,25.06912 -20.1334,25.35894"
        id="path3923"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -852,8 +729,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1100.2734,419.97323 c 2.2532,0.0725 14.3914,-0.1449 14.1006,4.20235 -0.2907,5.3616 -11.1205,5.28914 -13.8825,5.28914 1.0902,-3.55025 1.3809,-5.07179 -0.2181,-9.49149 z"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1126.5374,476.54177 c 2.2532,0.0725 14.3914,-0.1449 14.1006,4.20235 -0.2907,5.3616 -11.1205,5.28914 -13.8825,5.28914 1.0902,-3.55025 1.3809,-5.07179 -0.2181,-9.49149 z"
        id="path3925"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -861,8 +738,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1134.7989,398.5268 c -0.072,12.82438 2.98,25.06912 20.1334,25.35894"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1161.0629,455.09534 c -0.072,12.82438 2.98,25.06912 20.1334,25.35894"
        id="path3923-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -870,8 +747,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1169.1057,419.75585 c -2.2532,0.0725 -14.3914,-0.1449 -14.1006,4.20235 0.2907,5.3616 11.1205,5.28914 13.8826,5.28914 -1.0903,-3.55025 -1.381,-5.07179 0.218,-9.49149 z"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1195.3697,476.32439 c -2.2532,0.0725 -14.3914,-0.1449 -14.1006,4.20235 0.2907,5.3616 11.1205,5.28914 13.8826,5.28914 -1.0903,-3.55025 -1.381,-5.07179 0.218,-9.49149 z"
        id="path3925-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -880,44 +757,44 @@
        inkscape:export-ydpi="428" />
     <path
        sodipodi:type="arc"
-       style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.9224331;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.92243314;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="path3948"
        sodipodi:cx="1123.7053"
        sodipodi:cy="431.33539"
        sodipodi:rx="5.5803571"
        sodipodi:ry="5.7589288"
        d="m 1129.2857,431.33539 a 5.5803571,5.7589288 0 1 1 -11.1607,0 5.5803571,5.7589288 0 1 1 11.1607,0 z"
-       transform="matrix(0.81406014,0,0,0.81148611,219.85287,75.855565)"
+       transform="matrix(0.81406014,0,0,0.81148611,246.11684,132.42411)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1134.7983,420.91514 -0.2181,-21.9536"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1161.0623,477.48368 -0.2181,-21.9536"
        id="path3950"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1376.8379,484.65645 -39.901,0 c 0,0 0,9.84899 9.5964,10.35407 9.5965,0.50507 31.3148,1.01015 31.3148,1.01015"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1403.1019,541.22499 -39.901,0 c 0,0 0,9.84899 9.5964,10.35407 9.5965,0.50507 31.3148,1.01015 31.3148,1.01015"
        id="path3952"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1356.8874,495.76813 c 0,0 8.0812,23.23351 8.0812,39.14341"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1383.1514,552.33667 c 0,0 8.0812,23.23351 8.0812,39.14341"
        id="path3954"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1286.4293,508.01623 c 3.5355,0.0631 21.3395,0.31567 21.3395,0.31567 4.6088,-0.0631 3.7248,3.91435 3.7248,3.91435 l -28.3473,-0.56822 c 0,0 -1.1996,-3.8512 3.283,-3.6618 z"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1312.6933,564.58477 c 3.5355,0.0631 21.3395,0.31567 21.3395,0.31567 4.6088,-0.0631 3.7248,3.91435 3.7248,3.91435 l -28.3473,-0.56822 c 0,0 -1.1996,-3.8512 3.283,-3.6618 z"
        id="path3956"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
@@ -925,8 +802,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1311.2411,512.56192 c 0.076,3.59867 0.6066,6.31345 -6.5966,6.31345 -6.6723,0 -24.4148,-0.88388 -24.4148,-0.88388 l -6.4273,-0.12627"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1337.5051,569.13046 c 0.076,3.59867 0.6066,6.31345 -6.5966,6.31345 -6.6723,0 -24.4148,-0.88388 -24.4148,-0.88388 l -6.4273,-0.12627"
        id="path3958"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscc"
@@ -934,8 +811,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1306.5061,519.06477 -4.9245,14.33154"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1332.7701,575.63331 -4.9245,14.33154"
        id="path3960"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -943,8 +820,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1283.3357,511.67803 -3.5987,0 c 0,0 -0.5682,-16.16244 -0.8207,-20.20305 -0.1263,-3.283 -11.5537,-2.96736 -11.8062,0.0631 -0.1263,5.05076 0.3157,34.85026 0.3157,34.85026 l 9.0913,0.94702 2.2729,6.81853"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1309.5997,568.24657 -3.5987,0 c 0,0 -0.5682,-16.16244 -0.8207,-20.20305 -0.1263,-3.283 -11.5537,-2.96736 -11.8062,0.0631 -0.1263,5.05076 0.3157,34.85026 0.3157,34.85026 l 9.0913,0.94702 2.2729,6.81853"
        id="path3966"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
@@ -952,16 +829,16 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 1279.2857,491.82647 1340,492.71932"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1305.5497,548.39501 60.7143,0.89285"
        id="path3968"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1371.5179,484.41575 -1.6518,-2.63393 c 0,0 3.6161,-1.24999 4.4643,-2.58928 1.9196,1.74107 2.1875,5.04464 2.1875,5.04464"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1397.7819,540.98429 -1.6518,-2.63393 c 0,0 3.6161,-1.24999 4.4643,-2.58928 1.9196,1.74107 2.1875,5.04464 2.1875,5.04464"
        id="path3970"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -969,8 +846,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1374.0626,478.88004 c 0,0 -3.8267,-1.97176 -4.643,-2.05357 -2.1109,-0.43895 -6.439,-0.61816 -8.0803,0.13393 -1.6413,0.75209 -1.8304,2.05357 -1.8304,2.05357 l 2.009,0.71428 c 0,0 0.2973,-0.77654 1.3392,-1.11607 1.0419,-0.33953 3.577,-0.36485 4.8215,0.3125 1.2445,0.67735 2.1875,2.94643 2.1875,2.94643 0,0 4.5536,-2.00893 4.1965,-2.99107 z"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1400.3266,535.44858 c 0,0 -3.8267,-1.97176 -4.643,-2.05357 -2.1109,-0.43895 -6.439,-0.61816 -8.0803,0.13393 -1.6413,0.75209 -1.8304,2.05357 -1.8304,2.05357 l 2.009,0.71428 c 0,0 0.2973,-0.77654 1.3392,-1.11607 1.0419,-0.33953 3.577,-0.36485 4.8215,0.3125 1.2445,0.67735 2.1875,2.94643 2.1875,2.94643 0,0 4.5536,-2.00893 4.1965,-2.99107 z"
        id="path3972"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cczcczzcc"
@@ -978,8 +855,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1370.8929,477.13896 0.3125,-1.16071 c 0,0 -1.25,-2.45536 -5.1786,-3.03571 -3.9286,-0.58036 5.8929,-0.9375 7.8571,2.09821 1.9643,3.03571 0.3125,3.4375 0.2679,3.66071"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1397.1569,533.7075 0.3125,-1.16071 c 0,0 -1.25,-2.45536 -5.1786,-3.03571 -3.9286,-0.58036 5.8929,-0.9375 7.8571,2.09821 1.9643,3.03571 0.3125,3.4375 0.2679,3.66071"
        id="path3974"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -990,16 +867,16 @@
        id="rect3980"
        width="111.07935"
        height="1.8711315"
-       x="1266.8575"
-       y="420.16452"
+       x="1293.1215"
+       y="476.73306"
        ry="0.50771517"
        rx="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1277.4562,420.27447 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1303.7202,476.84301 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
        id="path3982"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
@@ -1007,8 +884,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1296.6906,420.09615 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1322.9546,476.66469 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
        id="path3982-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
@@ -1016,8 +893,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1311.1805,419.73888 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1337.4445,476.30742 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
        id="path3982-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
@@ -1025,8 +902,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1334.3435,419.56056 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1360.6075,476.1291 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
        id="path3982-9-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
@@ -1034,8 +911,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1355.4662,419.73888 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1381.7302,476.30742 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
        id="path3982-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
@@ -1043,8 +920,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1373.1827,419.73913 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1399.4467,476.30767 c 0.1604,-1.64013 2.2531,-2.24376 2.2492,2.13133 -0.037,4.74445 -2.2997,4.9032 -2.3439,0.0784"
        id="path3982-9-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
@@ -1052,8 +929,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1373.4821,474.59432 c 0,0 -0.1785,-19.01785 -0.4464,-23.03571 -0.2678,-4.01786 2.4107,-27.32143 2.4107,-27.32143 0,0 -7.3214,2.94644 -10.2678,2.85714 -2.9465,-0.0893 -7.6383,-2.54802 -9.1072,-2.5 -1.4689,0.048 -6.3432,2.90511 -10.0893,2.94643 -3.483,0.0384 -7.9499,-3.21113 -10.625,-3.30357 -2.6751,-0.0924 -8.4821,2.85714 -13.2142,2.85714 -4.7322,0 -8.1092,-2.63439 -10,-2.58928 -1.8908,0.0451 -3.4822,3.03571 -7.1429,3.03571 -3.6607,0 -5.5078,-2.57277 -7.4107,-2.58928 -1.9029,-0.0165 -7.0536,2.41071 -10,2.41071 -2.9464,0 -7.0478,-2.09756 -8.9732,-2.14286 -1.9253,-0.0453 -2.5893,1.33929 -2.5893,1.33929 2.5893,3.97321 1.2946,33.125 1.2946,33.125 0,0 0.3572,13.66071 -0.8035,21.51786 -1.1608,7.85714 -1.25,8.30357 -1.25,8.30357"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1399.7461,531.16286 c 0,0 -0.1785,-19.01785 -0.4464,-23.03571 -0.2678,-4.01786 2.4107,-27.32143 2.4107,-27.32143 0,0 -7.3214,2.94644 -10.2678,2.85714 -2.9465,-0.0893 -7.6383,-2.54802 -9.1072,-2.5 -1.4689,0.048 -6.3432,2.90511 -10.0893,2.94643 -3.483,0.0384 -7.9499,-3.21113 -10.625,-3.30357 -2.6751,-0.0924 -8.4821,2.85714 -13.2142,2.85714 -4.7322,0 -8.1092,-2.63439 -10,-2.58928 -1.8908,0.0451 -3.4822,3.03571 -7.1429,3.03571 -3.6607,0 -5.5078,-2.57277 -7.4107,-2.58928 -1.9029,-0.0165 -7.0536,2.41071 -10,2.41071 -2.9464,0 -7.0478,-2.09756 -8.9732,-2.14286 -1.9253,-0.0453 -2.5893,1.33929 -2.5893,1.33929 2.5893,3.97321 1.2946,33.125 1.2946,33.125 0,0 0.3572,13.66071 -0.8035,21.51786 -1.1608,7.85714 -1.25,8.30357 -1.25,8.30357"
        id="path4039"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccszszszszszcccc"
@@ -1061,16 +938,16 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1348.8062,432.38106 c 1.9022,-1.30306 2.5576,-2.55761 4.0406,-4.04061"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1375.0702,488.9496 c 1.9022,-1.30306 2.5576,-2.55761 4.0406,-4.04061"
        id="path4053"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1356.6348,450.05873 c 1.2907,-3.9042 -0.2525,-15.5585 -0.2525,-19.95052"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1382.8988,506.62727 c 1.2907,-3.9042 -0.2525,-15.5585 -0.2525,-19.95052"
        id="path4055"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -1078,24 +955,24 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1367.494,440.46228 c -3.7852,-4.35124 -6.411,-7.75182 -8.8388,-12.12183"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1393.758,497.03082 c -3.7852,-4.35124 -6.411,-7.75182 -8.8388,-12.12183"
        id="path4057"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1288.7021,435.66405 c 0.3735,-0.35425 2.49,-2.34348 4.2932,-4.04061"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1314.9661,492.23259 c 0.3735,-0.35425 2.49,-2.34348 4.2932,-4.04061"
        id="path4059"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1293.5003,462.4331 c -0.4972,-5.64652 2.9236,-25.58398 4.0406,-30.05204"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1319.7643,519.00164 c -0.4972,-5.64652 2.9236,-25.58398 4.0406,-30.05204"
        id="path4061"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -1103,40 +980,40 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1312.1882,433.64375 c -0.052,3.36512 0.3364,5.63828 0.7576,8.58629"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1338.4522,490.21229 c -0.052,3.36512 0.3364,5.63828 0.7576,8.58629"
        id="path4065"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1314.9661,430.36075 c -0.2516,0.92349 1.9498,2.92466 3.5355,5.3033"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1341.2301,486.92929 c -0.2516,0.92349 1.9498,2.92466 3.5355,5.3033"
        id="path4067"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1302.0866,432.12852 c 3.3551,3.49733 3.3124,0.85275 6.3135,0.25254"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1328.3506,488.69706 c 3.3551,3.49733 3.3124,0.85275 6.3135,0.25254"
        id="path4073"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1332.1387,431.62344 c -0.7077,-0.33141 -2.3963,2.8755 -3.7881,4.54569"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1358.4027,488.19198 c -0.7077,-0.33141 -2.3963,2.8755 -3.7881,4.54569"
        id="path4075"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1334.6641,434.14882 c 0.4552,3.75851 2.1298,26.81183 2.7779,30.05204"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1360.9281,490.71736 c 0.4552,3.75851 2.1298,26.81183 2.7779,30.05204"
        id="path4077"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -1144,56 +1021,56 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1337.947,429.09806 c 0.7372,2.23423 2.3245,3.57614 3.283,5.05076"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1364.211,485.6666 c 0.7372,2.23423 2.3245,3.57614 3.283,5.05076"
        id="path4079"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1292.8571,472.36218 0.3572,15.71429"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1319.1211,528.93072 0.3572,15.71429"
        id="path4081"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1312.1429,458.43361 1.0714,25.35714"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1338.4069,515.00215 1.0714,25.35714"
        id="path4083"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1328.9286,466.29075 -0.7143,19.64286"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1355.1926,522.85929 -0.7143,19.64286"
        id="path4085"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1348.9286,457.00504 2.1428,23.21428"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1375.1926,513.57358 2.1428,23.21428"
        id="path4087"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1282.8571,453.07647 1.7858,27.5"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1309.1211,509.64501 1.7858,27.5"
        id="path4089"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1205.8696,502.6032 c -3.7881,-3.7306 -3.6618,-10.7529 -0.3788,-15.80018 l 3.1567,0.10972 c 4.5457,5.157 4.1669,11.52098 0.6314,15.80019 z"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1232.1336,559.17174 c -3.7881,-3.7306 -3.6618,-10.7529 -0.3788,-15.80018 l 3.1567,0.10972 c 4.5457,5.157 4.1669,11.52098 0.6314,15.80019 z"
        id="path4091"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
@@ -1201,8 +1078,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1198.9248,469.25162 c 9.4702,3.91435 8.0812,17.42514 8.0812,17.42514 0,0 -0.1262,-6.69226 2.6517,-7.32361"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1225.1888,525.82016 c 9.4702,3.91435 8.0812,17.42514 8.0812,17.42514 0,0 -0.1262,-6.69226 2.6517,-7.32361"
        id="path4093"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1210,7 +1087,7 @@
        inkscape:export-ydpi="428" />
     <path
        sodipodi:type="spiral"
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path4095"
        sodipodi:cx="1199.4299"
        sodipodi:cy="469.12537"
@@ -1222,10 +1099,11 @@
        d="m 1199.4299,469.12537 c -0.076,0.35136 -0.5111,0.0709 -0.584,-0.12627 -0.1975,-0.53444 0.353,-0.99553 0.8366,-1.04172 0.865,-0.0826 1.5025,0.73963 1.4994,1.54679 -0,1.18455 -1.1297,2.01936 -2.257,1.95717 -1.5026,-0.0829 -2.5401,-1.52071 -2.4149,-2.96732 0.1574,-1.82041 1.9121,-3.06266 3.6775,-2.87262 2.1383,0.23017 3.5864,2.30372 3.3304,4.38785 -0.3017,2.45608 -2.6955,4.11082 -5.0981,3.78807"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
-       inkscape:export-ydpi="428" />
+       inkscape:export-ydpi="428"
+       transform="translate(26.263966,56.568543)" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1209.4683,479.29001 c 0.8839,1.13642 1.4521,3.283 -1.8941,7.32361"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1235.7323,535.85855 c 0.8839,1.13642 1.4521,3.283 -1.8941,7.32361"
        id="path4097"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -1233,12 +1111,12 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.5625;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4099"
        width="38.482143"
        height="34.732143"
-       x="1050"
-       y="435.21933"
+       x="1076.2639"
+       y="491.78787"
        ry="6.9952188e-007"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -1248,71 +1126,71 @@
        id="rect4101"
        width="33.125"
        height="29.107141"
-       x="1052.5892"
-       y="437.89789"
+       x="1078.8531"
+       y="494.46643"
        ry="7.0383987e-007"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1053.3036,453.07647 c 4.2017,-3.68523 10.2744,-1.73907 13.75,0.71428"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1079.5676,509.64501 c 4.2017,-3.68523 10.2744,-1.73907 13.75,0.71428"
        id="path4105"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1063.75,451.6479 c 4.2209,-2.56346 9.033,-1.54359 12.8571,0.26785"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1090.014,508.21644 c 4.2209,-2.56346 9.033,-1.54359 12.8571,0.26785"
        id="path4107"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1075.4464,451.0229 c 2.8187,-1.44778 7.6308,-1.27743 10.4465,-0.71429"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1101.7104,507.59144 c 2.8187,-1.44778 7.6308,-1.27743 10.4465,-0.71429"
        id="path4109"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1057.3214,440.30861 c 1.6634,3.62261 4.9768,2.33726 4.5536,-0.625"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1083.5854,496.87715 c 1.6634,3.62261 4.9768,2.33726 4.5536,-0.625"
        id="path4111"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1057.5,444.05861 c -0.6706,1.55901 -1.65,2.70067 -2.6786,3.66071"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1083.764,500.62715 c -0.6706,1.55901 -1.65,2.70067 -2.6786,3.66071"
        id="path4117"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1060.2679,444.41575 c 0.722,1.64936 0.9348,2.88829 1.25,4.46429"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1086.5319,500.98429 c 0.722,1.64936 0.9348,2.88829 1.25,4.46429"
        id="path4119"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1062.6786,443.16575 c 1.3323,1.05807 2.7571,2.02778 3.9285,2.67857"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1088.9426,499.73429 c 1.3323,1.05807 2.7571,2.02778 3.9285,2.67857"
        id="path4121"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1064.0179,441.46932 c 2.9929,0.25189 5.6006,1.18275 8.5714,1.60715"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1090.2819,498.03786 c 2.9929,0.25189 5.6006,1.18275 8.5714,1.60715"
        id="path4123"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1323,23 +1201,23 @@
        id="rect4125"
        width="7.2321429"
        height="6.1607141"
-       x="1072.7678"
-       y="455.84433"
+       x="1099.0317"
+       y="512.4129"
        ry="7.0383987e-007"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1069.1964,456.6479 6.6965,-3.66072 7.9464,3.48214"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1095.4604,513.21644 6.6965,-3.66072 7.9464,3.48214"
        id="path4127"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1055.5357,434.7729 13.75,-10.17858 14.9107,10.44643"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1081.7997,491.34144 13.75,-10.17858 14.9107,10.44643"
        id="path4129"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1354,13 +1232,13 @@
        sodipodi:rx="1.1160715"
        sodipodi:ry="1.1160715"
        d="m 1070.8928,426.15683 a 1.1160715,1.1160715 0 1 1 -2.2321,0 1.1160715,1.1160715 0 1 1 2.2321,0 z"
-       transform="translate(-0.53571429,0.44642857)"
+       transform="translate(25.728252,57.014971)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1033.0357,654.86218 148.2143,1.07143"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1059.2997,711.43072 148.2143,1.07143"
        id="path4151"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -1368,8 +1246,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1033.2143,658.61218 148.75,1.25"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1059.4783,715.18072 148.75,1.25"
        id="path4153"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1380,8 +1258,8 @@
        id="rect4155"
        width="43.214287"
        height="43.75"
-       x="1080.6545"
-       y="663.63385"
+       x="1106.9185"
+       y="720.20239"
        ry="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -1391,15 +1269,15 @@
        id="rect4157"
        width="36.785713"
        height="28.482143"
-       x="1083.6903"
-       y="675.50885"
+       x="1109.9542"
+       y="732.07739"
        ry="3.3035715"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1080.5652,673.27671 43.2143,0.17857"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1106.8292,729.84525 43.2143,0.17857"
        id="path4159"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1414,7 +1292,7 @@
        sodipodi:rx="2.2321429"
        sodipodi:ry="2.2767856"
        d="m 1092.5,668.56757 a 2.2321429,2.2767856 0 1 1 -4.4643,0 2.2321429,2.2767856 0 1 1 4.4643,0 z"
-       transform="translate(-3.0954507,-0.24619279)"
+       transform="translate(23.168516,56.32235)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
@@ -1427,7 +1305,7 @@
        sodipodi:rx="2.2321429"
        sodipodi:ry="2.2767856"
        d="m 1092.5,668.56757 a 2.2321429,2.2767856 0 1 1 -4.4643,0 2.2321429,2.2767856 0 1 1 4.4643,0 z"
-       transform="translate(27.529588,-0.02300566)"
+       transform="translate(53.793554,56.545537)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
@@ -1436,15 +1314,15 @@
        id="rect4181"
        width="8.5714283"
        height="4.7321429"
-       x="1097.7081"
-       y="666.22308"
+       x="1123.972"
+       y="722.79163"
        ry="1.2053572"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1092.4402,675.68742 -8.8392,8.39286"
+       d="m 1118.7042,732.25596 -8.8392,8.39286"
        id="path4183"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1452,7 +1330,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1100.1188,675.41956 -16.5178,14.82143"
+       d="m 1126.3828,731.9881 -16.5178,14.82143"
        id="path4185"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1460,7 +1338,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1106.726,675.41956 -23.0358,19.46429"
+       d="m 1132.99,731.9881 -23.0358,19.46429"
        id="path4187"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1468,7 +1346,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1111.6367,675.77671 -27.4107,24.91071"
+       d="M 1137.9007,732.34525 1110.49,757.25596"
        id="path4189"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1476,7 +1354,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1117.6188,676.13385 -29.6428,27.67857"
+       d="M 1143.8828,732.70239 1114.24,760.38096"
        id="path4192"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1484,7 +1362,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1120.5652,679.70528 -25.7142,24.28571"
+       d="m 1146.8292,736.27382 -25.7142,24.28571"
        id="path4194"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1492,7 +1370,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1120.3867,686.49099 -17.7679,17.41072"
+       d="m 1146.6507,743.05953 -17.7679,17.41072"
        id="path4196"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1500,7 +1378,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1120.5652,693.27671 -11.4285,10.44642"
+       d="m 1146.8292,749.84525 -11.4285,10.44642"
        id="path4198"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1508,39 +1386,39 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1120.0295,698.72313 -4.6428,5.17858"
+       d="m 1146.2935,755.29167 -4.6428,5.17858"
        id="path4200"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1080.2081,658.9017 -0.089,51.96429"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1106.4721,715.47024 -0.089,51.96429"
        id="path4202"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1124.2259,659.61599 0.2679,52.23214"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1150.4899,716.18453 0.2679,52.23214"
        id="path4204"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1051.875,654.59432 -1.5179,-1.60714 2.1429,-1.69643 1.3393,1.16072 0.1786,-1.96429 3.2142,0 -0.089,1.96429 1.5178,-0.80357 1.3393,1.78571 -1.875,1.25 z"
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1078.139,711.16286 -1.5179,-1.60714 2.1429,-1.69643 1.3393,1.16072 0.1786,-1.96429 3.2142,0 -0.089,1.96429 1.5178,-0.80357 1.3393,1.78571 -1.875,1.25 z"
        id="path4206"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1054.8179,650.25631 c 0.4735,-3.4724 -0.8417,-8.20591 2.7353,-10.38872 3.577,-2.1828 5.9788,1.20508 6.1759,3.29638 -0.4726,0.0726 -1.1375,0.0418 -1.4969,0.002 0,0 -1.0986,-3.77883 -3.6608,-2.32142 -2.5622,1.45741 -1.6495,5.89718 -1.8389,9.43271"
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1081.0819,706.82485 c 0.4735,-3.4724 -0.8417,-8.20591 2.7353,-10.38872 3.577,-2.1828 5.9788,1.20508 6.1759,3.29638 -0.4726,0.0726 -1.1375,0.0418 -1.4969,0.002 0,0 -1.0986,-3.77883 -3.6608,-2.32142 -2.5622,1.45741 -1.6495,5.89718 -1.8389,9.43271"
        id="path4208"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="czcczc"
@@ -1548,8 +1426,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1050.4955,652.62588 c 0.063,-0.12627 -0.8839,-1.35739 -0.8839,-1.35739 l -1.894,1.51523 c -1.6099,0.85232 -1.6099,-1.4521 1.1049,-2.24128 l 1.1048,-0.91545 c 2.014,-2.58734 3.7893,-1.5431 1.6415,0.0631 l -0.8207,0.72605 1.1679,1.32583"
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1076.7595,709.19442 c 0.063,-0.12627 -0.8839,-1.35739 -0.8839,-1.35739 l -1.894,1.51523 c -1.6099,0.85232 -1.6099,-1.4521 1.1049,-2.24128 l 1.1048,-0.91545 c 2.014,-2.58734 3.7893,-1.5431 1.6415,0.0631 l -0.8207,0.72605 1.1679,1.32583"
        id="path4210"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc"
@@ -1557,8 +1435,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1059.132,651.76809 c 0.1261,0.0632 1.3606,-0.87907 1.3606,-0.87907 l -1.5084,-1.89946 c -0.8465,-1.61298 1.4579,-1.60462 2.2373,1.11302 l 0.9114,1.10808 c 2.5801,2.02335 1.5294,3.79488 -0.069,1.64126 l -0.7231,-0.82332 -1.33,1.16317"
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1085.396,708.33663 c 0.1261,0.0632 1.3606,-0.87907 1.3606,-0.87907 l -1.5084,-1.89946 c -0.8465,-1.61298 1.4579,-1.60462 2.2373,1.11302 l 0.9114,1.10808 c 2.5801,2.02335 1.5294,3.79488 -0.069,1.64126 l -0.7231,-0.82332 -1.33,1.16317"
        id="path4210-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc"
@@ -1570,15 +1448,15 @@
        id="rect4230"
        width="0.88388348"
        height="11.869292"
-       x="1072.277"
-       y="668.50421"
+       x="1098.5409"
+       y="725.07275"
        ry="0.44194174"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1153.5942,659.28658 0.3789,50.38135"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1179.8582,715.85512 0.3789,50.38135"
        id="path4232"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -1586,16 +1464,16 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1124.4261,670.65079 29.5469,0"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1150.6901,727.21933 29.5469,0"
        id="path4234"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1124.4261,688.9598 29.0418,0"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1150.6901,745.52834 29.0418,0"
        id="path4236"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1606,8 +1484,8 @@
        id="rect4230-1"
        width="0.88388348"
        height="11.869292"
-       x="1160.3496"
-       y="667.99915"
+       x="1186.6135"
+       y="724.56769"
        ry="0.44194174"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -1617,8 +1495,8 @@
        id="rect4230-1-7"
        width="0.88388348"
        height="11.869292"
-       x="663.13776"
-       y="-1144.7554"
+       x="719.7063"
+       y="-1171.0193"
        ry="0.44194174"
        transform="matrix(0,1,-1,0,0,0)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1629,8 +1507,8 @@
        id="rect4230-1-7-1"
        width="0.88388348"
        height="11.869292"
-       x="674.75452"
-       y="-1145.2604"
+       x="731.32306"
+       y="-1171.5243"
        ry="0.44194174"
        transform="matrix(0,1,-1,0,0,0)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1641,24 +1519,24 @@
        id="rect4230-1-7-15"
        width="0.88388348"
        height="11.869292"
-       x="692.55847"
-       y="-1144.8816"
+       x="749.12701"
+       y="-1171.1455"
        ry="0.44194174"
        transform="matrix(0,1,-1,0,0,0)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1032.6284,612.44075 47.2247,0 0,-32.57742 -47.4772,0"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1058.8924,669.00929 47.2247,0 0,-32.57742 -47.4772,0"
        id="path4299"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1182.0265,580.20778 -59.2419,0.41317 0,32.07234 58.3363,0"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1208.2905,636.77632 -59.2419,0.41317 0,32.07234 58.3363,0"
        id="path4301"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -1666,8 +1544,8 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1080.858,619.16999 41.2762,-0.25254 -13.9969,-14.81046 -0.2525,-42.93148 -12.3744,-0.25254 -0.7576,43.43656 z"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1107.122,675.73853 41.2762,-0.25254 -13.9969,-14.81046 -0.2525,-42.93148 -12.3744,-0.25254 -0.7576,43.43656 z"
        id="path4303"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
@@ -1675,24 +1553,24 @@
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1056.25,579.86218 0,32.23214"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1082.514,636.43072 0,32.23214"
        id="path4305"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1143.3036,580.66575 0,31.96429"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1169.5676,637.23429 0,31.96429"
        id="path4307"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1163.0357,580.21932 0,32.58929"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1189.2997,636.78786 0,32.58929"
        id="path4309"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1703,8 +1581,8 @@
        id="rect4230-1-2"
        width="0.88388348"
        height="11.869292"
-       x="1166.433"
-       y="590.35614"
+       x="1192.6969"
+       y="646.92468"
        ry="0.44194174"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -1714,8 +1592,8 @@
        id="rect4230-1-76"
        width="0.88388348"
        height="11.869292"
-       x="1159.1117"
-       y="590.35614"
+       x="1185.3756"
+       y="646.92468"
        ry="0.44194174"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -1725,8 +1603,8 @@
        id="rect4230-1-1"
        width="0.88388348"
        height="11.869292"
-       x="1139.3795"
-       y="590.44537"
+       x="1165.6434"
+       y="647.01392"
        ry="0.44194174"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -1736,8 +1614,8 @@
        id="rect4230-1-4"
        width="0.88388348"
        height="11.869292"
-       x="1059.7366"
-       y="590.7132"
+       x="1086.0005"
+       y="647.28174"
        ry="0.44194174"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
@@ -1747,15 +1625,15 @@
        id="rect4230-1-23"
        width="0.88388348"
        height="11.869292"
-       x="1051.8795"
-       y="590.71326"
+       x="1078.1434"
+       y="647.2818"
        ry="0.44194174"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1037.7959,612.73438 c -0.083,0.24319 1.1238,1.28543 0.874,2.70983 -0.2497,1.42439 -0.7076,1.28543 -0.874,2.50138 -0.1666,1.21594 0.8324,1.38965 0.9573,2.50138 0.1249,1.11172 0,1.04224 0,1.04224 l 4.9533,-0.10423 c 0,0 0.042,0.72957 -0.042,-0.55586 -0.083,-1.28543 -0.7075,-1.25069 -0.5827,-2.6056 0.1249,-1.35492 0.5827,-0.79905 0.8741,-2.67509 0.2914,-1.87603 -0.7492,-2.91827 -0.7492,-2.91827 z"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1064.0599,669.30292 c -0.083,0.24319 1.1238,1.28543 0.874,2.70983 -0.2497,1.42439 -0.7076,1.28543 -0.874,2.50138 -0.1666,1.21594 0.8324,1.38965 0.9573,2.50138 0.1249,1.11172 0,1.04224 0,1.04224 l 4.9533,-0.10423 c 0,0 0.042,0.72957 -0.042,-0.55586 -0.083,-1.28543 -0.7075,-1.25069 -0.5827,-2.6056 0.1249,-1.35492 0.5827,-0.79905 0.8741,-2.67509 0.2914,-1.87603 -0.7492,-2.91827 -0.7492,-2.91827 z"
        id="path4357"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1765,7 +1643,8 @@
        id="g4420"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
-       inkscape:export-ydpi="428">
+       inkscape:export-ydpi="428"
+       transform="translate(26.263966,56.568543)">
       <path
          sodipodi:nodetypes="sssssssss"
          inkscape:connector-curvature="0"
@@ -1839,23 +1718,23 @@
        id="rect4418"
        width="27.678572"
        height="35.178574"
-       x="1349.1964"
-       y="671.02295"
+       x="1375.4603"
+       y="727.59149"
        ry="1.4890827"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.56250000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1349.375,680.48718 27.3214,0"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1375.639,737.05572 27.3214,0"
        id="path4432"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.56250000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1349.1071,694.28183 27.3215,0"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1375.3711,750.85037 27.3215,0"
        id="path4434"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1870,7 +1749,7 @@
        sodipodi:rx="1.1160715"
        sodipodi:ry="1.1160715"
        d="m 1364.0178,676.20148 a 1.1160715,1.1160715 0 1 1 -2.2321,0 1.1160715,1.1160715 0 1 1 2.2321,0 z"
-       transform="translate(0.3125,-0.22321429)"
+       transform="translate(26.576466,56.345328)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
@@ -1883,7 +1762,7 @@
        sodipodi:rx="1.1160715"
        sodipodi:ry="1.1160715"
        d="m 1364.0178,676.20148 a 1.1160715,1.1160715 0 1 1 -2.2321,0 1.1160715,1.1160715 0 1 1 2.2321,0 z"
-       transform="translate(0.44648524,10.982133)"
+       transform="translate(26.710451,67.550676)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
@@ -1896,13 +1775,13 @@
        sodipodi:rx="1.1160715"
        sodipodi:ry="1.1160715"
        d="m 1364.0178,676.20148 a 1.1160715,1.1160715 0 1 1 -2.2321,0 1.1160715,1.1160715 0 1 1 2.2321,0 z"
-       transform="translate(0.44648519,24.241062)"
+       transform="translate(26.710451,80.809605)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1353.7322,670.7627 c 0,0 0.1786,-2.45536 2.3661,-2.36607 l 8.6607,0 c 2.3661,-0.26786 2.3214,2.32142 2.3214,2.32142"
+       d="m 1379.9962,727.33124 c 0,0 0.1786,-2.45536 2.3661,-2.36607 l 8.6607,0 c 2.3661,-0.26786 2.3214,2.32142 2.3214,2.32142"
        id="path4463"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -1911,15 +1790,15 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1360.2054,668.30734 c 0,0 1.8304,-14.15179 -3.2142,-13.97321 -5.0447,0.17857 -4.9108,0.40178 -5.8929,1.5625"
+       d="m 1386.4694,724.87588 c 0,0 1.8304,-14.15179 -3.2142,-13.97321 -5.0447,0.17857 -4.9108,0.40178 -5.8929,1.5625"
        id="path4465"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:#0055d4;stroke:#ffffff;stroke-width:1.56250000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
-       d="m 1346.9019,655.80734 c 2.0536,-0.89286 4.4196,-0.0893 4.4196,-0.0893 0,0 1.3839,1.29465 1.0268,3.83929 z"
+       style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1373.1659,712.37588 c 2.0536,-0.89286 4.4196,-0.0893 4.4196,-0.0893 0,0 1.3839,1.29465 1.0268,3.83929 z"
        id="path4467"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -1931,15 +1810,15 @@
        id="rect4469"
        width="52.5"
        height="109.46429"
-       x="1210.8928"
-       y="597.54077"
+       x="1237.1567"
+       y="654.10931"
        ry="6.9952188e-007"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.56250000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1236.4286,597.71932 0,109.46429"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1262.6926,654.28786 0,109.46429"
        id="path4471"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -1954,7 +1833,7 @@
        sodipodi:rx="1.1160715"
        sodipodi:ry="1.1160715"
        d="m 1364.0178,676.20148 a 1.1160715,1.1160715 0 1 1 -2.2321,0 1.1160715,1.1160715 0 1 1 2.2321,0 z"
-       transform="translate(-132.72316,-28.482152)"
+       transform="translate(-106.45919,28.086391)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
@@ -1967,13 +1846,13 @@
        sodipodi:rx="1.1160715"
        sodipodi:ry="1.1160715"
        d="m 1364.0178,676.20148 a 1.1160715,1.1160715 0 1 1 -2.2321,0 1.1160715,1.1160715 0 1 1 2.2321,0 z"
-       transform="translate(-120.40173,-28.482152)"
+       transform="translate(-94.137764,28.086391)"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1216.0833,591.18087 c 0.6523,0.32408 -0.115,1.03914 -0.5386,1.08414 -1.1479,0.12192 -1.7796,-1.18858 -1.6296,-2.16139 0.2681,-1.7401 2.2003,-2.58292 3.784,-2.17515 2.3243,0.5984 3.4039,3.22367 2.7208,5.40689 -0.9106,2.90987 -4.2508,4.23191 -7.0296,3.26618 -3.4971,-1.21521 -5.0636,-5.27954 -3.8118,-8.65238 1.5161,-4.08498 6.3093,-5.8973 10.2752,-4.35726 4.6736,1.8149 6.7323,7.33967 4.9027,11.89794 -1.4419,2.63122 -4.9098,2.2351 -4.6349,-1.52423"
+       style="fill:none;stroke:#ffffff;stroke-width:1.5625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1242.3473,647.74941 c 0.6523,0.32408 -0.115,1.03914 -0.5386,1.08414 -1.1479,0.12192 -1.7796,-1.18858 -1.6296,-2.16139 0.2681,-1.7401 2.2003,-2.58292 3.784,-2.17515 2.3243,0.5984 3.4039,3.22367 2.7208,5.40689 -0.9106,2.90987 -4.2508,4.23191 -7.0296,3.26618 -3.4971,-1.21521 -5.0636,-5.27954 -3.8118,-8.65238 1.5161,-4.08498 6.3093,-5.8973 10.2752,-4.35726 4.6736,1.8149 6.7323,7.33967 4.9027,11.89794 -1.4419,2.63122 -4.9098,2.2351 -4.6349,-1.52423"
        id="path4498"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csccscsscc"
@@ -1985,15 +1864,15 @@
        id="rect4501"
        width="16.339285"
        height="12.589286"
-       x="1226.0714"
-       y="583.88007"
+       x="1252.3353"
+       y="640.44861"
        ry="6.9952188e-007"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1227.9911,586.87111 2.5446,0 -1.3392,-1.25 z"
+       d="m 1254.2551,643.43965 2.5446,0 -1.3392,-1.25 z"
        id="path4503"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -2001,7 +1880,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1229.2411,587.27289 -0.089,1.78572 -1.1607,0.17857"
+       d="m 1255.5051,643.84143 -0.089,1.78572 -1.1607,0.17857"
        id="path4505"
        inkscape:connector-curvature="0"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
@@ -2012,15 +1891,15 @@
        id="rect4507"
        width="26.160715"
        height="3.5714285"
-       x="1209.4642"
-       y="578.52289"
+       x="1235.7281"
+       y="635.09143"
        ry="6.9952188e-007"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
     <path
        style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.25;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m 1254.6078,585.75502 -10.7143,0 c 0.277,0.89375 0.1685,2.00084 0,2.58929 l 0,0 10.7143,0 0,0 c 0.7588,-0.56985 0.642,-2.29147 0,-2.58929 z"
+       d="m 1280.8718,642.32356 -10.7143,0 c 0.277,0.89375 0.1685,2.00084 0,2.58929 l 0,0 10.7143,0 0,0 c 0.7588,-0.56985 0.642,-2.29147 0,-2.58929 z"
        id="rect4509"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
@@ -2029,7 +1908,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.25;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m 1244.7274,592.54076 10.7143,0 c -0.277,0.63179 -0.1685,1.41439 0,1.83036 l 0,0 -10.7143,0 0,0 c -0.7588,-0.40282 -0.642,-1.61983 0,-1.83036 z"
+       d="m 1270.9914,649.1093 10.7143,0 c -0.277,0.63179 -0.1685,1.41439 0,1.83036 l 0,0 -10.7143,0 0,0 c -0.7588,-0.40282 -0.642,-1.61983 0,-1.83036 z"
        id="rect4509-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
@@ -2038,7 +1917,7 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.25;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m 1245.9147,588.99165 9.4377,0 c -0.244,0.89375 -0.1484,2.00085 0,2.58929 l 0,0 -9.4377,0 0,0 c -0.6684,-0.56984 -0.5655,-2.29146 0,-2.58929 z"
+       d="m 1272.1787,645.56019 9.4377,0 c -0.244,0.89375 -0.1484,2.00085 0,2.58929 l 0,0 -9.4377,0 0,0 c -0.6684,-0.56984 -0.5655,-2.29146 0,-2.58929 z"
        id="rect4509-5-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
@@ -2047,12 +1926,231 @@
        inkscape:export-ydpi="428" />
     <path
        style="fill:#0055d4;fill-opacity:1;stroke:#ffffff;stroke-width:1.25000012;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m 1255.6926,595.26397 -11.7145,0 c 0.3028,0.53933 0.1841,1.20741 0,1.5625 l 0,0 11.7145,0 0,0 c 0.8296,-0.34387 0.7019,-1.38278 0,-1.5625 z"
+       d="m 1281.9566,651.83251 -11.7145,0 c 0.3028,0.53933 0.1841,1.20741 0,1.5625 l 0,0 11.7145,0 0,0 c 0.8296,-0.34387 0.7019,-1.38278 0,-1.5625 z"
        id="rect4509-5-7-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
        inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
        inkscape:export-xdpi="428"
        inkscape:export-ydpi="428" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:6;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3859-1"
+       width="392.85715"
+       height="347.85712"
+       x="2104.158"
+       y="418.39828"
+       ry="6.9952188e-007"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2124.158,599.8269 -1.4285,150 151.4285,0 0,-153.57143 z"
+       id="path3861-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2299.158,598.39832 -5,149.28572 176.4286,-0.71429 0,-154.28571 z"
+       id="path3863-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2327.0152,574.82689 -201.4286,10e-6 -1.4286,-138.57143 207.1429,-0.71429 z"
+       id="path3867-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2355.5866,573.39832 1.4286,-135.71428 112.8571,-0.71429 0,137.14286 z"
+       id="path3869-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2054.8723,429.82689 253.246,-108.57142 245.3254,107.14285"
+       id="path3871-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <g
+       id="g4466"
+       transform="matrix(1.1317661,0,0,1.1317661,111.09726,-61.240231)">
+      <rect
+         ry="29.538227"
+         y="470.2193"
+         x="1802.1429"
+         height="89.285881"
+         width="137.14236"
+         id="rect3515"
+         style="fill:none;stroke:#ffffff;stroke-width:3.357584;stroke-miterlimit:4;stroke-dasharray:none" />
+      <rect
+         ry="15.297029"
+         y="478.07642"
+         x="1828.5714"
+         height="73.571419"
+         width="82.857285"
+         id="rect3517"
+         style="fill:none;stroke:#ffffff;stroke-width:3.35758424;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3519"
+         d="m 1821.4286,453.07647 46.4286,17.14285 44.2857,-17.85714"
+         style="fill:none;stroke:#ffffff;stroke-width:3.53429914;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         transform="matrix(1.25,0,0,1,-483.21427,0)"
+         d="m 1932.8571,499.86218 c 0,3.74765 -2.5584,6.78572 -5.7143,6.78572 -3.1559,0 -5.7143,-3.03807 -5.7143,-6.78572 0,-3.74764 2.5584,-6.78571 5.7143,-6.78571 3.1559,0 5.7143,3.03807 5.7143,6.78571 z"
+         sodipodi:ry="6.7857141"
+         sodipodi:rx="5.7142859"
+         sodipodi:cy="499.86218"
+         sodipodi:cx="1927.1428"
+         id="path4302"
+         style="fill:none;stroke:#ffffff;stroke-width:3.16117311;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.25,0,0,1,-483.21423,23.214284)"
+         d="m 1932.8571,499.86218 c 0,3.74765 -2.5584,6.78572 -5.7143,6.78572 -3.1559,0 -5.7143,-3.03807 -5.7143,-6.78572 0,-3.74764 2.5584,-6.78571 5.7143,-6.78571 3.1559,0 5.7143,3.03807 5.7143,6.78571 z"
+         sodipodi:ry="6.7857141"
+         sodipodi:rx="5.7142859"
+         sodipodi:cy="499.86218"
+         sodipodi:cx="1927.1428"
+         id="path4302-2"
+         style="fill:none;stroke:#ffffff;stroke-width:3.16117311;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="arc" />
+    </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2404.9223,512.82773 c 7.6238,0.14519 46.0158,0.72638 46.0158,0.72638 9.9383,-0.1452 8.0321,9.00729 8.0321,9.00729 l -61.1273,-1.30752 c 0,0 -2.5868,-8.86199 7.0794,-8.42615 z"
+       id="path3956-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2458.4257,523.28779 c 0.1639,8.28087 1.3081,14.52784 -14.2247,14.52784 -14.3879,0 -52.6473,-2.03389 -52.6473,-2.03389 l -13.8597,-0.29055"
+       id="path3958-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscc"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2448.2153,538.25146 -10.6191,32.97824"
+       id="path3960-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2398.2514,521.25388 -7.7602,0 c 0,0 -1.2252,-37.19131 -1.7697,-46.48914 -0.2723,-7.5545 -24.914,-6.82818 -25.4585,0.1452 -0.2724,11.62228 0.6808,80.19375 0.6808,80.19375 l 19.6041,2.17919 4.9013,15.69008"
+       id="path3966-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="G:\unity-dev\HouseCraft\Gfx\icon\icon3.png"
+       inkscape:export-xdpi="428"
+       inkscape:export-ydpi="428" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2137.5941,650.82157 0.3571,61.07143 c -0.8242,12.68317 8.261,29.79288 22.1428,29.64286 l 49.2858,-1.07143 c 18.8243,-0.002 25.0611,-20.58152 25,-32.14286 l -0.3571,-58.21428 z"
+       id="path4349"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path4351"
+       sodipodi:cx="1890.1786"
+       sodipodi:cy="682.89789"
+       sodipodi:rx="24.107143"
+       sodipodi:ry="24.107143"
+       d="m 1880.324,660.89695 a 24.107143,24.107143 0 1 1 -0.1737,43.92325"
+       sodipodi:start="4.2912689"
+       sodipodi:end="8.283011"
+       sodipodi:open="true"
+       transform="translate(354.73686,2.3879613)" />
+    <path
+       transform="matrix(0.65479709,0,0,0.71114693,1004.4064,199.64725)"
+       sodipodi:type="arc"
+       style="fill:none;stroke:#ffffff;stroke-width:5.86174536;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path4351-7"
+       sodipodi:cx="1890.1786"
+       sodipodi:cy="682.89789"
+       sodipodi:rx="24.107143"
+       sodipodi:ry="24.107143"
+       d="m 1880.324,660.89695 a 24.107143,24.107143 0 1 1 -0.1737,43.92325"
+       sodipodi:start="4.2912689"
+       sodipodi:end="8.283011"
+       sodipodi:open="true" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2166.8797,644.03585 c -6.6935,-7.42511 -4.6565,-13.39513 0,-18.92857 5.3336,-9.03189 3.1098,-13.02559 0,-16.42857"
+       id="path4371"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2187.415,644.57156 c -6.6935,-7.42511 -4.6565,-13.39513 0,-18.92857 5.3336,-9.03189 3.1098,-13.02559 0,-16.42857"
+       id="path4371-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 2208.4864,643.85728 c -6.6935,-7.42511 -4.6565,-13.39513 0,-18.92857 5.3336,-9.03189 3.1098,-13.02559 0,-16.42857"
+       id="path4371-15"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4426"
+       width="136.07143"
+       height="47.5"
+       x="2315.094"
+       y="696.17871"
+       ry="23.75" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4426-1"
+       width="92.5"
+       height="30"
+       x="2337.0583"
+       y="663.8573"
+       ry="15" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4426-1-4"
+       width="46.785713"
+       height="18.928572"
+       x="2360.6299"
+       y="642.6073"
+       ry="9.4642859" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path4464"
+       sodipodi:cx="2023.5714"
+       sodipodi:cy="631.29077"
+       sodipodi:rx="10"
+       sodipodi:ry="10.714286"
+       d="m 2033.5714,631.29077 a 10,10.714286 0 1 1 -20,0 10,10.714286 0 1 1 20,0 z"
+       transform="translate(359.73686,-2.9691816)" />
   </g>
 </svg>
