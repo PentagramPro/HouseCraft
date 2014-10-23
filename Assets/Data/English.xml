@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF8"?>
+<Strings Language="Russian" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SimpleStrings>
+  	<String Name="LabelTotalProfit">Total Profit:</String>
+  	<String Name="LabelLevelSelectorHeader">Стартовый набор уровней</String> ???
+  	
+  	<String Name="LevelTraining">Training</String>
+  	<String Name="LevelSimpleCottage">The simple cottage</String>
+  	<String Name="LevelBigHouse">The big house</String>
+  	<String Name="LevelHugeHouse">The huge house</String>
+  	<String Name="LevelColdHouse">The cold house</String>
+  	<String Name="LevelGarage">The garage</String>
+  	
+  	
+  	<String Name="BtnStart">Start</String>
+  	<String Name="LabelWall">wall</String>
+  	<String Name="LabelDoor">door</String>
+  	<String Name="LabelRemoveWall">remove a wall/a door</String>
+  	<String Name="LabelRemoveObject">remove an object</String>
+  	
+  	<String Name="LabelBathtub">bathtub</String>
+  	<String Name="LabelBoiler">boiler</String>
+  	<String Name="LabelRiser">riser</String>
+  	<String Name="LabelShower">shower</String>
+  	<String Name="LabelSink">sink</String>
+  	<String Name="LabelToilet">toilet</String>
+  	<String Name="LabelFireplace">fireplace</String>
+  	<String Name="LabelHeater">radiator</String>
+  	<String Name="LabelHeatingPipe">heating pipe</String>
+  	<String Name="LabelHob">cooker</String>
+  	<String Name="LabelVent">vent shaft</String>
+  	
+  	<String Name="LabelHouseBoughtFor">spent on house:</String>
+  	<String Name="LabelProbablePrice">probable price:</String>
+  	<String Name="LabelCurrentExpences">current expenses:</String>
+  	
+  	<String Name="LabelEquipment">equipment:</String>
+  	<String Name="LabelCommunications">communications:</String>
+  	<String Name="LabelPenalties">losses due to bad lay-out:</String>
+  	<String Name="LabelTotalExpences">total expenses:</String>
+  	<String Name="LabelAveragePrice">average price:</String>
+  	<String Name="LabelTraded">traded for good solutions:</String>
+  	
+  	<String Name="BtnSale">Sale!</String>
+  	<String Name="BtnBack">Back</String>
+  	<String Name="BtnNext">Next</String>
+  	
+  	<String Name="Rule.BlockedDoor">blocked door</String> ???
+	<String Name="Rule.BlockedDoor.Descr">A bulky object is near the door</String>
+	<String Name="Rule.CleanHands">clean hands</String>
+	<String Name="Rule.CleanHands.Descr"></String>
+	<String Name="Rule.ColdHouse">cold house</String>
+	<String Name="Rule.ColdHouse.Descr">There isn't enough radiators in the house or they aren't connected to the stream-heating</String>
+	<String Name="Rule.ColdRoom">cold room</String>
+	<String Name="Rule.ColdRoom.Descr">There isn't enough radiators in the room or they aren't connected to the stream-heating</String>
+	<String Name="Rule.ColdWater">cold water</String>
+	<String Name="Rule.ColdWater.Descr">There is no hot water supply and no boilers</String> 
+	<String Name="Rule.DarkRoom">dark room</String>
+	<String Name="Rule.DarkRoom.Descr">There are no windows in the room</String>
+	<String Name="Rule.EatingTogether">eating together</String>
+	<String Name="Rule.EatingTogether.Descr"></String>
+	<String Name="Rule.EnoughBedrooms">enough bedrooms</String>
+	<String Name="Rule.EnoughBedrooms.Descr"></String>
+	<String Name="Rule.EnoughToilets">enough toilets</String>
+	<String Name="Rule.EnoughToilets.Descr"></String>
+	<String Name="Rule.FreshAir">fresh air</String>
+	<String Name="Rule.FreshAir.Descr"></String>
+	<String Name="Rule.HotRoom">hot room</String>
+	<String Name="Rule.HotRoom.Descr">There are too many radiators or fireplaces in the room</String>
+	<String Name="Rule.NarrowCoridor">narrow corridor</String>
+	<String Name="Rule.NarrowCoridor.Descr">There is a passage with less-meter width in the coridor</String>
+	<String Name="Rule.NoisyRoom">noisy room</String>
+	<String Name="Rule.NoisyRoom.Descr">Windows of a room overlook a noisy highway</String>
+	<String Name="Rule.NoRoom">no room</String>
+	<String Name="Rule.NoRoom.Descr">Absence of one of the important rooms</String>
+	<String Name="Rule.PassThroughBedroom">bedroom like a corridor</String>
+	<String Name="Rule.PassThroughBedroom.Descr">You have to pass the bedroom in order to enter one of the rooms</String>
+	<String Name="Rule.RoomWithout">no object - </String>
+	<String Name="Rule.RoomWithout.Descr">An important object is absent in the room</String>
+	<String Name="Rule.SmallRoom">small room</String>
+	<String Name="Rule.SmallRoom.Descr">The room is too small to perform its functions</String>
+	<String Name="Rule.StiffyRoom">stuffy room</String>
+	<String Name="Rule.StiffyRoom.Descr">Room needs ventilation, but there are no vent shafts</String>
+	<String Name="Rule.StrangeHob">strange cooker</String>
+	<String Name="Rule.StrangeHob.Descr">The cooker isn't by a wall</String>
+	<String Name="Rule.Studio">studio</String>
+	<String Name="Rule.Studio.Descr"></String>
+	<String Name="Rule.SunnyRoom">sunny room</String>
+	<String Name="Rule.SunnyRoom.Descr">The windows of the room overlook south, and it is bad in this case !</String>
+	<String Name="Rule.TightKitchen">tight kitchen</String>
+	<String Name="Rule.TightKitchen.Descr">Cooker and sink are located closely to each other</String>
+	<String Name="Rule.UglyObject">ugly object</String>
+	<String Name="Rule.UglyObject.Descr">There is no wall between a room and riser and vent shaft</String>
+	<String Name="Rule.WastingSpace">wasting space</String>
+	<String Name="Rule.WastingSpace.Descr">A quarter or more of the house is corridor</String>
+  	
+  	<String Name="Room.Studio">studio</String>
+	<String Name="Room.Kitchen">kitchen</String>
+	<String Name="Room.Dining">dining room</String>
+	<String Name="Room.Toilet">toilet</String>
+	<String Name="Room.Bathroom">bathroom</String>
+	<String Name="Room.ToiletBathroom">combined bathroom</String> 
+	<String Name="Room.Coridor">corridor</String>
+	<String Name="Room.Bedroom">bed room</String>
+	<String Name="Room.Livingroom">living room</String>
+	<String Name="Room.Garage">garage</String>
+	<String Name="Room.Storage">pantry</String>
+  	
+  	<String Name="Object.HeatingPipe">heating pipe</String>
+	<String Name="Object.Riser">riser</String>
+	<String Name="Object.Heater">radiator</String>
+	<String Name="Object.Toilet">toilet</String>
+	<String Name="Object.Sink">sink</String>
+	<String Name="Object.Shower">shower</String>
+	<String Name="Object.Bathtub">bathtub</String>
+	<String Name="Object.Ventshaft">vent shaft</String>
+	<String Name="Object.Fireplace">fireplace</String>
+	<String Name="Object.Hob">cooker</String>
+	<String Name="Object.Boiler ">boiler</String>
+
+  	<String Name="Label"></String>
+  	<String Name=""></String>
+  </SimpleStrings>
+</Strings>
