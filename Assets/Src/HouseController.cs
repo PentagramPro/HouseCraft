@@ -316,39 +316,65 @@ public class HouseController : BaseController {
 		WallController wallPrefab = selectedPrefab.GetComponent<WallController>();
 		WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));
 		
-		
+		Side side;
+		if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
+		{
+			side = Side.Middle;
+		}
+		else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+		{
+			side = Side.Left;
+		}
+		else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
+		{
+			side = Side.Top;
+		}
+		else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+		{
+			side = Side.Right;
+		}
+		else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
+		{
+			side = Side.Bottom;
+		}
+		else
+		{
+			side = Side.Undefined;
+		}
+
+
+		if(side==Side.Undefined)
+			return;
 		//new Rect(wp.X-0.5f,wp.Y-0.5f,wp.X+0.5f,wp.Y+0.5f).Contains(pz)
-		if(IsInsideBuilding(wp) && wallPrefab.PrefabValidatePosition(M,wp))
+		if(IsInsideBuilding(wp))
 		{
 			WallController wall = null, adjWall=null;
-			
-			if(new Rect(wp.X-0.25f,wp.Y-0.25f,0.5f,0.5f).Contains(pz))
+			if(side==Side.Middle)
 			{
 				wall = wallPrefab.PrefabSetWall(M,wp);
 			}
-			else if(new Rect(wp.X-0.5f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
+			else
 			{
 				wall = wallPrefab.PrefabSetWall(M,wp);
-				SetAdjacentWall(wall,Side.Left);
+				SetAdjacentWall(wall,side);
 			}
-			else if(new Rect(wp.X-0.25f,wp.Y+0.25f,0.5f,0.25f).Contains(pz))
-			{
-				wall = wallPrefab.PrefabSetWall(M,wp);
-				SetAdjacentWall(wall,Side.Top);
-			}
-			else if(new Rect(wp.X+0.25f,wp.Y-0.25f,0.25f,0.5f).Contains(pz))
-			{
-				wall = wallPrefab.PrefabSetWall(M,wp);
-				SetAdjacentWall(wall,Side.Right);
-			}
-			else if(new Rect(wp.X-0.25f,wp.Y-0.5f,0.5f,0.25f).Contains(pz))
-			{
-				wall = wallPrefab.PrefabSetWall(M,wp);
-				SetAdjacentWall(wall,Side.Bottom);
-			}
-			
+
 			UpdateWallsAround(wp);
+
 			
+		}
+		else
+		{
+			// not inside building
+			WallController wall = GetWall(wp);
+			if(wall!=null && wall.WallObject==null)
+			{
+				wp.Foreach( (WallPoint p, Side wallSide) => {
+					if(wallPrefab.PrefabValidatePosition(M,p) && side == wallSide)
+						SetAdjacentWall(wall,side);
+				});
+				UpdateWallsAround(wp);
+			}
 		}
 		Phantom.RemoveIndicators();
 		Phantom.PlaceIndicators(cells,walls,wallPrefab);

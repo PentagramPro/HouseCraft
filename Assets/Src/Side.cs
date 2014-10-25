@@ -1,7 +1,7 @@
 
 public enum Side
 {
-	Left,Right,Top,Bottom
+	Undefined,Left,Right,Top,Bottom,Middle
 }
 
 

@@ -34,6 +34,11 @@ public class IntegerPoint
 		Y = (v & 0xffff);
 	}
 
+	protected static readonly int[] xtable = {1,-1,0,0};
+	protected static readonly int[] ytable = {0,0,1,-1};
+	protected static readonly Side[] sidetable = {Side.Right,Side.Left,Side.Top,Side.Bottom};
+
+
 
 }
 

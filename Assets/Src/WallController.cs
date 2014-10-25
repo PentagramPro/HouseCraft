@@ -82,6 +82,11 @@ public class WallController : BaseController {
 			update = true;
 	}
 
+	//public void ForeachWall(System.Action<WallPoint,WallController> action)
+	//{
+
+	//}
+
 	public WallController PrefabSetWall(Manager m, WallPoint point)
 	{
 		IWallObject wo = GetComponentInterface<IWallObject>();
