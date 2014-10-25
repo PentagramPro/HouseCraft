@@ -123,6 +123,12 @@ public class HouseController : BaseController {
 	public void SwitchRotation()
 	{
 		selectedRotation = selectedRotation.Next();
+		if(state!=Modes.SetObject || !Phantom.IsDisplayed())
+			return;
+		CellController cellPrefab = selectedPrefab.GetComponent<CellController>();
+		
+		cellPrefab.PrefabValidatePosition(M,Phantom.LastPhantomPosition,selectedRotation);
+
 	}
 
 	void OnDrawGizmosSelected()
@@ -461,6 +467,8 @@ public class HouseController : BaseController {
 	{
 		if(state==Modes.SetWalls || state==Modes.SetDoors)
 			Phantom.RemoveIndicators();
+		if(state==Modes.SetObject)
+			Phantom.RemovePhantom();
 		bool showRotationBtn = false;
 
 		switch(mode)

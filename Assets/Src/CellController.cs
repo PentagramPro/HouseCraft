@@ -104,7 +104,7 @@ public class CellController : BaseController {
 
 		MapRect rect = GetCellIndexes(point,rotation);
 
-		bool res = m.House.Phantom.PlacePhantom(rect);
+		bool res = m.House.Phantom.PlacePhantom(point,rect);
 
 
 		if(IsRectFree(rect,true)==false)

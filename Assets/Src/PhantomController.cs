@@ -7,6 +7,8 @@ public class PhantomController : BaseController {
 	Dictionary<int,Transform> indicators = new Dictionary<int,Transform>();
 	MapRect lastRect = new MapRect(-1,-1,-1,-1);
 
+	public MapPoint LastPhantomPosition;
+
 	public Transform Red,Green;
 	public Transform PlaceIndicator;
 	public Transform DoorIndicator;
@@ -22,9 +24,9 @@ public class PhantomController : BaseController {
 	}
 
 	//returns true if this phantom already has been placed
-	public bool PlacePhantom(MapRect rect)
+	public bool PlacePhantom(MapPoint pos,MapRect rect)
 	{
-
+		LastPhantomPosition = pos;
 		if(lastRect.Equals(rect))
 			return true;
 
@@ -39,6 +41,10 @@ public class PhantomController : BaseController {
 		return false;
 	}
 
+	public bool IsDisplayed()
+	{
+		return phantoms.Count>0;
+	}
 	public void SetRedPhantom(MapPoint p)
 	{
 		Transform ph= null;
