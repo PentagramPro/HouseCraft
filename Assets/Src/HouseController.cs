@@ -397,6 +397,29 @@ public class HouseController : BaseController {
 			UpdateWallsAround(wp);
 		}
 	}
+
+	public void Save()
+	{
+		string prefName = Application.loadedLevelName+".save";
+		string data = "";
+		data+="1;"; //version
+		foreach(CellController cell in cells.Values)
+		{
+			if(cell.CellObject==null ||  string.IsNullOrEmpty(cell.PrefabName))
+				continue;
+
+			data+=string.Format("{0}({1},{2},{3});",cell.PrefabName,cell.Position.X,cell.Position.Y,
+			                    Enum.GetName(typeof(CellController.CellRotation),cell.Rotation));
+		}
+		
+	}
+
+	public void Load()
+	{
+		string prefName = Application.loadedLevelName+".save";
+
+	}
+
 	private void OnRemoveWall(Vector3 pz)
 	{
 		WallPoint wp = new WallPoint(Mathf.RoundToInt(pz.x),Mathf.RoundToInt(pz.y));

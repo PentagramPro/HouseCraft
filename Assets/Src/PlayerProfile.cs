@@ -23,6 +23,23 @@ public class PlayerProfile : MonoBehaviour {
 		}
 	}
 
+	public void StoreLevel(string sceneName,string data,string version)
+	{
+		PlayerPrefs.SetString(sceneName+".version",version);
+		PlayerPrefs.SetString(sceneName+".save",data);
+	}
+
+	public string LoadLevel(string sceneName,string version)
+	{
+		string data = "";
+		if(PlayerPrefs.GetString(sceneName+".version")==version)
+		{
+			data = PlayerPrefs.GetString(sceneName+".save");
+		}
+
+		return data;
+	}
+
 	public int GetProfitForLevel(string sceneName)
 	{
 		return PlayerPrefs.GetInt("Level:"+sceneName,0);

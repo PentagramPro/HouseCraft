@@ -18,7 +18,7 @@ public class Manager : MonoBehaviour {
 	public HouseController House;
 	public OverlayController Overlay;
 
-
+	public PlayerProfile Profile{get;internal set;}
 
 
 	UIController ui;
@@ -44,7 +44,7 @@ public class Manager : MonoBehaviour {
 
 	void Awake()
 	{
-
+		Profile = GetComponent<PlayerProfile>();
 		GameObject ui = GameObject.Find("HouseCraftUI");
 		if(ui==null)
 		{
@@ -115,11 +115,10 @@ public class Manager : MonoBehaviour {
 
 	public void OnCompleteLevel()
 	{
-		PlayerProfile profile = GetComponent<PlayerProfile>();
 
-		int old = profile.GetProfitForLevel(Application.loadedLevelName);
+		int old = Profile.GetProfitForLevel(Application.loadedLevelName);
 		if(old<Statistic.Profit)
-			profile.SetProfitForLevel(Application.loadedLevelName,Statistic.Profit);
+			Profile.SetProfitForLevel(Application.loadedLevelName,Statistic.Profit);
 
 		Application.LoadLevel("main_menu");
 	}

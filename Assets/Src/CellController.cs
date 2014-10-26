@@ -17,6 +17,7 @@ public class CellController : BaseController {
 	};
 	public ICellObject CellObject;
 	public int SizeX = 1, SizeY = 1;
+	public string PrefabName {get;internal set;}
 
 	public MapPoint position;
 	HouseController houseController;
@@ -173,6 +174,7 @@ public class CellController : BaseController {
 	public static CellController InstantiateMe(CellController prefab, Transform parent, MapPoint point)
 	{
 		CellController newCell = Instantiate<CellController>(prefab);
+		newCell.PrefabName = prefab.name;
 		newCell.transform.parent = parent;
 		newCell.Position = point;
 		return newCell;
