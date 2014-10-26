@@ -27,6 +27,7 @@ public class UIController : BaseController {
 	public VerifyCostsPanel vCostsPanel;
 
 	public ResultsPanel ResultsPanel;
+	public RectTransform WaitPanel;
 
 	Modes state = Modes.Build;
 	protected override void Awake ()
@@ -70,6 +71,11 @@ public class UIController : BaseController {
 			vCommandsPanel.ConfButton.gameObject.SetActive(false);
 		else
 			vCommandsPanel.ConfButton.gameObject.SetActive(true);
+	}
+
+	public void OnShowWait(bool show)
+	{
+		WaitPanel.gameObject.SetActive(show);
 	}
 
 	public void OnShowBuild()

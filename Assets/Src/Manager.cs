@@ -19,7 +19,7 @@ public class Manager : MonoBehaviour {
 	public OverlayController Overlay;
 
 	public PlayerProfile Profile{get;internal set;}
-
+	List<System.Action> ActionsOnUpdate = new List<System.Action>();
 
 	UIController ui;
 	public UIController UI{
@@ -44,6 +44,7 @@ public class Manager : MonoBehaviour {
 
 	void Awake()
 	{
+		//Input.simulateMouseWithTouches = true;
 		Profile = GetComponent<PlayerProfile>();
 		GameObject ui = GameObject.Find("HouseCraftUI");
 		if(ui==null)
@@ -64,7 +65,19 @@ public class Manager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(ActionsOnUpdate.Count>0)
+		{
+			foreach(System.Action action in ActionsOnUpdate)
+			{
+				action();
+			}
+			ActionsOnUpdate.Clear();
+		}
+	}
+
+	public void InvokeOnUpdate(System.Action action)
+	{
+		ActionsOnUpdate.Add(action);
 	}
 
 	public void Scroll(Vector2 delta)
@@ -76,9 +89,12 @@ public class Manager : MonoBehaviour {
 	{
 		if(state== Modes.Build)
 		{
-			state = Modes.Process;
+			UI.OnShowWait(true);
+			InvokeOnUpdate(() => {
+				state = Modes.Process;
+				House.SetHouseMode(HouseModes.Sale,null);
+			});
 
-			House.SetHouseMode(HouseModes.Sale,null);
 
 		}
 
@@ -88,6 +104,7 @@ public class Manager : MonoBehaviour {
 	{
 		if(state==Modes.Verify)
 		{
+
 			state = Modes.Build;
 			UI.OnShowBuild();
 			Overlay.RemoveOverlay();
@@ -99,6 +116,7 @@ public class Manager : MonoBehaviour {
 	{
 		state = Modes.Verify;
 		UI.OnShowVerify();
+		UI.OnShowWait(false);
 	}
 
 	public void OnVerified()

@@ -129,6 +129,9 @@
 	<String Name="TipVent">Одной вентшахты хватит на целый дом. Игра сама посчитает стоимость прокладки вентиляционных коробов</String>
 	<String Name="TipBoiler">Бойлер нужен в тех случаях, когда горячее водоснабжение недоступно.</String>
 	
+<!-- New in 1.0.2-->
+  	<String Name="LabelWait">Подождите...</String>
+
   	<String Name="Label"></String>
   	<String Name=""></String>
   </SimpleStrings>

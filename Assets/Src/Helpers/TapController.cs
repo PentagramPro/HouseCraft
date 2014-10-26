@@ -18,9 +18,15 @@ public class TapController : BaseController {
 	{
 		if(Input.mousePosition.x>Screen.width-316)
 			return;
-
 		if(EventSystem.current.IsPointerOverGameObject())
 			return;
+
+		foreach(Touch t in Input.touches)
+		{
+
+			if(EventSystem.current.IsPointerOverGameObject(t.fingerId))
+				return;
+		}
         	
 		curPanDistance = 0;
 		lastMousePos = Input.mousePosition;
@@ -33,8 +39,8 @@ public class TapController : BaseController {
 		if(!mouseDown)
 			return;
 
-		if(EventSystem.current.IsPointerOverGameObject())
-			return;
+		//if(EventSystem.current.IsPointerOverGameObject())
+		//	return;
 
 		Vector2 touchDeltaPosition = new Vector2(lastMousePos.x-Input.mousePosition.x,
 		                                         lastMousePos.y-Input.mousePosition.y);
@@ -49,8 +55,8 @@ public class TapController : BaseController {
 	
 	public void OnMouseUp()
 	{
-		if(EventSystem.current.IsPointerOverGameObject())
-			return;
+		//if(EventSystem.current.IsPointerOverGameObject())
+		//	return;
 
 		if(!mouseDown)
 			return;

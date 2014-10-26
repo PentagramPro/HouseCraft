@@ -130,6 +130,11 @@
 	<String Name="TipVent">One ventshaft is sufficient for a house. The game will calculate cost of airboxes from it to kitchen and bath.</String>
 	<String Name="TipBoiler">Boiler is necessary when house doesn`t connected to central heating.</String>
 	
+		
+<!-- New in 1.0.2-->
+  	<String Name="LabelWait">Please wait...</String>
+  	
+  	
   	<String Name="Label"></String>
   	<String Name=""></String>
   </SimpleStrings>
