@@ -392,7 +392,7 @@ public class Segmentator : BaseController {
 		processed.Add(curCell);
 
 
-		M.House.ForEachWall(curCell.Position, (WallPoint wp, WallController wc) => {
+		M.House.ForEachWall(curCell.Position, (WallPoint wp, WallController wc,Corner corn) => {
 			if(wc==null)
 				return;
 			if(wc.WallObject is DoorController)

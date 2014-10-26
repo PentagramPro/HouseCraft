@@ -140,8 +140,8 @@ public class HouseController : BaseController {
 	}
 
 
-
-	public void ForEachWall(MapPoint point, Action<WallPoint,WallController> action)
+	static readonly Corner[] cornersTable = {Corner.BottomLeft,Corner.BottomRight,Corner.TopLeft,Corner.TopRight}; 
+	public void ForEachWall(MapPoint point, Action<WallPoint,WallController,Corner> action)
 	{
 		WallController wc = null;
 		WallPoint wp;
@@ -153,7 +153,7 @@ public class HouseController : BaseController {
 			if(wp.X<0 || wp.Y<0)
 				continue;
 			walls.TryGetValue(wp.toInt(),out wc);
-			action(wp,wc);
+			action(wp,wc,cornersTable[i]);
 			wc = null;
 		}
 
@@ -490,7 +490,8 @@ public class HouseController : BaseController {
 		case HouseModes.SetObject:
 			state = Modes.SetObject;
 			selectedPrefab = prefab;
-			showRotationBtn = true;
+
+			showRotationBtn = !prefab.GetComponent<CellController>().IsSquare;
 			break;
 		case HouseModes.RemoveWalls:
 			state = Modes.RemoveWall;
@@ -529,7 +530,7 @@ public class HouseController : BaseController {
 	public void EditorUpdateThickWalls (MapPoint point)
 	{
 
-		ForEachWall(point, (WallPoint wp, WallController wc) => {
+		ForEachWall(point, (WallPoint wp, WallController wc,Corner cor) => {
 			if(wc==null)
 			{
 				wc = Instantiate<WallController>(ThickWallPrefab,transform);

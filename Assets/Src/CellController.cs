@@ -114,6 +114,12 @@ public class CellController : BaseController {
 		return res;
 	}
 
+	public bool IsSquare
+	{
+		get{
+			return SizeX==SizeY;
+		}
+	}
 	public bool IsMultiCell
 	{
 		get{
