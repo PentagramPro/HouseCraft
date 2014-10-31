@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof (UnityEngine.EventSystems.Physics2DRaycaster))]
 public class CameraController : BaseController {
 	enum Modes{
 		Idle,Moving,Blocked
