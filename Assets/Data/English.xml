@@ -2,7 +2,7 @@
 <Strings Language="Russian" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SimpleStrings>
   	<String Name="LabelTotalProfit">Total Profit:</String>
-  	<String Name="LabelLevelSelectorHeader">Стартовый набор уровней</String> ???
+  	<String Name="LabelLevelSelectorHeader">Basic Set of Levels</String>
   	
   	<String Name="LevelTraining">Training</String>
   	<String Name="LevelSimpleCottage">The simple cottage</String>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class LevelSelectorController : MonoBehaviour {
 
+	public static string LocalizedLevelName = "";
 	//public List<LevelItemController> Levels = new List<LevelItemController>();
 	LevelItemController[] Levels;
 	public NumericFieldController TotalProfit;
@@ -64,6 +65,7 @@ public class LevelSelectorController : MonoBehaviour {
 		if(selectedLevel==null)
 			return;
 
+		LocalizedLevelName = selectedLevel.LevelNameLabel.text;
 		Application.LoadLevel(selectedLevel.SceneName);
 	}
 

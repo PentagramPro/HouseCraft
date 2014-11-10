@@ -11,6 +11,7 @@ public class LevelItemController : MonoBehaviour {
 
 	public string SceneName;
 	public LevelSelectorController LevelSelector{get;internal set;}
+	public Text LevelNameLabel;
 
 	// Use this for initialization
 	void Start () {
