@@ -58,7 +58,8 @@ public class Evaluator : BaseController {
 		new ColdHouse(-900),
 		new WastingSpace(-1000),
 		new EnoughBedrooms(700),
-		new EnoughToilets(300)
+		new EnoughToilets(300),
+		new BathtubForBig(200)
 	};
 
 	protected override void Awake ()

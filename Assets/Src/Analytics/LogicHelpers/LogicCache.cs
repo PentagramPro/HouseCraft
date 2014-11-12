@@ -10,6 +10,7 @@ public class LogicCache
 	public List<LogicHeater> Heaters = new List<LogicHeater>();
 	public List<LogicFireplace> Fireplaces = new List<LogicFireplace>();
 	public List<LogicVentshaft> Vents = new List<LogicVentshaft>();
+	public List<LogicBathtub> Bathtubs = new List<LogicBathtub>();
 
 	public int BedroomsCount=0;
 	public int ToiletsCount=0;
@@ -26,6 +27,7 @@ public class LogicCache
 		Heaters.Clear();
 		Vents.Clear();
 		Fireplaces.Clear();
+		Bathtubs.Clear();
 	}
 
 	public T FindClosest<T>(List<T> lobjects, Vector3 position) where T : ILogicObject

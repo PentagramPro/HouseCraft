@@ -43,43 +43,47 @@ public class WallController : BaseController {
 		if(update)
 		{
 			update = false;
-			if(houseController==null)
-				houseController = GetComponentInParent<HouseController>();
-
-			WallController w = houseController.GetWall(new WallPoint(position.X-1,position.Y));
-			if(w==null)
-				wallSprite.Left = false;
-			else if(w.wallSprite.Right)
-				wallSprite.Left = true;
-
-			w = houseController.GetWall(new WallPoint(position.X+1,position.Y));
-			if(w==null)
-				wallSprite.Right = false;
-			else if(w.wallSprite.Left)
-				wallSprite.Right = true;
-
-			w = houseController.GetWall(new WallPoint(position.X,position.Y-1));
-			if(w==null)
-				wallSprite.Bottom = false;
-			else if(w.wallSprite.Top)
-				wallSprite.Bottom = true;
-
-			w = houseController.GetWall(new WallPoint(position.X,position.Y+1));
-			if(w==null)
-				wallSprite.Top = false;
-			else if(w.wallSprite.Bottom)
-				wallSprite.Top = true;
-
-			wallSprite.UpdateWall();
-			if(WallObject!=null)
-				WallObject.UpdateWall();
+			UpdateImmediate();
 		}
 	}
 
+	private void UpdateImmediate()
+	{
+		if(houseController==null)
+			houseController = GetComponentInParent<HouseController>();
+		
+		WallController w = houseController.GetWall(new WallPoint(position.X-1,position.Y));
+		if(w==null)
+			wallSprite.Left = false;
+		else if(w.wallSprite.Right)
+			wallSprite.Left = true;
+		
+		w = houseController.GetWall(new WallPoint(position.X+1,position.Y));
+		if(w==null)
+			wallSprite.Right = false;
+		else if(w.wallSprite.Left)
+			wallSprite.Right = true;
+		
+		w = houseController.GetWall(new WallPoint(position.X,position.Y-1));
+		if(w==null)
+			wallSprite.Bottom = false;
+		else if(w.wallSprite.Top)
+			wallSprite.Bottom = true;
+		
+		w = houseController.GetWall(new WallPoint(position.X,position.Y+1));
+		if(w==null)
+			wallSprite.Top = false;
+		else if(w.wallSprite.Bottom)
+			wallSprite.Top = true;
+		
+		wallSprite.UpdateWall();
+		if(WallObject!=null)
+			WallObject.UpdateWall();
+	}
 	public void UpdateWall( )
 	{
-
-			update = true;
+		UpdateImmediate();
+			//update = true;
 	}
 
 	//public void ForeachWall(System.Action<WallPoint,WallController> action)

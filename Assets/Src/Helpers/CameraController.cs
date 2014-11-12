@@ -13,7 +13,7 @@ public class CameraController : BaseController {
 	public Rect bounds = new Rect();
 
 	Vector3 newTargetPos;
-	float moveSpeed = 5;
+	float moveSpeed = 16;
 
 	float ScrollFactor = 0.3f;
 	Modes state = Modes.Idle;

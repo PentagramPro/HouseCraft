@@ -84,8 +84,11 @@ public class Room  {
 				{
 				case CellObjects.Shower:
 				case CellObjects.Sink:
+					cache.HotWaterConsumers.Add(lo as IHotWaterConsumer);
+					break;
 				case CellObjects.Bathtub:
 					cache.HotWaterConsumers.Add(lo as IHotWaterConsumer);
+					cache.Bathtubs.Add(lo as LogicBathtub);
 					break;
 				case CellObjects.Boiler:
 					cache.Boilers.Add(lo as LogicBoiler);

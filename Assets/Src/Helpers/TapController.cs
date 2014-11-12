@@ -9,10 +9,10 @@ public class TapController : BaseController, IPointerClickHandler, IDragHandler 
 	public delegate void TapEvent();
 	public event TapEvent OnTap;
 
-
 	public void OnPointerClick(PointerEventData eventData)
 	{
-		if(OnTap!=null)
+
+		if(OnTap!=null && !eventData.dragging)
 			OnTap();
 	}
 	
