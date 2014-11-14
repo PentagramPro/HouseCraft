@@ -133,7 +133,13 @@
 		
 <!-- New in 1.0.2-->
   	<String Name="LabelWait">Please wait...</String>
-  	
+	
+<!-- New in 1.0.4-->
+	<String Name="TipRiser">Вся сантехника подключается к стояку, бойлеры тоже. Стоимость коммуникаций зависит от расстояния до него.</String>
+	<String Name="TipHeater">Без труб отопления радиаторы не будут согревать дом зимой.</String>
+	<String Name="TipHob">Не забудьте разместить плиту на предполагаемой кухне. Плиту лучше ставить у стены</String>
+	<String Name="TipSink">Умывальники и раковины делают кухни и туалеты удобнее</String>
+	<String Name="TipHotWater">Горячая вода есть не во всех домах. Внимательно смотрите на начальные уусловия.</String>
   	
   	<String Name="Label"></String>
   	<String Name=""></String>
