@@ -68,7 +68,7 @@
 	<String Name="Rule.HotRoom">hot room</String>
 	<String Name="Rule.HotRoom.Descr">There are too many radiators or fireplaces in the room</String>
 	<String Name="Rule.NarrowCoridor">narrow corridor</String>
-	<String Name="Rule.NarrowCoridor.Descr">There is a passage with less-meter width in the coridor</String>
+	<String Name="Rule.NarrowCoridor.Descr">There is a passage with less-meter width in the corridor</String>
 	<String Name="Rule.NoisyRoom">noisy room</String>
 	<String Name="Rule.NoisyRoom.Descr">Windows of a room overlook a noisy highway</String>
 	<String Name="Rule.NoRoom">no room</String>
@@ -128,18 +128,19 @@
                              	
 	<String Name="TipHeater">One heater generates power enough for 10 square meters</String>
 	<String Name="TipVent">One ventshaft is sufficient for a house. The game will calculate cost of airboxes from it to kitchen and bath.</String>
-	<String Name="TipBoiler">Boiler is necessary when house doesn`t connected to central heating.</String>
+	<String Name="TipBoiler">Boiler is necessary when house isn`t connected to central heating.</String>
 	
 		
 <!-- New in 1.0.2-->
   	<String Name="LabelWait">Please wait...</String>
 	
 <!-- New in 1.0.4-->
-	<String Name="TipRiser">Вся сантехника подключается к стояку, бойлеры тоже. Стоимость коммуникаций зависит от расстояния до него.</String>
-	<String Name="TipHeater">Без труб отопления радиаторы не будут согревать дом зимой.</String>
-	<String Name="TipHob">Не забудьте разместить плиту на предполагаемой кухне. Плиту лучше ставить у стены</String>
-	<String Name="TipSink">Умывальники и раковины делают кухни и туалеты удобнее</String>
-	<String Name="TipHotWater">Горячая вода есть не во всех домах. Внимательно смотрите на начальные уусловия.</String>
+<!-- Вот отсюда, лапочка. Я с тобой :) -->
+	<String Name="TipRiser">All sanitary engineering is connected to the riser, same about boilers. The cost of service lines depends on the distance between the riser and them.</String>
+	<String Name="TipHeater">Radiators wouldn't heat the house in winter without heating pipes.</String>
+	<String Name="TipHob">Don't forget to place a cooker in the assumed kitchen. It is better to place the cooker near a wall.</String>
+	<String Name="TipSink">Kitchens and toilets are more comfortable with washstands and sinks.</String>
+	<String Name="TipHotWater">Not all the houses are provided with hot water. Be attentive to the initial conditions.</String>
   	
   	<String Name="Label"></String>
   	<String Name=""></String>
